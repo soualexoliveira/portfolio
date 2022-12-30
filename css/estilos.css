@@ -2,14 +2,16 @@
 
 :root, .light{
     --color-text: #171717;
+    --color-text2: rgb(0, 16, 195);
     --color-bg: #ffffff;
     --font: 'Poppins', sans-serif;
-    --color-slider: #cccccc;
-    --color-slider-active: #999999;
+    --color-slider: #666;
+    --color-slider-active: rgb(39, 0, 213);
 }
 
 .dark{
     --color-text: #ffffff;
+    --color-text2: rgb(243, 201, 14);
     --color-bg: #171717;
     --font: 'Poppins', sans-serif;
     --color-slider: #6c6c6c;
@@ -58,12 +60,13 @@ body{
     height: 40px;
     border-radius: 45px;
     border: none;
-    background-color: var(--color-text);
+    background-color: var(--color-text2);
     cursor: pointer;
 }
 
 .menu-btn i{
     font-size: 15pt;
+    color: var(--color-bg);
 }
 
 .menu-list{
@@ -105,12 +108,13 @@ body{
     height: 40px;
     border-radius: 45px;
     border: none;
-    background-color: var(--color-text);
+    background-color: var(--color-text2);
     cursor: pointer;
 }
 
 .idioma i{
     font-size: 15pt;
+    color: var(--color-bg);
 }
 
 .tema{
@@ -118,12 +122,13 @@ body{
     height: 40px;
     border-radius: 45px;
     border: none;
-    background-color: var(--color-text);
+    background-color: var(--color-text2);
     cursor: pointer;
 }
 
 .tema i{
     font-size: 15pt;
+    color: var(--color-bg);
 }
 
 .one{
@@ -139,7 +144,7 @@ body{
     font-weight: 600;
     font-size: 90pt;
     line-height: 100%;
-    color: var(--color-text);
+    color: var(--color-text2);
 }
 
 .sub-one{
@@ -198,6 +203,7 @@ body{
     font-weight: 700;
     font-size: 20pt;
     line-height: 25px;
+    color: var(--color-text2);
 }
 
 .texto-sobre p{
@@ -293,7 +299,7 @@ body{
 }
 
 .cover-img button{
-    background-color: var(--color-text);
+    background-color: var(--color-text2);
     border-style: none;
     color:var(--color-bg);
     font-size: 14pt;
@@ -461,7 +467,7 @@ body{
 
 .apelo p{
     font-family: var(--font);
-    color: var(--color-text);
+    color: var(--color-text2);
     font-size: 14pt;
     font-weight: 500;
     line-height: 25px;
