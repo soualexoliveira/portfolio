@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Oliveira</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="css/estilos.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bcda37c68a.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark">
-    <header>
+    <header id="inicio">
         <div class="header" id="header">
             <div class="logo">
                 <h1><a href="index.html">AO</a></h1>
@@ -17,9 +19,9 @@
                 <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
                 <ul class="menu-list">
                     <li id="home"><a href="index.html">INÍCIO</a></li>
-                    <li id="about"><a href="#">SOBRE</a></li>
-                    <li id="works"><a href="#">PORTFÓLIO</a></li>
-                    <li id="contact"><a href="#">CONTATO</a></li>
+                    <li id="about"><a href="#sobre">SOBRE</a></li>
+                    <li id="works"><a href="#portfolio">PORTFÓLIO</a></li>
+                    <li id="contact"><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,16 +31,24 @@
             <div class="one">
                 <h1>Alex Oliveira</h1>
                 <div class="sub-one">
-                    <a href="#"><p>ROLE A PÁGINA PARA EXPLORAR</p></a>
+                    <a href="#sobre"><p>ROLE A PÁGINA PARA EXPLORAR</p></a>
                     <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
                 </div>
             </div>
             <div class="buttons-one">
-                <button class="idioma"><i class="fa-solid fa-language"></i></button>
-                <button class="tema"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <div class="bg-idioma">
+                    <button class="idioma"><i class="fa-solid fa-language"></i></button>
+                </div>
+                <div class="bg-tema">
+                    <input type="checkbox" name="tema" id="tema" class="tema"/>
+                        <label for="tema">
+                            <i aria-hidden="true" id="correct-icon" class="fa-solid fa-circle-half-stroke" title="Modo Escuro"></i>
+                            <i aria-hidden="true" id="inverted-icon" class="fa-solid fa-circle-half-stroke" title="Modo Claro"></i>
+                        </label>
+                </div>
             </div>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="texto-sobre">
                 <h2>DESIGNER GRÁFICO</h2>
                 <h2>DESIGNER DIGITAL</h2>
@@ -52,7 +62,7 @@
                 <img src="images/eupb.png" height="570">
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="gallery-wrapper" data-slide="wrapper">
                     <div class="gallery" data-slide="gallery">
@@ -146,11 +156,11 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contato">
             <div class="contact-content">
                 <div class="curriculo">
                     <span class="curriculo-title"><h3>CASO QUEIRA CONHECER MINHA TRAJETÓRIA:</h3></span>
-                    <span class="curriculo-archive"><a target="_blank" href="https://doc-10-3c-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/vd6cb2dej96c7tkbeslfi8p7ppufov9v/35vvmo90htl67tacvtken7vfobq44tbu/1672412775000/3/106133160023137951350/APznzaaemTossIXeVi4wp-xgkqTOpdKCPIsfjRYS15WPR_bXkRNbMA88NoedBkbN3HX9rsFd5ynHE3iw_P0c-Qdk3yqkgfa0NtfNBvFIL3Q1qZkpYDeVUoNWwOTSYuuhzC5lnPKVIydpumC8CSltW4KVx_0bNJ9NxQyftzaasSUHFA1S-lF1dDcgdtrg9ZKAFJKAZYejIrOY9aOItIbzhD8D9S9eZrqKp3zfypKDILKLjIXFo5TIbbLTgiuVrStbcbYHhQHDXKoMguc9ruLlnsj5BkAxZ8m1cSiyArOesyQDSKxikoULkYEyqHGJtOjAPcWsOnxauaP0X9Ym34TNKSqucJt-U1lye1EQDBWEzFqY9RLmA5v5QgYs9xaj-4mDZf4hKxwhMGpI?authuser=0&nonce=51qie093m2reg&user=106133160023137951350&hash=k1m93fj6ftcklb55npq7nblqrof0rlrg"><div class="curriculo-btn">CURRÍCULO</div></a></span>
+                    <span class="curriculo-archive"><a target="_blank" href="./pdf/Alexsandro Oliveira Santos - curriculo.pdf"><div class="curriculo-btn">CURRÍCULO</div></a></span>
                 </div>
                 <div class="information">
                     <span class="info-title"><h3>CASO QUEIRA ENTRAR EM CONTATO COMIGO:</h3></span>
@@ -168,7 +178,7 @@
     </main>
     <footer>
         <div class="topo-final">
-            <button class="backtotop" aria-label="topo" text="voltar ao topo"><i class="fa-solid fa-arrow-up"></i>VOLTAR AO TOPO</button>
+            <a href="#inicio" class="backtotop" aria-label="topo" text="voltar ao topo"><i class="fa-solid fa-arrow-up"></i>VOLTAR AO TOPO</a>
         </div>
         <div class="creditos">
             <p>Alex Oliveira © 2023</p>
