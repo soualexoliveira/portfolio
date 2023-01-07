@@ -352,16 +352,20 @@ input[type="checkbox"]{
     transition: all 0.5s ease-in-out;
 }
 
-.cover-img button{
-    background-color: var(--color-text2);
-    border-style: none;
-    color:var(--color-text);
-    font-size: 14pt;
+.btn-img{
+    background-color: var(--color-text2);    
     width: 270px;
     height: 75px;
     cursor: pointer;
+}
+
+.text-btn{
+    color:var(--color-text);
+    text-align: center;
     font-family: var(--font);
     font-weight: 400;
+    font-size: 14pt;
+    padding-top: 25px;
 }
 
 .item h4{
@@ -373,7 +377,7 @@ input[type="checkbox"]{
     line-height: 100%;
 }
 
-.item p{
+.text-item{
     font-family: var(--font);
     color: var(--color-text);
     font-size: 13pt;
