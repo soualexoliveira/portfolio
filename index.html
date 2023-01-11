@@ -6,8 +6,11 @@
     <title>Alex Oliveira</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link href="css/estilos.css" type="text/css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bcda37c68a.js" crossorigin="anonymous"></script>
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body class="dark">
     <header id="inicio">
@@ -16,13 +19,32 @@
                 <h1><a href="index.html">AO</a></h1>
             </div>
             <nav class="menu">
-                <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
-                <ul class="menu-list">
-                    <li id="home"><a href="index.html">INÍCIO</a></li>
-                    <li id="about"><a href="#sobre">SOBRE</a></li>
-                    <li id="works"><a href="#portfolio">PORTFÓLIO</a></li>
-                    <li id="contact"><a href="#contato">CONTATO</a></li>
-                </ul>
+                <input type="checkbox" name="menu-btn" id="menu-btn" class="menu-btn" autocomplete="off">
+                <label for="menu-btn">
+                    <div class="nav-btn">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </div>
+                    <ul class="menu-list">
+                        <li id="home"><a href="index.html">INÍCIO</a></li>
+                        <li id="about"><a href="#sobre">SOBRE</a></li>
+                        <li id="works"><a href="#portfolio">PORTFÓLIO</a></li>
+                        <li id="contact"><a href="#contato">CONTATO</a></li>
+                    </ul>
+                    <div class="buttons-one">
+                        <div class="bg-idioma">
+                            <button class="idioma"><i class="fa-solid fa-language"></i></button>
+                        </div>
+                        <div class="bg-tema">
+                            <input type="checkbox" name="tema" id="tema" class="tema"/>
+                                <label for="tema">
+                                    <i aria-hidden="true" class="fa-solid fa-circle-half-stroke correct-icon" title="Modo Escuro"></i>
+                                    <i aria-hidden="true" class="fa-solid fa-circle-half-stroke inverted-icon" title="Modo Claro"></i>
+                                </label>
+                        </div>
+                    </div>
+                </label>
             </nav>
         </div>
     </header>
@@ -33,18 +55,6 @@
                 <div class="sub-one">
                     <a href="#sobre"><p>ROLE A PÁGINA PARA EXPLORAR</p></a>
                     <a href="#sobre"><i class="fa-solid fa-arrow-down"></i></a>
-                </div>
-            </div>
-            <div class="buttons-one">
-                <div class="bg-idioma">
-                    <button class="idioma"><i class="fa-solid fa-language"></i></button>
-                </div>
-                <div class="bg-tema">
-                    <input type="checkbox" name="tema" id="tema" class="tema"/>
-                        <label for="tema">
-                            <i aria-hidden="true" id="correct-icon" class="fa-solid fa-circle-half-stroke" title="Modo Escuro"></i>
-                            <i aria-hidden="true" id="inverted-icon" class="fa-solid fa-circle-half-stroke" title="Modo Claro"></i>
-                        </label>
                 </div>
             </div>
         </section>
@@ -64,17 +74,37 @@
         </section>
         <section class="portfolio" id="portfolio">
             <div class="container">
+                <div class="overlay-item">
+                    <span class="close-item">FECHAR<i class="fa-solid fa-xmark fechar-item"></i></span>
+                    <div class="expand-item">
+                        <div class="expand-project">
+                            <div class="project-presentation"></div>
+                            <h2 class="project-title">UP EVER</h2>
+                            <p class="project-text">A Up Ever é uma plataforma online de cursos de inglês, focada em ser referência no ensino do idioma. O objetivo da plataforma é trazer valor ao potencial humano através do comprometimento e da qualidade, e assim alcançar o crescimento pessoal e profissional de seus empregados e clientes.</p>
+                            <div class="box-p project-img"></div>
+                            <div class="box-p project-img"></div>
+                            <div class="box-p project-img"></div>
+                            <div class="box-p project-img"></div>
+                            <div class="box-m project-img"></div>
+                            <div class="box-m project-img"></div>
+                            <div class="box-g project-img"></div>
+                            <div class="box-m project-img"></div>
+                            <div class="box-m project-img"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="gallery-wrapper" data-slide="wrapper">
                     <div class="gallery" data-slide="gallery">
                         <div class="pf-one item" data-slide="item" data-index="0">
                             <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?school" alt="Up Ever">
+                                <div class="logo-carrossel"><img src="./images/carrossel/upever/upever.png" alt="Up Ever"></div>
+                                <span class="cor-bg-carrossel" alt="Up Ever"></span>
+                                <span class="luz-bg-carrossel"></span>
+                                <img class="fundo-carrossel" src="./images/carrossel/upever/fundo.png" alt="Up Ever">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
-                                        <div class="btn-img">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
+                                    <div class="btn-img">
+                                        <p class="text-btn">VISUALIZAR PROJETO</p>
+                                    </div>
                                 </div>
                             </div>
                             <h4>UP EVER</h4>
@@ -82,13 +112,14 @@
                         </div>
                         <div class="pf-two item" data-slide="item" data-index="1">
                             <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?publicity" alt="La Red">
+                                <div class="logo-carrossel"><img src="./images/carrossel/lared/lared.svg" alt="La Red"></div>
+                                <span class="cor-bg-carrossel" alt="La Red"></span>
+                                <span class="luz-bg-carrossel"></span>
+                                <img class="fundo-carrossel" src="./images/carrossel/lared/fundo.png" alt="La Red">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
-                                        <div class="btn-img">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
+                                    <div class="btn-img">
+                                        <p class="text-btn">VISUALIZAR PROJETO</p>
+                                    </div>
                                 </div>
                             </div>
                             <h4>LA RED</h4>
@@ -96,13 +127,14 @@
                         </div>
                         <div class="pf-three item" data-slide="item" data-index="2">
                             <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?singer" alt="Caldélica">
+                                <div class="logo-carrossel"><img src="./images/carrossel/caldelica/caldelica.png" alt="Caldélica"></div>
+                                <span class="cor-bg-carrossel" alt="Caldélica"></span>
+                                <span class="luz-bg-carrossel"></span>
+                                <img class="fundo-carrossel" src="./images/carrossel/caldelica/fundo1.jpg" alt="Caldélica">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
-                                        <div class="btn-img">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
+                                    <div class="btn-img">
+                                        <p class="text-btn">VISUALIZAR PROJETO</p>
+                                    </div>
                                 </div>
                             </div>
                             <h4>CALDÉLICA</h4>
@@ -112,7 +144,7 @@
                             <div class="imgedit">
                                 <img src="https://source.unsplash.com/random/?vegan" alt="Di Maître">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
+                                    <a href="upever.html">
                                         <div class="btn-img">
                                             <p class="text-btn">VISUALIZAR PROJETO</p>
                                         </div>
@@ -126,7 +158,7 @@
                             <div class="imgedit">
                                 <img src="https://source.unsplash.com/random/?church" alt="Célula Coach">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
+                                    <a href="upever.html">
                                         <div class="btn-img">
                                             <p class="text-btn">VISUALIZAR PROJETO</p>
                                         </div>
@@ -140,7 +172,7 @@
                             <div class="imgedit">
                                 <img src="https://source.unsplash.com/random/?events" alt="andiamo">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
+                                    <a href="upever.html">
                                         <div class="btn-img">
                                             <p class="text-btn">VISUALIZAR PROJETO</p>
                                         </div>
@@ -154,7 +186,7 @@
                             <div class="imgedit">
                                 <img src="https://source.unsplash.com/random/?chocolat" alt="Dunkel">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html">
+                                    <a href="upever.html">
                                         <div class="btn-img">
                                             <p class="text-btn">VISUALIZAR PROJETO</p>
                                         </div>
@@ -168,7 +200,7 @@
                             <div class="imgedit">
                                 <img src="https://source.unsplash.com/random/?stream" alt="Caioso">
                                 <div class="cover-img">
-                                    <a href="./pages/upever.html" target="_self">
+                                    <a href="upever.html">
                                         <div class="btn-img">
                                             <p class="text-btn">VISUALIZAR PROJETO</p> 
                                         </div>
@@ -232,5 +264,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/slides.js"></script>
+    <script src="https://kit.fontawesome.com/bcda37c68a.js" crossorigin="anonymous"></script>
 </body>
 </html>

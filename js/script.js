@@ -1,5 +1,9 @@
 //CHANGE THEME
 const btn = document.querySelector('.tema');
+const sol = document.querySelector('.inverted-icon');
+const lua = document.querySelector('.correct-icon');
+const voltarBtn = document.querySelector('.voltar-btn');
+
 
 function toggleTheme() {
     document.body.classList.toggle('light');
@@ -9,36 +13,48 @@ function toggleTheme() {
 window.addEventListener("load", function(){
     if (window.localStorage.getItem('modo') != "Escuro"){
         toggleTheme();
-        document.getElementById('inverted-icon').style.display = "none";
-        document.getElementById('correct-icon').style.display = "block";
+        sol.style.display = "none";
+        lua.style.display = "block";
     }else{
-        document.getElementById('inverted-icon').style.display = "block";
-        document.getElementById('correct-icon').style.display = "none";
+        sol.style.display = "block";
+        lua.style.display = "none";
     }
 });
 
-btn.addEventListener('change', function() {
+btn.addEventListener("change", function() {
     toggleTheme();
 
 
     if(document.body.classList.contains('dark')) {
         localStorage.setItem('modo', 'Escuro');
-        document.getElementById('inverted-icon').style.display = "block";
-        document.getElementById('correct-icon').style.display = "none";
+        sol.style.display = "block";
+        lua.style.display = "none";
     }else{
         localStorage.setItem('modo', 'Claro');
-        document.getElementById('inverted-icon').style.display = "none";
-        document.getElementById('correct-icon').style.display = "block";
+        sol.style.display = "none";
+        lua.style.display = "block";
     }
 });
 
 // CHANGE LANGUAGE
 
+//OPEN PROJECTS
+const openProjects = document.querySelector('.btn-img');
+const closeProjects = document.querySelector('.close-item');
+const overlayProjects = document.querySelector('.overlay-item')
 
-//SCROLL SMOOTH
+openProjects.addEventListener('click', function(){
+        overlayProjects.style.opacity = '1';
+        overlayProjects.style.zIndex = '2';
+        document.body.style.overflow = 'hidden';
+        overlayProjects.style.transform = 'scale(1)';
+        overlayProjects.stylewebkitTransform = 'scale(1)';
+})
 
-
-//SHOW FULL NAV
-
-
-//OPEN ITEM
+closeProjects.addEventListener('click', function(){
+        overlayProjects.style.opacity = '0';
+        overlayProjects.style.zIndex = '-2';
+        document.body.style.overflow = 'visible';
+        overlayProjects.style.transform = 'scale(0)';
+        overlayProjects.stylewebkitTransform = 'scale(0)';
+})
