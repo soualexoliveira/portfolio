@@ -17,12 +17,12 @@
 
     --upever: #000d20;
     --lared: #eaeaea;
-    --dimaitre: #000d20;
+    --dimaitre: #;
     --caldelica: #162c39;
-    --coach: #000d20;
-    --caioso: #000d20;
-    --andiamo: #000d20;
-    --dunkel: #000d20;
+    --coach: #;
+    --caioso: #090909;
+    --andiamo: #;
+    --dunkel: #;
 
     --preto: #000;
     --branco: #fff;
@@ -34,6 +34,7 @@
     --color-text: #031624; /*#171717*/
     --color-text2: #f34d3d;
     --color-bg: #f3f3f3; /*#ffffff*/
+    --color-bg-gradient: linear-gradient(180deg, #f3f3f3 0%, rgb(216, 216, 216) 50%, #f3f3f3 100%);
     --color-bg-overlay: #ccccccf3;
 
     --color-slider: #999999; /*#666666*/
@@ -46,12 +47,12 @@
 
     --upever: #000d20;
     --lared: #eaeaea;
-    --dimaitre: #000d20;
+    --dimaitre: #;
     --caldelica: #162c39;
-    --coach: #000d20;
-    --caioso: #000d20;
-    --andiamo: #000d20;
-    --dunkel: #000d20;
+    --coach: #;
+    --caioso: #1c1c1c;
+    --andiamo: #;
+    --dunkel: #;
 
     --preto: #000;
     --branco: #fff;
@@ -70,7 +71,7 @@
 body{
     font-size: 100%;
     background-color: var(--color-bg);
-    background-image: var(--color-bg-gradient);
+    /*background-image: var(--color-bg-gradient);*/
     padding-left: 5%;
     padding-right: 5%;
     overflow-x: hidden;
@@ -83,7 +84,6 @@ body{
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: var(--color-bg);
 }
 
 .logo a{
@@ -270,23 +270,18 @@ body{
 }
 
 .inicial{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding-bottom: 50px;
     height: 90vh;
     position: relative;
 }
 
 .one{
-    width: 35vw;
+    width: 90vw;
     height: 90vh;
     padding-top: 45vh;
 }
 
 .one h1 {
-    display: flex;
-    flex-direction:column;
     font-family: var(--font);
     font-weight: 600;
     font-size: 90pt;
@@ -298,7 +293,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 5vh;
 }
 
 .sub-one p{
@@ -516,10 +511,6 @@ body{
     background-size:cover;
 }
 
-.project-img{
-    
-}
-
 .logo-up1{
     cursor: pointer;
     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fc4e5258550031.5b4966182301c.png);
@@ -612,6 +603,11 @@ body{
     z-index: 1;
 }
 
+.imgedit:hover .cor-bg-carrossel{
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+}
+
 .cor-bg-carrossel[alt="Up Ever"]{
     background-color: var(--upever);
 }
@@ -648,7 +644,7 @@ body{
     width: 270px;
     height: 400px;
     object-fit: cover;
-    opacity: .3;
+    opacity: .4;
     transition: all 0.6s ease-in-out;
     background-color: var(--preto);
     position: absolute;
