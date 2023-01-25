@@ -1,1 +1,14 @@
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.12 90.34"><defs><style>.cls-1{fill:#e8b023;}.cls-2{font-size:48px;fill:#d8d8d8;font-family:LEMONMILK-Medium, LEMON MILK;font-weight:500;}</style></defs><polygon class="cls-1" points="41.95 25.46 41.95 25.5 33.56 39.31 41.95 39.31 41.95 39.27 92.72 39.27 98.8 39.27 110.08 39.27 86.21 0 68.86 0 84.33 25.46 41.95 25.46"/><polygon class="cls-1" points="92.72 51.07 41.95 51.07 41.95 50.99 33.56 50.99 41.95 64.81 41.95 64.88 84.33 64.88 68.86 90.34 86.21 90.34 110.08 51.07 98.8 51.07 92.72 51.07"/><polygon class="cls-1" points="36.49 76.53 21.02 51.07 20.93 51.07 17.45 45.34 17.38 45.34 36.54 13.81 59.24 13.81 67.63 13.81 59.24 0 44.89 0 28.87 0 27.53 0 3.67 39.27 3.72 39.27 0 45.38 0.12 45.38 23.96 84.61 24.05 84.61 27.53 90.34 28.87 90.34 44.89 90.34 59.24 90.34 67.63 76.53 59.24 76.53 36.49 76.53"/><text class="cls-2" transform="translate(117.4 63.3)">CAIOSO</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 110.1 90.3" style="enable-background:new 0 0 110.1 90.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E8B023;}
+</style>
+<polygon class="st0" points="42,25.5 42,25.5 33.6,39.3 42,39.3 42,39.3 92.7,39.3 98.8,39.3 110.1,39.3 86.2,0 68.9,0 84.3,25.5 
+	"/>
+<polygon class="st0" points="92.7,51.1 42,51.1 42,51 33.6,51 42,64.8 42,64.9 84.3,64.9 68.9,90.3 86.2,90.3 110.1,51.1 98.8,51.1 
+	"/>
+<polygon class="st0" points="36.5,76.5 21,51.1 20.9,51.1 17.5,45.3 17.4,45.3 36.5,13.8 59.2,13.8 67.6,13.8 59.2,0 44.9,0 28.9,0 
+	27.5,0 3.7,39.3 3.7,39.3 0,45.4 0.1,45.4 24,84.6 24,84.6 27.5,90.3 28.9,90.3 44.9,90.3 59.2,90.3 67.6,76.5 59.2,76.5 "/>
+</svg>
