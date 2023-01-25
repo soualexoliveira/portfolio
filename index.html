@@ -6,265 +6,204 @@
     <title>Alex Oliveira</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <link rel="preload" href="css/estilos.css" as="style">
-    <link rel="preload" href="js/script.js" as="script">
-
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
-<body class="dark">
+<body>
     <header id="inicio">
-        <div class="header" id="header">
-            <div class="logo">
-                <h1><a href="index.html">AO</a></h1>
+        <div class="logo">
+            <h1><a href="index.html">AO</a></h1>
+        </div>
+        <div class="menu">
+            <div class="close-nav-btn" onclick="hideMenu()">
+                <span class="close-bars"></span>
+                <span class="close-bars"></span>
             </div>
-            <nav class="menu">
-                <input type="checkbox" name="menu-btn" id="menu-btn" class="menu-btn" autocomplete="off">
-                <label for="menu-btn">
-                    <div class="nav-btn">
-                        <span class="bars"></span>
-                        <span class="bars"></span>
-                        <span class="bars"></span>
+            <nav id="navLinks">
+                <ul class="menu-list">
+                    <li id="home"><a href="index.html">INÍCIO</a></li>
+                    <li id="about"><a href="/pages/about.html">SOBRE</a></li>
+                    <li id="contact"><a href="/pages/contact.html">CONTATO</a></li>
+                </ul>
+                <div class="menu-social">
+                    <div class="menu-socialmedia">
+                        <ul>
+                            <li class="linkedin menu-rs"><a target="_blank" href="https://www.linkedin.com/in/alexsandro-oliveira-santos-a05658194/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="behance menu-rs"><a target="_blank" href="https://www.behance.net/Alex_Oliveira"><i class="fa-brands fa-behance"></i></a></li>
+                            <li class="github menu-rs"><a target="_blank" href="https://www.facebook.com/belinho.rap"><i class="fa-brands fa-github"></a></i></li>
+                            <li class="instagram menu-rs"><a target="_blank" href="https://www.instagram.com/soualexoliveira/"><i class="fa-brands fa-instagram"></a></i></li>
+                        </ul>
                     </div>
-                    <ul class="menu-list">
-                        <li id="home"><a href="index.html">INÍCIO</a></li>
-                        <li id="about"><a href="#sobre">SOBRE</a></li>
-                        <li id="works"><a href="#portfolio">PORTFÓLIO</a></li>
-                        <li id="contact"><a href="#contato">CONTATO</a></li>
-                    </ul>
-                    <div class="buttons-one">
-                        <div class="bg-idioma">
-                            <button class="idioma"><i class="fa-solid fa-language"></i></button>
-                        </div>
-                        <div class="bg-tema">
-                            <input type="checkbox" name="tema" id="tema" class="tema"/>
-                                <label for="tema">
-                                    <i aria-hidden="true" class="fa-solid fa-circle-half-stroke correct-icon" title="Modo Escuro"></i>
-                                    <i aria-hidden="true" class="fa-solid fa-circle-half-stroke inverted-icon" title="Modo Claro"></i>
-                                </label>
-                        </div>
-                    </div>
-                </label>
+                </div>
             </nav>
+            <div class="open-nav-btn" onclick="showMenu()">
+                <span class="open-bars"></span>
+                <span class="open-bars"></span>
+                <span class="open-bars"></span>
+            </div> 
         </div>
     </header>
     <main>
-        <section class="inicial">
-            <div class="one">
-                <h1>Alex <br>Oliveira</h1>
-                <div class="sub-one">
-                    <a href="#sobre"><p>ROLE A PÁGINA PARA EXPLORAR</p></a>
-                    <a href="#sobre"><i class="fa-solid fa-arrow-down"></i></a>
+        <section class="chamada">
+            <div class="titulo">
+                <h1>Alex<br>Oliveira</h1>
+                <div class="subtitulo">
+                    <p>DESIGNER GRÁFICO // <span>DESENVOLVEDOR FRONT-END //</span></p>
+                    <p>FOTÓGRAFO // <span> PRODUTOR AUDIOVISUAL //</span></p>
                 </div>
+                <span class="curriculo-archive">
+                    <a target="_blank" href="./pdf/Alexsandro Oliveira Santos - curriculo.pdf">
+                        <div class="curriculo-btn">
+                            <p>CURRÍCULO</p>
+                            <div class="icon-download">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </div>
+                        </div>
+                    </a>
+                </span>
             </div>
         </section>
-        <section class="sobre" id="sobre">
-            <div class="texto-sobre">
-                <h2>DESIGNER GRÁFICO</h2>
-                <h2>DESIGNER DIGITAL</h2>
-                <h2>PRODUTOR AUDIOVISUAL</h2>
-                <p>Sou um designer que ama aprender e busco constantemente me manter atualizado sobre as tendências. Atualmente meu foco está em Design Gráfico e Branding Design.</p>
-                <p>Procuro proporcionar aos meus clientes a melhor experiência possível. Para isso, adquiri ao longo dos anos conhecimentos na área de Fotografia, Motion Design, Web Design, Administração e Marketing.</p>
-                <img src="images/assinatura.png">
-                <a href="#">DESCUBRA MAIS SOBRE MIM</a>
-            </div>
-            <div class="img-sobre">
-                <img src="images/eupb.png" height="570">
-            </div>
-        </section>
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="overlay-item">
-                    <span class="close-item">FECHAR<i class="fa-solid fa-xmark fechar-item"></i></span>
-                    <div class="expand-item">
-                        <div class="expand-project">
-                            <div class="project-presentation"></div>
-                            <h2 class="project-title">UP EVER</h2>
-                            <p class="project-text">A Up Ever é uma plataforma online de cursos de inglês, focada em ser referência no ensino do idioma. O objetivo da plataforma é trazer valor ao potencial humano através do comprometimento e da qualidade, e assim alcançar o crescimento pessoal e profissional de seus empregados e clientes.</p>
-                            <div class="box-p project-img"></div>
-                            <div class="box-p project-img"></div>
-                            <div class="box-p project-img"></div>
-                            <div class="box-p project-img"></div>
-                            <div class="box-m project-img"></div>
-                            <div class="box-m project-img"></div>
-                            <div class="box-g project-img"></div>
-                            <div class="box-m project-img"></div>
-                            <div class="box-m project-img"></div>
-                        </div>
+        <section id="portfolio" class="portfolio">
+            <div class="projetos dunkel">
+                <a href="#"><div class="project-logo">
+                    <img src="./images/carrossel/dunkel/dunkel.svg" alt="Dunkel">
+                </div></a>
+                <div class="cover">
+                    <div class="project-bg">
+                        <img src="./images/carrossel/dunkel/fundo.png" alt="Tema Dunkel">
                     </div>
-                </div>
-                <div class="gallery-wrapper" data-slide="wrapper">
-                    <div class="gallery" data-slide="gallery">
-                        <div class="pf-one item" data-slide="item" data-index="0">
-                            <div class="imgedit">
-                                <div class="logo-carrossel"><img src="./images/carrossel/upever/upever.png" alt="Up Ever"></div>
-                                <span class="cor-bg-carrossel" alt="Up Ever"></span>
-                                <span class="luz-bg-carrossel"></span>
-                                <img class="fundo-carrossel" src="./images/carrossel/upever/fundo.png" alt="Up Ever">
-                                <div class="cover-img">
-                                    <div class="btn-img">
-                                        <p class="text-btn">VISUALIZAR PROJETO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>UP EVER</h4>
-                            <p class="text-item">ESCOLA DE INGLÊS ONLINE</p>
-                        </div>
-                        <div class="pf-two item" data-slide="item" data-index="1">
-                            <div class="imgedit">
-                                <div class="logo-carrossel"><img src="./images/carrossel/lared/lared.svg" alt="La Red"></div>
-                                <span class="cor-bg-carrossel" alt="La Red"></span>
-                                <span class="luz-bg-carrossel"></span>
-                                <img class="fundo-carrossel" src="./images/carrossel/lared/fundo.png" alt="La Red">
-                                <div class="cover-img">
-                                    <div class="btn-img btni">
-                                        <p class="text-btn">VISUALIZAR PROJETO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>LA RED</h4>
-                            <p class="text-item">AGÊNCIA PUBLICITÁRIA</p>
-                        </div>
-                        <div class="pf-three item" data-slide="item" data-index="2">
-                            <div class="imgedit">
-                                <div class="logo-carrossel"><img src="./images/carrossel/caldelica/caldelica.png" alt="Caldélica"></div>
-                                <span class="cor-bg-carrossel" alt="Caldélica"></span>
-                                <span class="luz-bg-carrossel"></span>
-                                <img class="fundo-carrossel" src="./images/carrossel/caldelica/fundo1.jpg" alt="Caldélica">
-                                <div class="cover-img">
-                                    <div class="btn-img btni">
-                                        <p class="text-btn">VISUALIZAR PROJETO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>CALDÉLICA</h4>
-                            <p class="text-item">ESCOLA DE CANTO</p>
-                        </div>
-                        <div class="pf-four item" data-slide="item" data-index="3">
-                            <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?vegan" alt="Di Maître">
-                                <div class="cover-img">
-                                    <a href="upever.html">
-                                        <div class="btn-img btni">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h4>DI MAÎTRE</h4>
-                            <p class="text-item">FASTFOOD VEGANO</p>
-                        </div>
-                        <div class="pf-five item" data-slide="item" data-index="4">
-                            <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?church" alt="Célula Coach">
-                                <div class="cover-img">
-                                    <a href="upever.html">
-                                        <div class="btn-img btni">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h4>CÉLULA COACH</h4>
-                            <p class="text-item">GRUPO RELIGIOSO</p>
-                        </div>
-                        <div class="pf-six item" data-slide="item" data-index="5">
-                            <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?events" alt="andiamo">
-                                <div class="cover-img">
-                                    <a href="upever.html">
-                                        <div class="btn-img btni">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h4>ANDIAMO EVENTOS</h4>
-                            <p class="text-item">AGÊNCIA DE EVENTOS</p>
-                        </div>
-                        <div class="pf-seven item" data-slide="item" data-index="6">
-                            <div class="imgedit">
-                                <img src="https://source.unsplash.com/random/?chocolat" alt="Dunkel">
-                                <div class="cover-img">
-                                    <a href="upever.html">
-                                        <div class="btn-img btni">
-                                            <p class="text-btn">VISUALIZAR PROJETO</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h4>DUNKEL</h4>
-                            <p class="text-item">CHOCOLATE SUÍÇO</p>
-                        </div>
-                        <div class="pf-eight item" data-slide="item" data-index="7">
-                            <div class="imgedit">
-                                <div class="logo-carrossel"><img src="./images/carrossel/caioso/caioso.svg" alt="Caioso"></div>
-                                <span class="cor-bg-carrossel" alt="Caioso"></span>
-                                <span class="luz-bg-carrossel"></span>
-                                <img class="fundo-carrossel" src="./images/carrossel/caioso/fundo.jpg" alt="Caioso">
-                                <div class="cover-img">
-                                    <div class="btn-img">
-                                        <p class="text-btn">VISUALIZAR PROJETO</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>CAIOSO</h4>
-                            <p class="text-item">STREAMER E YOUTUBER</p>
-                        </div>
+                    <div class="selo">
+                        <h2>DUNKEL</h2>
+                        <p>CHOCOLATE SUÍÇO</p>
+                        <p>BRANDING DESIGN // PRODUCT DESIGN</p>
+                        <p>2023</p>
                     </div>
-                </div>
-                <div class="control-bar">
-                    <button class="arrow-left control" aria-label="Anterior" text="anterior" data-slide="previous-btn"><i class="fa-solid fa-angle-left"></i>ANTERIOR</button>
-                    <div class="slider-control" data-slide="controls-wrapper">
-                    </div>
-                    <button class="arrow-right control" aria-label="Próximo" data-slide="next-btn">PRÓXIMO<i class="fa-solid fa-angle-right"></i></button>
+                    <a class="open-project" href="#">
+                        <h3>ABRIR PROJETO</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section class="contact" id="contato">
-            <div class="contact-content">
-                <div class="curriculo">
-                    <span class="curriculo-title"><h3>CASO QUEIRA CONHECER MINHA TRAJETÓRIA:</h3></span>
-                    <span class="curriculo-archive"><a target="_blank" href="./pdf/Alexsandro Oliveira Santos - curriculo.pdf"><div class="curriculo-btn">CURRÍCULO</div></a></span>
-                </div>
-                <div class="information">
-                    <span class="info-title"><h3>CASO QUEIRA ENTRAR EM CONTATO COMIGO:</h3></span>
-                    <span class="info-contacts"><h5>EMAIL:</h5>
-                    <p>ALEXS.OLIVEIRA1998@GMAIL.COM</p>
-                    <h5>TELEFONE/WHATSAPP:</h5>
-                    <p>(11) 9 3905-4152</p></span>
+            <div class="projetos lared">
+                <a href="#"><div class="project-logo">
+                    <img src="./images/carrossel/lared/lared.svg" alt="La Red">
+                </div></a>
+                <div class="cover">
+                    <div class="project-bg">
+                        <img src="./images/carrossel/lared/fundo.png" alt="Tema La Red">
+                    </div>
+                    <div class="selo">
+                        <h2>LA RED</h2>
+                        <p>AGÊNCIA PUBLICITÁRIA</p>
+                        <p>BRANDING DESIGN</p>
+                        <p>2018</p>
+                    </div>
+                    <a class="open-project" href="#">
+                        <h3>ABRIR PROJETO</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
-            <div class="apelo">
-                <p>ESPERO QUE TENHA GOSTADO DE MIM.</p>
-                <p>VAMOS TRABALHAR JUNTOS!</p>
+            <div class="projetos upever">
+                <a href="#"><div class="project-logo">
+                    <img src="./images/carrossel/upever/upever.png" alt="Up Ever">
+                </div></a>
+                <div class="cover">
+                    <div class="project-bg">
+                        <img src="./images/carrossel/upever/fundo.png" alt="Tema Up Ever">
+                    </div>
+                    <div class="selo">
+                        <h2>UP EVER</h2>
+                        <p>ESCOLA DE INGLÊS ONLINE</p>
+                        <p>BRANDING DESIGN // FRONT-END</p>
+                        <p>2018</p>
+                    </div>
+                    <a class="open-project" href="#">
+                        <h3>ABRIR PROJETO</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projetos caldelica">
+                <a href="#"><div class="project-logo">
+                    <img src="./images/carrossel/caldelica/caldelica.svg" alt="Caldélica">
+                </div></a>
+                <div class="cover">
+                    <div class="project-bg">
+                        <img src="./images/carrossel/caldelica/fundo.png" alt="Tema Caldélica">
+                    </div>
+                    <div class="selo">
+                        <h2>CALDÉLICA</h2>
+                        <p>ESCOLA DE CANTO</p>
+                        <p>BRANDING DESIGN</p>
+                        <p>2020</p>
+                    </div>
+                    <a class="open-project" href="#">
+                        <h3>ABRIR PROJETO</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projetos caioso">
+                <a href="#"><div class="project-logo">
+                    <img src="./images/carrossel/caioso/caioso.svg" alt="Caioso">
+                </div></a>
+                <div class="cover">
+                    <div class="project-bg">
+                        <img src="./images/carrossel/caioso/fundo.png" alt="Tema Caioso">
+                    </div>
+                    <div class="selo">
+                        <h2>CAIOSO</h2>
+                        <p>STREAMER E YOUTUBER</p>
+                        <p>BRANDING DESIGN</p>
+                        <p>2022</p>
+                    </div>
+                    <a class="open-project" href="#">
+                        <h3>ABRIR PROJETO</h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="topo-final">
-            <a href="#inicio" class="backtotop" aria-label="topo" text="voltar ao topo"><i class="fa-solid fa-arrow-up"></i>VOLTAR AO TOPO</a>
-        </div>
+        <div class="social">
+            <div class="socialmedia">
+                <ul>
+                    <li class="linkedin rs"><a target="_blank" href="https://www.linkedin.com/in/alexsandro-oliveira-santos-a05658194/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="behance rs"><a target="_blank" href="https://www.behance.net/Alex_Oliveira"><i class="fa-brands fa-behance"></i></a></li>
+                    <li class="github rs"><a target="_blank" href="https://www.facebook.com/belinho.rap"><i class="fa-brands fa-github"></a></i></li>
+                    <li class="instagram rs"><a target="_blank" href="https://www.instagram.com/soualexoliveira/"><i class="fa-brands fa-instagram"></a></i></li>
+                </ul>
+            </div>
+    </div>
         <div class="creditos">
             <p>Alex Oliveira © 2023</p>
         </div>
-        <div class="social">
-            <div class="siga">
-                <p>ME SIGA</p>
-                <i class="fa-solid fa-share-nodes"></i>
-                <div class="socialmedia">
-                    <ul>
-                        <li class="linkedin rs"><a target="_blank" href="https://www.linkedin.com/in/alexsandro-oliveira-santos-a05658194/"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li class="behance rs"><a target="_blank" href="https://www.behance.net/Alex_Oliveira"><i class="fa-brands fa-behance"></i></a></li>
-                        <li class="instagram rs"><a target="_blank" href="https://www.instagram.com/soualexoliveira/"><i class="fa-brands fa-instagram"></a></i></li>
-                        <li class="facebook rs"><a target="_blank" href="https://www.facebook.com/belinho.rap"><i class="fa-brands fa-facebook"></a></i></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="topo-final">
+            <a href="#inicio" class="backtotop" aria-label="topo" text="voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/slides.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var fecharMenu = document.querySelector('.close-nav-btn')
+
+        function showMenu(){
+            navLinks.style.display = "flex";
+            fecharMenu.style.display = "flex";
+            navLinks.style.transform = "translateX(0em)";
+            fecharMenu.style.transform = "translateX(0em)";
+            navLinks.style.boxShadow = "-45px -0px 35px var(--color-overlay)";
+        }
+
+        function hideMenu(){
+            navLinks.style.transform = "translateX(16em)";
+            fecharMenu.style.transform = "translateX(16em)";
+            navLinks.style.boxShadow = "-0px -0px 0px var(--color-overlay)";
+            navLinks.style.display = "none";
+            fecharMenu.style.display = "none";
+        }
+    </script>
     <script src="https://kit.fontawesome.com/bcda37c68a.js" crossorigin="anonymous"></script>
 </body>
 </html>
