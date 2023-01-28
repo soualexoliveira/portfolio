@@ -1,3 +1,4 @@
+/*PAGINAS DOS PROJETOS*/
 .port-container{
     width: 100%;
     display: flex;
@@ -106,4 +107,373 @@
     color: var(--color-text);
     font-weight: 400;
     font-size: 1.3em;
+}
+
+/*PAGINA SOBRE*/
+.sobre-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.sobre-cabecalho{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-text2);
+}
+
+.sobre-cabecalho h1{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+/*PAGINA CONTATOS*/
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-cabecalho{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-text2);
+}
+
+.contact-cabecalho h1{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 100%;
+    color: var(--color-text);
+}
+.contact-infos{
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+.contact-info{
+    height: 100%;
+    width: 20vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2{
+    color: var(--color-text2);
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+.contact-info p{
+    color: var(--color-text);
+    font-family: var(--font);
+    font-weight: 300;
+}
+
+.telefone{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.local{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.social ul li{
+    list-style-type: none;
+}
+
+.rs a{
+    color: var(--color-text);
+    font-size: 1.75em;
+}
+
+.rs a:hover{
+    color: var(--color-text2);
+}
+
+.border-form{
+    width: .25vw;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--color-text2);
+}
+
+.contact-form{
+    height: 100%;
+    width: 75vw;
+    position: relative;
+}
+
+.title_contato {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size:2em;
+    color: var(--color-text2);
+    text-align: left;
+    margin-bottom:20px;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label{
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: .8em;
+    color: var(--color-text);
+    top: -11px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+    background: var(--color-text2);
+    padding: 5px 15px;
+    left: 25px;
+    border-radius: 50px;
+}
+
+.style-form-input{
+    float: left;
+    width: 49%;
+    margin: .9em 0;
+    position: relative;
+}
+
+.right { 
+    width: 49%;
+    float:right;
+}
+
+.style-form-input label {
+    color: var(--color-text);
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-family: var(--font);
+}
+
+.style-form-input.full { 
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    font-size: 1em;
+    background-color: var(--color-form-bg);
+    font-family: var(--font);
+    color: var(--color-text);
+    font-weight: 300;
+    border-radius: .5vw;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    font-size: 1em;
+    background-color: var(--color-form-bg);
+    font-family: var(--font);
+    color: var(--color-text);
+    font-weight: 300;
+    border-radius: .5vw;
+    min-height: 10em;
+}
+
+.btn-submit {
+    width: 15%;
+    height: 45px;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border:none;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-btn-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color:var(--color-text2);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.title-btn-form p{
+    color: var(--color-text);
+    font-family: var(--font);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.icon-btn-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: var(--color-text2);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.icon-btn-form i{
+    color: var(--color-text);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.btn-submit:hover .icon-btn-form{ 
+    background-color: var(--color-text);
+}
+
+.btn-submit:hover i{
+    color: var(--color-background);
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .contact-cabecalho h1{
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 480px){
+    .contact-cabecalho h1{
+        font-size: 13vw;
+    }
+}
+
+
+
+
+
+
+
+.curriculo-btn {
+    margin-top: 15px;
+    background-color: var(--color-text2);
+    border-radius: 5px;
+    width: 180px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.curriculo-btn p{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    font-size: var(--size-text);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.icon-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--color-text2);
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-download i{
+    font-size: var(--size-text);
+    text-decoration: none;
+    color: var(--color-text);
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.curriculo-btn:hover .icon-download{
+    background-color: var(--color-text);
+    transition: all 0.2s ease-in-out;  
+}
+
+.curriculo-btn:hover i{
+    color: var(--color-background);
+    transition: all 0.2s ease-in-out;  
 }
