@@ -19,8 +19,8 @@
     --dimaitre-bg: #136552;
     --daroca-txt: #ffffff;
     --daroca-bg: linear-gradient(-45deg, #ff2020 0%, #181818 50%, #146c03 100%);
-    --solitude-txt: #eaeaea;
-    --solitude-bg: #8b05b0;
+    --solitude-txt: #c2a9ff;
+    --solitude-bg: #440070;
     --caldelica-txt: #b99053;
     --caldelica-bg: #162c39;
     --lared-txt: #e8e8e8;
@@ -379,7 +379,7 @@ footer{
     font-family: var(--font);
     color: var(--color-text);
     text-align: center;
-    font-size: .9em;
+    font-size: .8em;
     font-weight: 300;
 }
 

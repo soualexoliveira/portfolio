@@ -185,12 +185,14 @@
     color: var(--color-text2);
     font-family: var(--font);
     font-weight: 500;
+    font-size: 1.5vw;
 }
 
 .contact-info p{
     color: var(--color-text);
     font-family: var(--font);
     font-weight: 300;
+    font-size: 1.1vw;
 }
 
 .telefone{
@@ -228,7 +230,7 @@
 .social ul{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 10%;
     transition: all 0.5s ease-in-out;
 }
 
@@ -256,12 +258,15 @@
     height: 100%;
     width: 75vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title_contato {
     font-family: var(--font);
     font-weight: 600;
-    font-size:2em;
+    font-size:2.1vw;
     color: var(--color-text2);
     text-align: left;
     margin-bottom:20px;
@@ -284,7 +289,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 .style-form-input{
     float: left;
     width: 49%;
-    margin: .9em 0;
+    margin: .7em 0;
     position: relative;
 }
 
@@ -303,6 +308,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     transition: all 0.25s ease;
     pointer-events: none;
     font-family: var(--font);
+    font-size: 1.1vw;
 }
 
 .style-form-input.full { 
@@ -313,7 +319,7 @@ input {
     width: 100%;
     padding: 30px;
     border: 0;
-    font-size: 1em;
+    font-size: 1.1vw;
     background-color: var(--color-form-bg);
     font-family: var(--font);
     color: var(--color-text);
@@ -337,17 +343,17 @@ textarea {
     width: 100%;
     padding: 30px;
     border: 0;
-    font-size: 1em;
+    font-size: 1.1vw;
     background-color: var(--color-form-bg);
     font-family: var(--font);
     color: var(--color-text);
     font-weight: 300;
     border-radius: .5vw;
-    min-height: 10em;
+    min-height: 7.5em;
 }
 
 .btn-submit {
-    width: 15%;
+    width: 150px;
     height: 45px;
     float: left;
     border-radius: 5px;
@@ -357,6 +363,7 @@ textarea {
     border:none;
     display: flex;
     flex-direction: row;
+    background-color: var(--color-text2);
 }
 
 .title-btn-form{
@@ -374,7 +381,7 @@ textarea {
     color: var(--color-text);
     font-family: var(--font);
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1vw;
 }
 
 .icon-btn-form{
@@ -402,9 +409,87 @@ textarea {
     color: var(--color-background);
 }
 
-@media (min-width: 481px) and (max-width: 768px){
+@media (max-width: 768px){
     .contact-cabecalho h1{
         font-size: 9vw;
+    }
+
+    .contact-infos{
+        padding: 10vh 5vw;
+        flex-direction: column-reverse;
+        gap: 10vh;
+        height:auto;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .title_contato{
+        font-size: 3.2vw;
+    }
+
+    input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label{
+        font-size: .7em;
+    }
+
+    .style-form-input label{
+        font-size: 2vw;
+    }
+
+    input{
+        font-size: 2vw;
+    }
+
+    textarea{
+        min-height: 14em;
+        font-size: 2vw;
+    }
+
+    .btn-submit{
+        width: 150px;
+    }
+
+    .title-btn-form p{
+        font-size: 2vw;
+    }
+
+    .border-form{
+        display: none;
+    }
+
+    .contact-info{
+        width: 100%;
+        gap: 5vh;
+    }
+
+    .contact-info h2{
+        color: var(--color-text2);
+        font-family: var(--font);
+        font-weight: 500;
+        font-size: 2.2vw;
+        line-height: 1.8em;
+    }
+    
+    .contact-info p{
+        color: var(--color-text);
+        font-family: var(--font);
+        font-weight: 300;
+        font-size: 1.6vw;
+    }
+
+    .telefone, .email, .local, .social{
+        height: 100%;
+        text-align: right;
+    }
+
+    .social ul{
+        gap: 3%;
+        justify-content: right;
+    }
+
+    .rs a{
+        font-size: 1.4em;
     }
 }
 
@@ -412,68 +497,75 @@ textarea {
     .contact-cabecalho h1{
         font-size: 13vw;
     }
-}
 
+    .contact-infos{
+        gap: 5vh;
+        padding: 5vh 5vw;
+    }
 
+    .title_contato{
+        font-size: 5.2vw;
+    }
 
+    .style-form-input{
+        width: 100%;
+        margin: .7em 0;
+    }
+    
+    .right { 
+        width: 100%;
+        float: left;
+    }
 
+    input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label{
+        font-size: .75em;
+    }
 
+    .style-form-input label{
+        font-size: .8em;
+    }
 
+    input{
+        font-size: .8em;
+    }
 
-.curriculo-btn {
-    margin-top: 15px;
-    background-color: var(--color-text2);
-    border-radius: 5px;
-    width: 180px;
-    height: 45px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
+    textarea{
+        font-size: .8em;
+    }
 
-.curriculo-btn p{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font);
-    font-size: var(--size-text);
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--color-text);
-}
+    .btn-submit{
+        width: 140px;
+    }
 
-.icon-download{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    border-radius: 0px 5px 5px 0px;
-    background-color: var(--color-text2);
-    transition: all 0.2s ease-in-out;
-}
+    .title-btn-form p{
+        font-size: 1em;
+    }
 
-.icon-download i{
-    font-size: var(--size-text);
-    text-decoration: none;
-    color: var(--color-text);
-    transform: rotate(45deg);
-    transition: all 0.2s ease-in-out;
-}
+    .border-form{
+        display: none;
+    }
 
-.curriculo-btn:hover .icon-download{
-    background-color: var(--color-text);
-    transition: all 0.2s ease-in-out;  
-}
+    .contact-info{
+        width: 100%;
+        gap: 5vh;
+    }
 
-.curriculo-btn:hover i{
-    color: var(--color-background);
-    transition: all 0.2s ease-in-out;  
+    .contact-info h2{
+        color: var(--color-text2);
+        font-family: var(--font);
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    
+    .contact-info p{
+        color: var(--color-text);
+        font-family: var(--font);
+        font-weight: 300;
+        font-size: .8em;
+    }
+
+    .social ul{
+        gap: 5%;
+    }
 }
