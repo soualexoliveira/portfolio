@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root{
-    --color-text: #e8e8e8; /*e8e8e8*/
-    --color-text2: #f13c24; /*f13c24*/
-    --color-background: #000000; /*000000*/
-    --color-overlay: #09090966;
-    --color-form-bg: #090909;
+    --color-b1: #000;
+    --color-b2: #333;
+    --color-b3: #666;
+    --color-w1: #ccc;
+    --color-w2: #fff;
 
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
@@ -43,7 +43,7 @@ body{
     font-size: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color:var(--color-background);
+    background-color:var(--color-b1);
     scroll-behavior: smooth;
 }
 
@@ -55,11 +55,11 @@ header{
     height: 10vh;
     width: 100%;
     padding: 0 5vw;
-    background-color:var(--color-background);
+    background-color:var(--color-b1);
 }
 
 .logo a{
-    color: var(--color-text);
+    color: var(--color-w1);
     font-family: var(--font);
     font-size: 1.3em;
 }
@@ -89,22 +89,22 @@ nav{
 }
 
 .menu-list li a{
-    color: var(--color-text);
+    color: var(--color-w1);
     font-family: var(--font);
     font-weight: 400;
-    font-size: --size-text;
+    font-size: var(--size-text);
     transition: all 0.3s ease-in-out;
 }
 
 .menu-list li a:hover{
-    color: var(--color-text2);
+    color: var(--color-w2);
     transition: all 0.3s ease-in-out;
 }
 
 .chamada{
     height: 85vh;
     width: 100%;
-    background-color: var(--color-background);
+    background-color:var(--color-b1);
     padding: 0 5vw;
     position: relative;
 }
@@ -122,7 +122,7 @@ nav{
     font-weight: 600;
     font-size: 5em;
     line-height: 100%;
-    color: var(--color-text);
+    color: var(--color-w2);
 }
 
 .subtitulo{
@@ -133,7 +133,7 @@ nav{
 }
 
 .subtitulo p{
-    color: var(--color-text);
+    color: var(--color-w1);
     font-family: var(--font);
     font-weight: 400;
     font-size: var(--size-text);
@@ -146,7 +146,7 @@ nav{
 
 .curriculo-btn {
     margin-top: 15px;
-    background-color: var(--color-text2);
+    background-color: var(--color-b2);
     border-radius: 5px;
     width: 100%;
     height: 100%;
@@ -169,7 +169,7 @@ nav{
     font-size: var(--size-text);
     font-weight: 400;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-w2);
 }
 
 .icon-download{
@@ -180,25 +180,25 @@ nav{
     width: 30%;
     height: 100%;
     border-radius: 0px 5px 5px 0px;
-    background-color: var(--color-text2);
+    background-color: var(--color-b3);
     transition: all 0.2s ease-in-out;
 }
 
 .icon-download i{
     font-size: var(--size-text);
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-w2);
     transform: rotate(45deg);
     transition: all 0.2s ease-in-out;
 }
 
 .curriculo-btn:hover .icon-download{
-    background-color: var(--color-text);
+    background-color: var(--color-w1);
     transition: all 0.2s ease-in-out;  
 }
 
 .curriculo-btn:hover i{
-    color: var(--color-background);
+    color: var(--color-b1);
     transition: all 0.2s ease-in-out;  
 }
 
@@ -206,7 +206,7 @@ nav{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--color-background);
+    background-color: var(--color-b1);
 }
 
 .dunkel{
@@ -332,7 +332,7 @@ nav{
 
 .selo p{
     text-align:left;
-    color: var(--color-text);
+    color: var(--color-w2);
     font-family: var(--font);
     font-weight: 400;
     font-size: .8em;
@@ -352,7 +352,7 @@ nav{
 }
 
 .open-project h3{
-    color: var(--color-text);
+    color: var(--color-w2);
     font-family: var(--font);
     font-weight: 500;
     font-size: 1.3em;
@@ -360,7 +360,7 @@ nav{
 }
 
 .open-project i{
-    color: var(--color-text);
+    color: var(--color-w2);
     font-size: 1.1em;
     transition: all 0.3s ease-in-out;
 }
@@ -377,7 +377,7 @@ footer{
 
 .creditos p{
     font-family: var(--font);
-    color: var(--color-text);
+    color: var(--color-w1);
     text-align: center;
     font-size: .8em;
     font-weight: 300;
@@ -388,7 +388,7 @@ footer{
     height: 2.2em;
     border-radius: 45px;
     border: none;
-    background-color: var(--color-text2);
+    background-color: var(--color-b2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,18 +400,18 @@ footer{
 }
 
 .backtotop:hover{
-    background-color: var(--color-text);
+    background-color: var(--color-w1);
     transition: all 0.2s ease-in-out;
 }
 
 .backtotop i{
     font-size: var(--size-text);
-    color: var(--color-text);
+    color: var(--color-w1);
     transition: all 0.2s ease-in-out;
 }
 
 .backtotop:hover i{
-    color: var(--color-background);
+    color: var(--color-b1);
     transition: all 0.2s ease-in-out;
 }
 
@@ -578,7 +578,7 @@ footer{
         border-radius: 40px;
         height: 0.6vh;
         width: 70%;
-        background-color: var(--color-text);
+        background-color: var(--color-w1);
     }
     
     .open-bars:nth-child(1){
@@ -603,7 +603,7 @@ footer{
 
     nav{
         position: fixed;
-        background-color: var(--color-text2);
+        background-color: var(--color-b2);
         height: 100vh;
         width: 100vw;
         top: 0;
@@ -664,7 +664,7 @@ footer{
     }
 
     .menu-rs a{
-        color: var(--color-text);
+        color: var(--color-b1);
         font-size: 1.7em;
         cursor: pointer;
     }
