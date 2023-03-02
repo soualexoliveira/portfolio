@@ -25,8 +25,8 @@
     --caldelica-bg: #162c39;
     --lared-txt: #e8e8e8;
     --lared-bg: #cc0000;
-    --upever-txt: #f32e32;
-    --upever-bg: #000d20;
+    --up-txt: #f32e32;
+    --up-bg: #000d20;
     
     --font: 'Poppins', sans-serif;
     --size-text: 1em;
@@ -64,16 +64,16 @@ header{
     font-size: 1.3em;
 }
 
+.menu{
+    position: relative;
+}
+
 .open-nav-btn {
     display: none;
 }
 
 .close-nav-btn {
     display: none;
-}
-
-nav{
-    position: relative;
 }
 
 .menu-list{
@@ -254,9 +254,9 @@ nav{
     color: var(--lared-txt);
 }
 
-.upever{
-    background-color: var(--upever-bg);
-    color: var(--upever-txt);
+.up{
+    background-color: var(--up-bg);
+    color: var(--up-txt);
 }
 
 .projetos{
@@ -504,13 +504,19 @@ footer{
     }
 
     .curriculo-btn {
-        margin-top: 15vh;
-        width: 45vw;
+        margin-top: 10vh;
+        width: 40vw;
+        justify-content: space-between;
+        align-items: center;
     }
     
+    .curriculo-btn p{
+        width: 75%;
+    }
+
     .icon-download{
-        justify-content: start;
-        width: 20%;
+        justify-content: center;
+        width: 25%;
         height: 100%;
     }
     
@@ -550,10 +556,6 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        right: 0vw;
-        padding-right: 5vw;
-        top: 0;
     }
 
     .close-nav-btn{
@@ -566,9 +568,6 @@ footer{
         align-items: center;
         justify-content: center;
         position: fixed;
-        top: 0em;
-        right: 0vw;
-        padding-right: 5vw;
         z-index: 4;
     }
 
