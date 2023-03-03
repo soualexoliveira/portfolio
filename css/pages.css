@@ -9,19 +9,10 @@
 
 .port-cabecalho{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    font-family: var(--font);
     position: relative;
-}
-
-.port-projeto{
-    padding: 0 5%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font);
 }
 
 .port-logo{
@@ -36,12 +27,7 @@
 }
 
 .port-logo img{
-    width: 25%;
-}
-
-.port-bglogo{
-    width: 100%;
-    height: 100%;
+    width: 10%;
 }
 
 .overlay-bglogo{
@@ -52,33 +38,132 @@
     top: 0;
 }
 
+.port-bglogo{
+    width: 100%;
+    height: 60vh;
+}
+
 .port-bglogo img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
+}
+
+.port-projeto{
+    padding: 0 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
 }
 
 .box img{
     cursor: pointer;
-    margin-bottom: .5%;
+    object-fit: cover;
 }
 
-.box1{
+.box1-a{
     display: flex;
     justify-content:space-between;
 }
 
-.box1 img{
+.box1-a img{
     width: 100%;
+    aspect-ratio: 2.35 / 1;
 }
 
-.box2{
+.box1-b{
     display: flex;
     justify-content:space-between;
 }
 
-.box2 img{
-    width: 49.8%;
+.box1-b img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1.5;
+}
+
+.box1-c{
+    display: flex;
+    justify-content:space-between;
+}
+
+.box1-c img{
+    width: 100%;
+    aspect-ratio: 2.35 / 0.5;
+}
+
+.box2-a{
+    display: flex;
+    justify-content:space-between;
+}
+
+.box2-a img{
+    width: 50%;
+    aspect-ratio: 2.35 / 2;
+}
+
+.box2-b{
+    display: flex;
+    justify-content:space-between;
+}
+
+.box2-b img{
+    width: 50%;
+    aspect-ratio: 2.35 / 1.5;
+}
+
+.box2-c{
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
+}
+
+.box2-c:nth-child(2){
+    flex-direction: column;
+}
+
+.box2-c img{
+    width: 100%;
+    aspect-ratio: 2 / 2.35;
+}
+
+.box-hori50{
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+
+.box-hori50 img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1.5;
+}
+
+.box2-d-e-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.box2-d{
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+}
+
+.box2-d img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1.5;
+}
+
+.box2-e{
+    display: flex;
+    justify-content:space-between;
+    width: 30%;
+}
+
+.box2-e img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1.5;
 }
 
 .box3{
@@ -87,7 +172,7 @@
 }
 
 .box3 img{
-    width: 33%;
+    width: 33.3%;
 }
 
 .box4{
@@ -96,7 +181,7 @@
 }
 
 .box4 img{
-    width: 24.7%;
+    width: 25%;
 }
 
 .info{
@@ -109,6 +194,9 @@
     font-size: 1.3em;
 }
 
+.info strong{
+    color: var(--up-txt);
+}
 /*PAGINA SOBRE*/
 .sobre-container{
     width: 100%;
