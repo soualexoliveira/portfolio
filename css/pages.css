@@ -40,7 +40,7 @@
 
 .port-bglogo{
     width: 100%;
-    height: 60vh;
+    height: 100%;
 }
 
 .port-bglogo img{
@@ -55,6 +55,90 @@
     display: flex;
     flex-direction: column;
     font-family: var(--font);
+}
+
+.modal{
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg-modal);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: visibility 0.15s linear, opacity 0.3s linear;
+}
+
+#bt_close{
+    color: var(--color-w1);
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    font-size: 3.5em;
+    cursor: pointer;
+    font-family: var(--font);
+    font-weight: 300;
+    transition: all ease-out 0.4s;
+}
+
+#bt_close:hover, #bt_prev:hover, #bt_next:hover{
+    color: var(--color-w2);
+}
+
+#bt_next{
+    color: var(--color-w1);
+    position: absolute;
+    top: 50vh;
+    right: 5vw;
+    font-size: 3em;
+    cursor: pointer;
+    font-family: var(--font);
+    font-weight: 400;
+    transition: all ease-out 0.4s;
+}
+
+#bt_prev{
+    color: var(--color-w1);
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+    font-size: 3em;
+    cursor: pointer;
+    font-family: var(--font);
+    font-weight: 400;
+    transition: all ease-out 0.4s;
+}
+
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#modal_img{
+    max-width: 75vw;
+    max-height: 85vh;
+    transform: scale(0);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_active #modal_img{
+    transform: scale(1);
+}
+
+.projeto_imgs{
+    transition: all linear 0.4s;
+}
+
+.projeto_imgs:hover{
+    opacity: 0.9;
 }
 
 .box img{
@@ -166,22 +250,53 @@
     aspect-ratio: 2.35 / 1.5;
 }
 
-.box3{
+.box2-note{
     display: flex;
     justify-content:space-between;
+    width: 50%;
 }
 
-.box3 img{
-    width: 33.3%;
+.box2-note img{
+    width: 100%;
+    aspect-ratio: 1 / 2.35;
+}
+
+.box2-mark{
+    display: flex;
+    flex-direction: row;
+}
+
+.box2-mark1{
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+}
+
+.box2-mark1 img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1;
+}
+
+.box2-mark2{
+    display: flex;
+    justify-content:space-between;
+    width: 40%;
+}
+
+.box2-mark2 img{
+    width: 100%;
+    aspect-ratio: 2.35 / 1;
 }
 
 .box4{
     display: flex;
     justify-content:space-between;
+    width: 25%;
 }
 
 .box4 img{
-    width: 25%;
+    width: 100%;
+    aspect-ratio: 2 / 2.35;
 }
 
 .info{
@@ -197,6 +312,7 @@
 .info strong{
     color: var(--up-txt);
 }
+
 /*PAGINA SOBRE*/
 .sobre-container{
     width: 100%;
@@ -498,6 +614,18 @@ textarea {
 }
 
 @media (max-width: 768px){
+    .port-cabecalho{
+        height: 40vh;
+    }
+
+    .port-container{
+        font-size: .8em;
+    }
+
+    .port-logo img{
+        width: 12.5%;
+    }
+
     .contact-cabecalho h1{
         font-size: 9vw;
     }
@@ -582,6 +710,26 @@ textarea {
 }
 
 @media (max-width: 480px){
+    .port-cabecalho{
+        height: 35vh;
+    }
+
+    .port-logo img{
+        width: 18%;
+    }
+
+    .box:not(.box4, .box2-b){
+        flex-direction: column;
+    }
+
+    .box2-a img, .box2-c, .box2-d, .box2-e, .box2-mark1, .box2-mark2, .box2-note{
+        width: 100%;
+    }
+
+    .box-hori50{
+        height: auto;
+    }
+
     .contact-cabecalho h1{
         font-size: 13vw;
     }

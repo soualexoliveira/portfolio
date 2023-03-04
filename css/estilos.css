@@ -6,7 +6,7 @@
     --color-b3: #666;
     --color-w1: #ccc;
     --color-w2: #fff;
-
+    --color-bg-modal: rgba(0, 0, 0, .7);
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
     --cerveja-txt: #0d0d0d;
@@ -140,12 +140,12 @@ header{
 }
 
 .curriculo-archive{
+    margin-top: 15px;
     width: 180px;
     height: 45px;
 }
 
 .curriculo-btn {
-    margin-top: 15px;
     background-color: var(--color-b2);
     border-radius: 5px;
     width: 100%;
@@ -473,9 +473,72 @@ footer{
         text-align: center;
     }
 
-    .curriculo-btn {
+    /*
+.curriculo-archive{
+    margin-top: 15px;
+    width: 180px;
+    height: 45px;
+}
+
+.curriculo-btn {
+    background-color: var(--color-b2);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.curriculo-btn p{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    font-size: var(--size-text);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-w2);
+}
+
+.icon-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--color-b3);
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-download i{
+    font-size: var(--size-text);
+    text-decoration: none;
+    color: var(--color-w2);
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+
+    */
+
+    .curriculo-archive {
         margin-top: 10vh;
-        width: 40vw;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .curriculo-btn {
+        width: 175px;
+        height: 45px;
         justify-content: space-between;
         align-items: center;
     }
