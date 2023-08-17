@@ -4,13 +4,13 @@
     --color-b1: #000;
     --color-b2: #333;
     --color-b3: #666;
-    --color-w1: #ccc;
+    --color-w1: #ddd;
     --color-w2: #fff;
-    --color-bg-modal: rgba(0, 0, 0, .7);
+    --color-bg-modal: rgba(0, 0, 0, .8);
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
-    --cerveja-txt: #0d0d0d;
-    --cerveja-bg: #fab43c;
+    --aqueladesempre-txt: #0d0d0d;
+    --aqueladesempre-bg: #fab43c;
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
     --manifesto-txt: #ffae6c;
@@ -23,8 +23,8 @@
     --solitude-bg: #440070;
     --caldelica-txt: #b99053;
     --caldelica-bg: #162c39;
-    --lared-txt: #e8e8e8;
-    --lared-bg: #cc0000;
+    --merula-txt: #ffffff;
+    --merula-bg: #81bc24;
     --up-txt: #e8e8e8;
     --up-bg: #071d49;
     
@@ -47,6 +47,23 @@ body{
     scroll-behavior: smooth;
 }
 
+#preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--color-b1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preloader lottie-player{
+    background: transparent;
+    width: 12vh;
+    height: 12vh;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -59,9 +76,15 @@ header{
 }
 
 .logo a{
-    color: var(--color-w1);
-    font-family: var(--font);
-    font-size: 1.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo svg{
+    height: 2.2vw;
+}
+.logo:hover path{
+    fill: var(--color-w2);
+    transition: all 0.3s ease-in-out;
 }
 
 .menu{
@@ -105,13 +128,12 @@ header{
     height: 85vh;
     width: 100%;
     background-color:var(--color-b1);
-    padding: 0 5vw;
     position: relative;
 }
-
 .hero{
     width: 100%;
     height: 80%;
+    padding: 0 5vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -122,7 +144,9 @@ header{
     font-weight: 600;
     font-size: 5em;
     line-height: 100%;
-    color: var(--color-w2);
+    color: var(--color-w1);
+    width:fit-content;
+  
 }
 
 .subtitulo{
@@ -133,7 +157,7 @@ header{
 }
 
 .subtitulo p{
-    color: var(--color-w1);
+    color: var(--color-w2);
     font-family: var(--font);
     font-weight: 400;
     font-size: var(--size-text);
@@ -197,9 +221,9 @@ header{
     transition: all 0.2s ease-in-out;  
 }
 
-.curriculo-btn:hover i{
+.curriculo-btn:hover .icon-download i{
     color: var(--color-b1);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.2s ease-in-out; 
 }
 
 .portfolio{
@@ -209,27 +233,9 @@ header{
     background-color: var(--color-b1);
 }
 
-.dunkel{
-    background-image: var(--dunkel-bg);
-}
-
-.dunkel h2, p{
-    color: var(--dunkel-txt);
-}
-
-/*.cerveja{
-    background-color: var(--cerveja-bg);
-    color: var(--cerveja-txt);
-}
-
-.cantarola{
+/*.cantarola{
     background-color: var(--cantarola-bg);
     color: var(--cantarola-txt);
-}
-
-.manifesto{
-    background-color: var(--manifesto-bg);
-    color: var(--manifesto-txt);
 }
 
 .dimaitre{
@@ -256,29 +262,69 @@ header{
 }
 
 .caldelica p{
-    color: var(--color-w2);
+    color: var(--color-w1);
 }
 
-.lared{
-    background-color: var(--lared-bg);
+.merula{
+    background-color: var(--merula-bg);
 }
 
-.lared h2, p{
-    color: var(--lared-txt);
+.merula h2{
+    color: var(--merula-txt);
+}
+
+.merula p{
+    color: var(--color-b1);
 }
 
 .up{
     background-color: var(--up-bg);
 }
 
-.up h2, p{
+.up h2, .up p{
     color: var(--up-txt);
+}
+
+.dunkel{
+    background-image: var(--dunkel-bg);
+}
+
+.dunkel h2{
+    color: var(--dunkel-txt);
+}
+
+.dunkel p{
+    color: var(--color-w1);
+}
+
+.aqueladesempre{
+    background-color: var(--aqueladesempre-bg);
+}
+
+.aqueladesempre h2{
+    color: var(--aqueladesempre-txt);
+}
+
+.aqueladesempre p{
+    color: var(--color-b1);
+}
+
+.manifesto{
+    background-color: var(--manifesto-bg);
+}
+
+.manifesto h2{
+    color: var(--manifesto-txt);
+}
+
+.manifesto p{
+    color: var(--color-w1);
 }
 
 .projetos{
     width: 50%;
     height: 70vh;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
@@ -292,8 +338,9 @@ header{
 }
 
 .project-logo img{
-    width: 6vw;
-    transition: all 0.5s ease-in-out;
+    max-width: 7vw;
+    max-height: 7vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .cover{
@@ -302,14 +349,14 @@ header{
     position: absolute;
     bottom: 0;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
 }
 
 .projetos:hover .cover{
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .selo{
@@ -317,7 +364,7 @@ header{
     width: 100%;
     left: 2%;
     bottom: 10%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .selo h2{
@@ -376,7 +423,7 @@ footer{
 
 .backtotop i{
     font-size: var(--size-text);
-    color: var(--color-w1);
+    color: var(--color-w2);
     transition: all 0.2s ease-in-out;
 }
 
