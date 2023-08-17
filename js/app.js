@@ -1,18 +1,31 @@
-'use strict'
-let imagens = document.querySelectorAll('.projeto_imgs');
-let modal = document.querySelector('.modal');
-let modalImg = document.querySelector('#modal_img');
-let btClose = document.querySelector('#bt_close');
-let srcVal="";
+'use strict';
 
-for(let i = 0; i<imagens.length; i++){
-    imagens[i].addEventListener('click', function(){
-        srcVal = imagens[i].getAttribute('src');
-        modalImg.setAttribute('src', srcVal);
-        modal.classList.toggle('modal_active');
-    });
-}
+(function(){
+    // Back to Top - by CodyHouse.co
+	var backTop = document.getElementsByClassName('js-cd-top')[0],
+		offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+		scrollDuration = 700,
+		scrolling = false;
 
-btClose.addEventListener('click', function(){
-    modal.classList.toggle('modal_active');
-});
+	if( backTop ) {
+		//update back to top visibility on scrolling
+		window.addEventListener("scroll", function(event) {
+			if( !scrolling ) {
+				scrolling = true;
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+			}
+		});
+
+		//smooth scroll to top
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+		});
+	}
+
+	function checkBackToTop() {
+		var windowTop = window.scrollY || document.documentElement.scrollTop;
+		( windowTop > offset ) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
+		scrolling = false;
+	}
+})();

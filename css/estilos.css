@@ -7,6 +7,7 @@
     --color-w1: #ddd;
     --color-w2: #fff;
     --color-bg-modal: rgba(0, 0, 0, .8);
+    --color-bg-loader: #121212;
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
     --aqueladesempre-txt: #0d0d0d;
@@ -51,17 +52,46 @@ body{
     height: 100vh;
     width: 100%;
     position: fixed;
+    bottom: 0;
     z-index: 100;
-    background-color: var(--color-b1);
+    background-color: var(--color-bg-loader);
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-delay: 2000ms;
+    -webkit-animation-name: loadend;
+    -webkit-animation-fill-mode: forwards;
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+    animation-name: loadend;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loadend {
+    from {
+      height: 100vh;
+    }
+  
+    to {
+      height: 0vh;
+    }
+}
+
+@keyframes loadend {
+    from {
+      height: 100vh;
+    }
+  
+    to {
+      height: 0vh;
+    }
 }
 
 #preloader lottie-player{
     background: transparent;
-    width: 12vh;
-    height: 12vh;
+    width: 12.3vh;
+    height: 12.3vh;
 }
 
 header{
@@ -400,7 +430,7 @@ footer{
     font-weight: 300;
 }
 
-.backtotop{
+.cd-top{
     width: 2.2em;
     height: 2.2em;
     border-radius: 45px;
@@ -416,18 +446,34 @@ footer{
     bottom: 3vh;
 }
 
-.backtotop:hover{
-    background-color: var(--color-w1);
-    transition: all 0.2s ease-in-out;
+.js .cd-top{
+    visibility:hidden;
+    opacity:0;
+    transition:opacity .3s, visibility .3s, background-color .3s;}
+
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.js .cd-top--fade-out {
+    opacity: .5;
 }
 
-.backtotop i{
+.js .cd-top:hover{
+    background-color: var(--color-w1);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.cd-top i{
     font-size: var(--size-text);
     color: var(--color-w2);
     transition: all 0.2s ease-in-out;
 }
 
-.backtotop:hover i{
+.cd-top:hover i{
     color: var(--color-b1);
     transition: all 0.2s ease-in-out;
 }

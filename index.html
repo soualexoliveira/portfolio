@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 	c0.34-0.01,0.69-0.02,1.03-0.04c0.34-0.02,0.68-0.04,1.02-0.07c0.95-0.08,1.89-0.19,2.83-0.34c0.31-0.05,0.62-0.11,0.93-0.16
 	c0.13-0.02,0.26-0.04,0.39-0.08c0.18-0.03,0.36-0.07,0.54-0.11c0.29-0.06,0.58-0.12,0.87-0.19c5.1-1.22,9.92-3.52,14.32-6.72
 	c0.09-0.06,0.18-0.13,0.27-0.2C118.01,109.18,128,88.15,128,64C128,39.96,118.1,19.01,103.46,8.08z"/>
-</svg>
+                </svg>
             </a>
         </div>
         <div class="menu">
@@ -237,10 +237,11 @@
             <p>ALEX OLIVEIRA © 2023</p>
         </div>
         <div class="topo-final">
-            <a href="#inicio" class="backtotop" aria-label="topo" text="voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#" class="cd-top text-replace js-cd-top"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="js/util.js"></script>
     <script>
         var navLinks = document.getElementById("navLinks");
         var fecharMenu = document.querySelector('.close-nav-btn')
@@ -268,6 +269,7 @@
         function preloader(){
             loader.style.display = "none";
         }
+
         window.addEventListener("load", function(){
             setTimeout(preloader, 3000);
         });
