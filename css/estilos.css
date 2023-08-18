@@ -2,12 +2,10 @@
 
 :root{
     --color-b1: #000;
-    --color-b2: #333;
-    --color-b3: #666;
-    --color-w1: #ddd;
+    --color-w1: #e6e6e6;
     --color-w2: #fff;
+    --color-t1: #D9961A;
     --color-bg-modal: rgba(0, 0, 0, .8);
-    --color-bg-loader: #121212;
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
     --aqueladesempre-txt: #0d0d0d;
@@ -54,7 +52,7 @@ body{
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: var(--color-bg-loader);
+    background-color: var(--color-t1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +111,7 @@ header{
     height: 2.2vw;
 }
 .logo:hover path{
-    fill: var(--color-w2);
+    fill: var(--color-t1);
     transition: all 0.3s ease-in-out;
 }
 
@@ -150,14 +148,13 @@ header{
 }
 
 .menu-list li a:hover{
-    color: var(--color-w2);
+    color: var(--color-t1);
     transition: all 0.3s ease-in-out;
 }
 
 .chamada{
     height: 85vh;
     width: 100%;
-    background-color:var(--color-b1);
     position: relative;
 }
 .hero{
@@ -174,7 +171,7 @@ header{
     font-weight: 600;
     font-size: 5em;
     line-height: 100%;
-    color: var(--color-w1);
+    color: var(--color-t1);
     width:fit-content;
   
 }
@@ -200,12 +197,12 @@ header{
 }
 
 .curriculo-btn {
-    background-color: var(--color-b2);
+    background-color: var(--color-w1);
     border-radius: 5px;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -223,7 +220,8 @@ header{
     font-size: var(--size-text);
     font-weight: 400;
     text-decoration: none;
-    color: var(--color-w2);
+    color: var(--color-b1);
+    transition: all 0.3s ease-in-out;
 }
 
 .icon-download{
@@ -234,26 +232,36 @@ header{
     width: 30%;
     height: 100%;
     border-radius: 0px 5px 5px 0px;
-    background-color: var(--color-b3);
-    transition: all 0.2s ease-in-out;
+    background-color: var(--color-t1);
+    transition: all 0.3s ease-in-out;
 }
 
 .icon-download i{
     font-size: var(--size-text);
     text-decoration: none;
-    color: var(--color-w2);
+    color: var(--color-w1);
     transform: rotate(45deg);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.curriculo-btn:hover{
+    background-color: var(--color-t1);
+    transition: all 0.3s ease-in-out;
+}
+
+.curriculo-btn:hover p{
+    color: var(--color-w1);
+    transition: all 0.3s ease-in-out;
 }
 
 .curriculo-btn:hover .icon-download{
     background-color: var(--color-w1);
-    transition: all 0.2s ease-in-out;  
+    transition: all 0.3s ease-in-out;  
 }
 
 .curriculo-btn:hover .icon-download i{
     color: var(--color-b1);
-    transition: all 0.2s ease-in-out; 
+    transition: all 0.3s ease-in-out; 
 }
 
 .portfolio{
@@ -435,7 +443,7 @@ footer{
     height: 2.2em;
     border-radius: 45px;
     border: none;
-    background-color: var(--color-b2);
+    background-color: var(--color-t1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,7 +477,7 @@ footer{
 
 .cd-top i{
     font-size: var(--size-text);
-    color: var(--color-w2);
+    color: var(--color-w1);
     transition: all 0.2s ease-in-out;
 }
 
@@ -728,7 +736,7 @@ footer{
 
     nav{
         position: fixed;
-        background-color: var(--color-b2);
+        background-color: var(--color-t1);
         height: 100vh;
         width: 100vw;
         top: 0;

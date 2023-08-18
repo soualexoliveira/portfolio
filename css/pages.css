@@ -272,7 +272,7 @@
 }
 
 #bt_close:hover, #bt_prev:hover, #bt_next:hover{
-    color: var(--color-w2);
+    color: var(--color-t1);
 }
 
 #bt_next{
@@ -354,7 +354,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-b2);
+    background-color: var(--color-t1);
 }
 
 .sobre-cabecalho h1{
@@ -381,7 +381,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-b2);
+    background-color: var(--color-t1);
 }
 
 .contact-cabecalho h1{
@@ -411,7 +411,7 @@
 }
 
 .contact-info h2{
-    color: var(--color-w2);
+    color: var(--color-t1);
     font-family: var(--font);
     font-weight: 500;
     font-size: 1.5vw;
@@ -473,14 +473,14 @@
 }
 
 .rs a:hover{
-    color: var(--color-w2);
+    color: var(--color-t1);
 }
 
 .border-form{
     width: .25vw;
     height: 100%;
     border-radius: 20px;
-    background-color: var(--color-b2);
+    background-color: var(--color-w1);
 }
 
 .contact-form{
@@ -496,7 +496,7 @@
     font-family: var(--font);
     font-weight: 600;
     font-size:2.1vw;
-    color: var(--color-w2);
+    color: var(--color-t1);
     text-align: left;
     margin-bottom:20px;
 }
@@ -509,7 +509,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     top: -11px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
-    background: var(--color-w1);
+    background: var(--color-t1);
     padding: 5px 15px;
     left: 25px;
     border-radius: 50px;
@@ -547,9 +547,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 input {
     width: 100%;
     padding: 30px;
-    border: 0;
     font-size: 1.1vw;
-    background-color: var(--color-b2);
+    background-color: var(--color-b1);
+    border: 0;
+    border-bottom: 2px solid var(--color-w1);
     font-family: var(--font);
     color: var(--color-w1);
     font-weight: 300;
@@ -558,7 +559,8 @@ input {
 
 input:focus,
 textarea:focus {
-    outline: 0;
+    outline: 2px solid var(--color-w1);
+    border:0;
 }
 
 input:focus ~ span,
@@ -573,7 +575,9 @@ textarea {
     padding: 30px;
     border: 0;
     font-size: 1.1vw;
-    background-color: var(--color-b2);
+    background-color: var(--color-b1);
+    border: 0;
+    border-bottom: 2px solid var(--color-w1);
     font-family: var(--font);
     color: var(--color-w1);
     font-weight: 300;
@@ -592,7 +596,7 @@ textarea {
     border:none;
     display: flex;
     flex-direction: row;
-    background-color: var(--color-b2);
+    transition: all 0.3s ease-in-out;
 }
 
 .title-btn-form{
@@ -602,15 +606,17 @@ textarea {
     align-items: center;
     height: 100%;
     width: 70%;
-    background-color:var(--color-b2);
+    background-color:var(--color-w1);
     border-radius: 5px 0px 0px 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .title-btn-form p{
-    color: var(--color-w1);
+    color: var(--color-b1);
     font-family: var(--font);
     text-align: center;
     font-size: 1.1vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon-btn-form{
@@ -620,22 +626,36 @@ textarea {
     align-items: center;
     height: 100%;
     width: 30%;
-    background-color: var(--color-b3);
+    background-color: var(--color-t1);
     border-radius: 0px 5px 5px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon-btn-form i{
     color: var(--color-w1);
     text-align: center;
     font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover .title-btn-form{
+    background-color: var(--color-t1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover .title-btn-form p{
+    color: var(--color-w1);
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-submit:hover .icon-btn-form{ 
     background-color: var(--color-w1);
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-submit:hover i{
     color: var(--color-b1);
+    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px){
