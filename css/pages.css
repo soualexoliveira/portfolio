@@ -70,7 +70,7 @@
     opacity: 0.9;
 }
 
-.box img{
+.box img, video{
     cursor: pointer;
     object-fit: cover;
 }
@@ -80,7 +80,7 @@
     justify-content:space-between;
 }
 
-.box1-a img{
+.box1-a img, video{
     width: 100%;
     aspect-ratio: 2.35 / 1;
 }
