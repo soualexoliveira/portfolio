@@ -34,7 +34,7 @@
 .overlay-bglogo{
     width: 100%;
     height: 100%;
-    opacity: .93;
+    opacity: .9;
     position: absolute;
     top: 0;
 }
@@ -59,15 +59,24 @@
     font-family: var(--font);
 }
 
+.port-projeto-merula{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    background-color:var(--color-w1);
+}
+
 .imgs-project{
     line-height: 0;
 }
 
-.projeto_imgs{
+.port-projeto .projeto_imgs{
     transition: all linear 0.4s;
 }
 
-.projeto_imgs:hover{
+.port-projeto .projeto_imgs:hover{
     opacity: 0.9;
 }
 
@@ -104,6 +113,15 @@
 .box1-c img{
     width: 100%;
     aspect-ratio: 2.35 / 0.5;
+}
+
+.box1-merula{
+    display: flex;
+    justify-content:center;
+}
+
+.box1-merula img{
+    width: 100%;
 }
 
 .box2-a{
