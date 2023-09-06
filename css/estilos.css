@@ -4,7 +4,7 @@
     --color-b1: #000;
     --color-w1: #e6e6e6;
     --color-w2: #fff;
-    --color-t1: #D9961A;
+    --color-t1: #F9AD20;
     --color-bg-modal: rgba(0, 0, 0, .8);
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
@@ -22,8 +22,9 @@
     --solitude-bg: #440070;
     --caldelica-txt: #b99053;
     --caldelica-bg: #162c39;
-    --merula-txt: #ffffff;
-    --merula-bg: #81bc24;
+    --merula-tit: #E5D889;
+    --merula-txt: #FAFFEE;
+    --merula-bg: #2C4A28;
     --up-txt: #e8e8e8;
     --up-bg: #071d49;
     
@@ -303,16 +304,26 @@ header{
     color: var(--color-w1);
 }
 
+.caldelica img{
+    max-width: 6vw;
+    transition: all 0.3s ease-in-out;
+}
+
 .merula{
     background-color: var(--merula-bg);
 }
 
 .merula h2{
-    color: var(--merula-txt);
+    color: var(--merula-tit);
 }
 
 .merula p{
-    color: var(--color-b1);
+    color: var(--merula-txt);
+}
+
+.merula img{
+    max-width: 13vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .up{
@@ -321,6 +332,11 @@ header{
 
 .up h2, .up p{
     color: var(--up-txt);
+}
+
+.up img{
+    max-height: 5.5vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .dunkel{
@@ -335,6 +351,11 @@ header{
     color: var(--color-w1);
 }
 
+.dunkel img{
+    max-width: 12vw;
+    transition: all 0.3s ease-in-out;
+}
+
 .aqueladesempre{
     background-color: var(--aqueladesempre-bg);
 }
@@ -347,6 +368,11 @@ header{
     color: var(--color-b1);
 }
 
+.aqueladesempre img{
+    max-width: 13.5vw;
+    transition: all 0.3s ease-in-out;
+}
+
 .manifesto{
     background-color: var(--manifesto-bg);
 }
@@ -357,6 +383,11 @@ header{
 
 .manifesto p{
     color: var(--color-w1);
+}
+
+.manifesto img{
+    max-width: 13vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .projetos{
@@ -373,12 +404,6 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.project-logo img{
-    max-width: 7vw;
-    max-height: 7vw;
-    transition: all 0.3s ease-in-out;
 }
 
 .cover{
