@@ -59,15 +59,6 @@
     font-family: var(--font);
 }
 
-.port-projeto-merula{
-    padding: 0%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font);
-    background-color:var(--color-w1);
-}
-
 .imgs-project{
     line-height: 0;
 }
@@ -113,15 +104,6 @@
 .box1-c img{
     width: 100%;
     aspect-ratio: 2.35 / 0.5;
-}
-
-.box1-merula{
-    display: flex;
-    justify-content:center;
-}
-
-.box1-merula img{
-    width: 100%;
 }
 
 .box2-a{
@@ -355,6 +337,144 @@
     display: none;
     background-color: var(--color-bg-modal);
     z-index: 3;
+}
+
+/*MERULA*/
+.port-projeto-merula{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    font-family: var(--merula-font);
+    font-weight:normal;
+}
+
+.merula-preset1{
+    width: 100vw;
+    padding: 5vh 0;
+    background-color: var(--merula-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-preset1-header{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 85vw;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--merula-bg);
+}
+
+.merula-preset-logo{
+    width: 3vh;
+    height: 3vh;
+}
+
+.merula-sobre{
+    display: flex;
+    flex-direction: row;
+    height: 55vh;
+    width: 85vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.merula-sobre-titulo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2em;
+    color: var(--merula-bg);
+}
+
+.merula-sobre-texto{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: var(--merula-txt2);
+}
+
+.box1-merula{
+    display: flex;
+    justify-content:center;
+}
+
+.box1-merula img{
+    width: 100%;
+}
+
+.merula-preset2{
+    width: 100vw;
+    padding: 5vh 0;
+    background-color: var(--merula-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-preset2-header{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 85vw;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--merula-txt2);
+}
+
+.merula-idvisual{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-idvisual img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-processo{
+    display: flex;
+    width: 85vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.merula-processo img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-cores{
+    width: 100vw;
+    height: 85vh;
+    background-image: url(../images/pages/merula/bg-color.jpg);
+    background-size: contain;
+    background-color: var(--color-w1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.merula-cores-palette img{
+    width: 65vw;
 }
 
 /*PAGINA SOBRE*/

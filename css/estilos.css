@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Regular.otf) format('opentype'), url(../fonts/OkineSans-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --color-b1: #000;
     --color-w1: #e6e6e6;
@@ -24,11 +31,13 @@
     --caldelica-bg: #162c39;
     --merula-tit: #E5D889;
     --merula-txt: #FAFFEE;
+    --merula-txt2:#b7b75e;
     --merula-bg: #2C4A28;
     --up-txt: #e8e8e8;
     --up-bg: #071d49;
     
     --font: 'Poppins', sans-serif;
+    --merula-font: 'Okine', 'Poppins', sans-serif;
     --size-text: 1em;
 }
 
