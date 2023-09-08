@@ -449,14 +449,14 @@
 .merula-processo{
     display: flex;
     flex-direction: row;
-    width: 90vw;
+    width: 85vw;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
 }
 
 .merula-processo img{
-    width: 44vw;
+    width: 41.5vw;
 }
 
 .merula-cores{
@@ -472,7 +472,7 @@
 }
 
 .merula-cores-palette img{
-    width: 65vw;
+    width: 85vw;
 }
 
 /*PAGINA SOBRE*/
