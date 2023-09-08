@@ -448,17 +448,15 @@
 
 .merula-processo{
     display: flex;
-    width: 85vw;
+    flex-direction: row;
+    width: 90vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
 }
 
 .merula-processo img{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 44vw;
 }
 
 .merula-cores{
