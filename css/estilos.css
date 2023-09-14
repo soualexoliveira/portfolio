@@ -2,8 +2,74 @@
 
 @font-face {
     font-family:'Okine';
-    src: url(../fonts/OkineSans-Regular.otf) format('opentype'), url(../fonts/OkineSans-Medium.otf) format('opentype');
-    font-weight: normal;
+    src: url(../fonts/OkineSans-Thin.otf) format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-ThinOutline.otf) format('opentype');
+    font-weight: 150;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Light.otf) format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-LightOutline.otf) format('opentype');
+    font-weight: 250;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Regular.otf) format('opentype');
+    font-weight: 300;
+    font-style:normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-RegularOutline.otf) format('opentype');
+    font-weight: 350;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Medium.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-MediumOutline.otf) format('opentype');
+    font-weight: 450;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Bold.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-BoldOutline.otf) format('opentype');
+    font-weight: 550;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-Black.otf) format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Okine';
+    src: url(../fonts/OkineSans-BlackOutline.otf) format('opentype');
+    font-weight: 650;
     font-style: normal;
 }
 
@@ -37,7 +103,7 @@
     --up-bg: #071d49;
     
     --font: 'Poppins', sans-serif;
-    --merula-font: 'Okine', 'Poppins', sans-serif;
+    --merula-font: 'Okine', sans-serif;
     --size-text: 1em;
 }
 

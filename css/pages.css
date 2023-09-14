@@ -345,9 +345,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: var(--font);
     font-family: var(--merula-font);
-    font-weight:normal;
 }
 
 .merula-preset1{
@@ -370,6 +368,10 @@
     color: var(--merula-bg);
 }
 
+.merula-preset1-indice h4{
+    font-weight: 400;
+}
+
 .merula-preset-logo{
     width: 3vh;
     height: 3vh;
@@ -388,9 +390,13 @@
     width: 35%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 3.2em;
+    justify-content: center;    
+}
+
+.merula-sobre-titulo h2{
+    font-size: 4.8em;
     color: var(--merula-bg);
+    font-weight: 400;
 }
 
 .merula-sobre-texto{
@@ -399,22 +405,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
-    color: var(--merula-txt2);
 }
 
-.box1-merula{
+.merula-sobre-texto p{
+    font-size: 1.2em;
+    color: var(--merula-txt2);
+    font-weight: 300;
+}
+
+.merula-poster{
     display: flex;
     justify-content:center;
 }
 
-.box1-merula img{
+.merula-poster img{
     width: 100%;
+    cursor: pointer;
 }
 
 .merula-preset2{
     width: 100vw;
-    padding: 5vh 0;
+    padding: 5vh 0 7.5vh 0;
     background-color: var(--merula-bg);
     display: flex;
     flex-direction: column;
@@ -430,6 +441,10 @@
     align-items: center;
     justify-content: space-between;
     color: var(--merula-txt2);
+}
+
+.merula-preset2-indice h4{
+    font-weight: 400;
 }
 
 .merula-idvisual{
@@ -452,11 +467,22 @@
     width: 85vw;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 .merula-processo img{
     width: 41.5vw;
+    cursor: pointer;
+}
+
+.merula-papelaria{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.merula-papelaria img{
+    width: 100%;
+    cursor: pointer;
 }
 
 .merula-cores{
@@ -468,11 +494,145 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .merula-cores-palette img{
     width: 85vw;
+    cursor: pointer;
+}
+
+.merula-tipografia{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 85vw;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.merula-tipografia-top{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 5vw;
+}
+
+.merula-tipografia-titulo{
+    width: 40vw;
+    display: flex;
+    justify-content: right;
+}
+
+.merula-tipografia-titulo p{
+    font-size: 5em;
+    color: var(--merula-bg);
+    font-weight: 300;
+}
+
+.merula-tipografia-info{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-tipografia-info p{
+    font-size: 1.15em;
+    color: var(--merula-txt2);
+    font-weight: 200;
+}
+
+.merula-tipografia-bottom{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.merula-tipografia-alfabeto{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: end;
+}
+
+.merula-tipografia-alfabeto p{
+    font-size: 1.7em;
+    color: var(--merula-txt2);
+    font-weight: 300;
+}
+
+.merula-tipografia-familyfont{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.merula-tipografia-font{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:left;
+    gap: 3vw;
+    font-size: 1.8em;
+    color: var(--merula-txt2);
+}
+
+.merula-font-thin{
+    font-weight: 100;
+}
+.merula-font-light{
+    font-weight: 200;
+}
+.merula-font-regular{
+    font-weight: 300;
+}
+.merula-font-medium{
+    font-weight: 400;
+}
+.merula-font-bold{
+    font-weight: 500;
+}
+.merula-font-black{
+    font-weight: 600;
+}
+.merula-font-thin-outline{
+    font-weight: 150;
+}
+.merula-font-light-outline{
+    font-weight: 250;
+}
+.merula-font-regular-outline{
+    font-weight: 350;
+}
+.merula-font-medium-outline{
+    font-weight: 450;
+}
+.merula-font-bold-outline{
+    font-weight: 550;
+}
+.merula-font-black-outline{
+    font-weight: 650;
+}
+
+.merula-cards{
+    display: flex;
+    justify-content:center;
+    background-color: var(--merula-txt2);
+}
+
+.merula-cards img{
+    width: 85vw;
+    cursor: pointer;
 }
 
 /*PAGINA SOBRE*/
