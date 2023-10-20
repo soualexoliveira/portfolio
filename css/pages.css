@@ -440,33 +440,23 @@
     width: 85vw;
     align-items: center;
     justify-content: space-between;
-    color: var(--merula-txt2);
+    color: var(--merula-tit);
 }
 
 .merula-preset2-indice h4{
     font-weight: 400;
 }
 
-.merula-idvisual{
-    display: flex;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.merula-idvisual img{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 .merula-processo{
     display: flex;
     flex-direction: row;
-    width: 85vw;
+    width: 100vw;
     align-items: center;
+    padding: 10vh 7.5vw;
     justify-content: space-between;
+    background-image: url(../images/pages/merula/bg-project.jpg);
+    background-size: contain;
+    background-color: var(--merula-tit);
 }
 
 .merula-processo img{
@@ -633,6 +623,50 @@
 .merula-cards img{
     width: 85vw;
     cursor: pointer;
+}
+
+.merula-application{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: var(--merula-bg);
+    height: 65vh;
+    width: 100vw;
+}
+
+.apl-one, .apl-two{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.merula-application img{
+    width: 20vw;
+    cursor: pointer;
+}
+
+.merula-socialmedia{
+    display: flex;
+    justify-content:center;
+    background-color: var(--merula-txt2);
+}
+
+.merula-socialmedia img{
+    width: 100vw;
+    cursor: pointer;
+}
+
+.merula-frase{
+    display: flex;
+    justify-content:center;
+}
+
+.merula-frase img{
+    width: 100%;
 }
 
 /*PAGINA SOBRE*/
