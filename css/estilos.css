@@ -81,8 +81,8 @@
     --color-bg-modal: rgba(0, 0, 0, .8);
     --dunkel-txt: #fff;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
-    --aqueladesempre-txt: #0d0d0d;
-    --aqueladesempre-bg: #fab43c;
+    --borogodo-txt: #0d0d0d;
+    --borogodo-bg: #fab43c;
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
     --manifesto-txt: #ffae6c;
@@ -91,8 +91,8 @@
     --dimaitre-bg: #136552;
     --daroca-txt: #ffffff;
     --daroca-bg: linear-gradient(-45deg, #ff2020 0%, #181818 50%, #146c03 100%);
-    --solitude-txt: #c2a9ff;
-    --solitude-bg: #440070;
+    --solitude-txt: #cfabff;
+    --solitude-bg: #5b10d3;
     --caldelica-txt: #b99053;
     --caldelica-bg: #162c39;
     --merula-tit: #E5D889;
@@ -360,12 +360,24 @@ header{
 .daroca{
     background-image: var(--daroca-bg);
     color: var(--daroca-txt);
-}
+}*/
 
 .solitude{
     background-color: var(--solitude-bg);
+}
+
+.solitude h2{
     color: var(--solitude-txt);
-}*/
+}
+
+.solitude p{
+    color: var(--color-w2);
+}
+
+.solitude img{
+    max-height: 6.5vw;
+    transition: all 0.3s ease-in-out;
+}
 
 .caldelica{
     background-color: var(--caldelica-bg);
@@ -376,7 +388,7 @@ header{
 }
 
 .caldelica p{
-    color: var(--color-w1);
+    color: var(--color-w2);
 }
 
 .caldelica img{
@@ -423,7 +435,7 @@ header{
 }
 
 .dunkel p{
-    color: var(--color-w1);
+    color: var(--color-w2);
 }
 
 .dunkel img{
@@ -431,20 +443,20 @@ header{
     transition: all 0.3s ease-in-out;
 }
 
-.aqueladesempre{
-    background-color: var(--aqueladesempre-bg);
+.borogodo{
+    background-color: var(--borogodo-bg);
 }
 
-.aqueladesempre h2{
-    color: var(--aqueladesempre-txt);
+.borogodo h2{
+    color: var(--borogodo-txt);
 }
 
-.aqueladesempre p{
+.borogodo p{
     color: var(--color-b1);
 }
 
-.aqueladesempre img{
-    max-width: 13.5vw;
+.borogodo img{
+    max-width: 12vw;
     transition: all 0.3s ease-in-out;
 }
 
@@ -457,7 +469,7 @@ header{
 }
 
 .manifesto p{
-    color: var(--color-w1);
+    color: var(--color-w2);
 }
 
 .manifesto img{
