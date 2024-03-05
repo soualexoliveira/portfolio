@@ -28,7 +28,7 @@
 
 .port-logo img{
     max-width: 26vw;
-    max-height: 20vh;
+    max-height: 24vh;
 }
 
 .overlay-bglogo{
@@ -669,6 +669,493 @@
     width: 100%;
 }
 
+/*CELULA COACH*/
+.port-projeto-coach{
+    font-family: var(--coach-font);
+}
+
+.coach-preset1{
+    background-color: var(--coach-txt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.coach-sobre, .coach-sobre2, .coach-sobre3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    padding: 10vh 0;
+}
+
+.coach-sobre p, .coach-sobre2 p, .coach-sobre3 p{
+    width:70%;
+    font-size: 1.3em;
+    color: var(--coach-bg);
+    font-weight: 200;
+    line-height: 115%;
+}
+
+.coach-preset2{
+    background-color: var(--coach-bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.tit-coach{
+    height: 35vw;
+    padding-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.tit-coach p{
+    font-family: var(--coach-font);
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 110%;
+    color: var(--color-w1);
+}
+
+.tit-coach-bg{
+    padding-right: 7.5%;
+    height: 35vw;
+}
+
+.tit-coach-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-bispo{
+    width: 60vw;
+    height: 25vw;
+}
+
+.foto-bispo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.foto-povo{
+    background-color: var(--coach-bg);
+    width: 100vw;
+    height: 35vw;
+}
+
+.foto-povo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.coach-preset3{
+    background-color: var(--coach-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:5vw 0;
+}
+
+.logo-coach-conceito{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-coach-conceito img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-coach-regras{
+    width: 50vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+.logo-coach-grid img{
+    width: 20vw;
+}
+
+.logo-coach-limite img{
+    width: 20vw;
+}
+
+.logo-coach-tipos{
+    width: 60vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+.logo-coach-tipos img{
+    height: 25vw;
+}
+
+.logo-coach-infos{
+    width: 100vw;
+    padding: 0 7.5%;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.logo-coach-cores{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5vw;
+}
+
+.coach-azul-escuro{
+    width: 11vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-azul-escuro img{
+    width: 80%;
+}
+
+.texto-azul-escuro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-azul-escuro p{
+    font-size: 1em;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.coach-azul-escuro span{
+    width: 100%;
+    height: 5%;
+    background-color: #302e2f;
+}
+
+.coach-azul-claro{
+    width: 11vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-azul-claro img{
+    width: 80%;
+}
+
+.texto-azul-claro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-azul-claro p{
+    font-size: 1em;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.coach-azul-claro span{
+    width: 100%;
+    height: 5%;
+    background-color: #8e8f91;
+}
+
+.coach-branco{
+    width: 11vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-branco img{
+    width: 80%;
+}
+
+.texto-branco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-branco p{
+    font-size: 1em;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.coach-branco span{
+    width: 100%;
+    height: 5%;
+    background-color: #c9c9c9;
+}
+
+.logo-coach-tipografia{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.coach-tipografia-exemplo{
+    width: 11vw;
+    height: 18.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coach-letra p{
+    text-align: right;
+    font-size: 6.5em;
+    color: var(--coach-bg);
+    font-weight: 500;
+}
+
+.coach-texto-exemplo p{
+    text-align: right;
+    font-size: 1em;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.coach-espessura{
+    margin-top: 1vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.coach-espessura p{
+    text-align: left;
+    font-size: 2.1em;
+    color: var(--coach-bg);
+    line-height: 140%;
+}
+
+.coach-espessura p:nth-child(1){
+    font-weight: 600;
+}
+
+.coach-espessura p:nth-child(2){
+    font-weight: 500;
+}
+
+.coach-espessura p:nth-child(3){
+    font-weight: 400;
+}
+
+.coach-espessura p:nth-child(4){
+    font-weight: 300;
+}
+
+.coach-espessura p:nth-child(5){
+    font-weight: 200;
+}
+
+.coach-espessura p:nth-child(6){
+    font-weight: 100;
+}
+
+.coach-preset4{
+    background-color: var(--coach-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:5vw 7.5vw;
+    gap: 3.5vw;
+}
+
+.coach-cartao, .coach-papelaria, .coach-tecido, .coach-outros, .coach-spotify{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-cartao1{
+    width: 48%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coach-cartao1-chuva{
+    width: 100%;
+    height: 15.75vw;
+}
+
+.coach-cartao1-chuva img{
+    width: 100%;
+    height: 15.75vw;
+    object-fit:cover;
+}
+
+.coach-cartao1-entrega{
+    width: 100%;
+    height: 15.75vw;
+}
+
+.coach-cartao1-entrega img{
+    width: 100%;
+    height: 15.75vw;
+    object-fit:cover;
+}
+
+.coach-cartao2{
+    width: 48%;
+    height: 35vw;
+}
+
+.coach-cartao2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-biblia{
+    width: 37%;
+    height: 30vw;
+}
+
+.coach-biblia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-quadro{
+    width: 25%;
+    height: 30vw;
+}
+
+.coach-quadro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-caderno{
+    width: 30%;
+    height: 30vw;
+}
+
+.coach-caderno img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-carteira{
+    width: 45%;
+    height: 28vw;
+}
+
+.coach-carteira img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-bolsa{
+    width: 30%;
+    height: 28vw;
+}
+
+.coach-bolsa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-bolsa-detalhe{
+    width: 17%;
+    height: 28vw;
+}
+
+.coach-bolsa-detalhe img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-canecas{
+    width: 48%;
+    height: 30vw;
+}
+
+.coach-canecas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-bone{
+    width: 48%;
+    height: 30vw;
+}
+
+.coach-bone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-spotify img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*PAGINA SOBRE*/
 .sobre-container{
     width: 100%;

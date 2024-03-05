@@ -73,6 +73,62 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/Gotham-Thin.otf) format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamBook.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamBookItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamMedium.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamBold.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/GothamBoldItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url(../fonts/Gotham-Black.otf) format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 :root{
     --color-b1: #000;
     --color-w1: #e6e6e6;
@@ -95,6 +151,9 @@
     --solitude-bg: #5b10d3;
     --caldelica-txt: #b99053;
     --caldelica-bg: #162c39;
+    --coach-txt: #ededed;
+    --coach-tit: #0093b5;
+    --coach-bg:#000d19;
     --merula-tit: #E5D889;
     --merula-txt: #FAFFEE;
     --merula-txt2:#b7b75e;
@@ -104,6 +163,7 @@
     
     --font: 'Poppins', sans-serif;
     --merula-font: 'Okine', sans-serif;
+    --coach-font: 'Gotham', sans-serif;
     --size-text: 1em;
 }
 
@@ -396,6 +456,23 @@ header{
     transition: all 0.3s ease-in-out;
 }
 
+.coach{
+    background-color: var(--coach-bg);
+}
+
+.coach h2{
+    color: var(--coach-tit);
+}
+
+.coach p{
+    color: var(--coach-txt);
+}
+
+.coach img{
+    max-width: 5.5vw;
+    transition: all 0.3s ease-in-out;
+}
+
 .merula{
     background-color: var(--merula-bg);
 }
@@ -422,7 +499,7 @@ header{
 }
 
 .up img{
-    max-height: 5.5vw;
+    max-height: 6vw;
     transition: all 0.3s ease-in-out;
 }
 
