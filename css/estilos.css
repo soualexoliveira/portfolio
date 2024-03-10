@@ -469,7 +469,7 @@ header{
 }
 
 .coach img{
-    max-width: 5.5vw;
+    max-width: 4.75vw;
     transition: all 0.3s ease-in-out;
 }
 
@@ -486,7 +486,7 @@ header{
 }
 
 .merula img{
-    max-width: 13vw;
+    max-width: 14vw;
     transition: all 0.3s ease-in-out;
 }
 
@@ -533,7 +533,7 @@ header{
 }
 
 .borogodo img{
-    max-width: 12vw;
+    max-width: 13vw;
     transition: all 0.3s ease-in-out;
 }
 
