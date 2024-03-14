@@ -1,0 +1,235 @@
+p, img, h2{
+    user-select: none;
+}
+
+.portfolio{
+    height: 75vh;
+    width: 100%;
+    background-color: var(--color-c);
+    padding: 5vh 0;
+    display: flex;
+    align-items: center;
+}
+
+.projetos{
+    height: 67.5vh;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-logo{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-logo img{
+    user-select: none;
+}
+
+.cover{
+    width: 100%;
+    height: 25%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 10%;
+    background-color: var(--color-w);
+}
+
+.selo{
+    width: 88%;
+}
+
+.selo h2{
+    text-align:left;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    user-select: none;
+}
+
+.selo p{
+    text-align:left;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: .8em;
+    user-select: none;
+}
+
+.btn-project{
+    width: 12%;
+    height: 35%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-project a{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-y);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-project i{
+    font-size: var(--size-text);
+    text-decoration: none;
+    color: var(--color-b);
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-project:hover{
+    width: 13%;
+    height: 38%;
+    transition: all 0.3s ease-in-out;
+}
+
+.solitude-bg{
+    background-color: var(--solitude-bg);
+}
+
+.solitude h2{
+    color: var(--solitude-bg);
+}
+
+.solitude img{
+    max-height: 6.5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.coach-bg{
+    background-color: var(--coach-bg);
+}
+
+.coach h2{
+    color: var(--coach-bg);
+}
+
+.coach img{
+    max-width: 4.75vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.merula-bg{
+    background-color: var(--merula-bg);
+}
+
+.merula h2{
+    color: var(--merula-bg);
+}
+
+.merula img{
+    max-width: 14vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.up-bg{
+    background-color: var(--up-bg);
+}
+
+.up h2{
+    color: var(--up-bg);
+}
+
+.up img{
+    max-height: 6vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.dunkel-bg{
+    background-image: var(--dunkel-bg);
+}
+
+.dunkel h2{
+    color: var(--dunkel-tit);
+}
+
+.dunkel img{
+    max-width: 12vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.borogodo-bg{
+    background-color: var(--borogodo-bg);
+}
+
+.borogodo h2{
+    color: var(--borogodo-bg);
+}
+
+.borogodo img{
+    max-width: 13vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.manifesto-bg{
+    background-color: var(--manifesto-bg);
+}
+
+.manifesto h2{
+    color: var(--manifesto-bg);
+}
+
+.manifesto img{
+    max-width: 13vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.coach p, .solitude p, .merula p, .up p, .dunkel p, .borogodo p, .manifesto p{
+    color: var(--color-b);
+}
+
+.controladores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    width: 5vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75em;
+    width: 1.75em;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-w);
+    color: var(--color-b);
+    cursor: pointer;
+}
+
+.controls i:hover{
+    height: 1.9em;
+    width: 1.9em;
+}
