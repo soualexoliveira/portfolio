@@ -654,8 +654,8 @@ footer{
 }
 
 .cd-top{
-    width: 2.1em;
-    height: 2.1em;
+    width: 2.3em;
+    height: 2.3em;
     border-radius: 45px;
     border: none;
     background-color: var(--color-y);
@@ -666,7 +666,7 @@ footer{
     position: fixed;
     z-index: 2;
     right: 5vw;
-    bottom: 2vh;
+    bottom: 3.5vh;
 }
 
 .js .cd-top{
