@@ -654,59 +654,6 @@ footer{
     font-weight: 300;
 }
 
-
-
-
-
-
-.cd-top{
-    width: 2.3em;
-    height: 2.3em;
-    border-radius: 45px;
-    border: none;
-    background-color: var(--color-y);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    position: fixed;
-    z-index: 2;
-    right: 5vw;
-    bottom: 3.5vh;
-}
-
-.js .cd-top{
-    visibility:hidden;
-    opacity:0;
-    transition:opacity .3s, visibility .3s, background-color .3s;}
-
-
-.js .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-  
-.js .cd-top--fade-out {
-    opacity: .5;
-}
-
-.js .cd-top:hover{
-    background-color: var(--color-w);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-}
-
-.cd-top i{
-    font-size: var(--size-text);
-    color: var(--color-w);
-    transition: all 0.2s ease-in-out;
-}
-
-.cd-top:hover i{
-    color: var(--color-b);
-    transition: all 0.2s ease-in-out;
-}
-
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
 
     .logo svg{
