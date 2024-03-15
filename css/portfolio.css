@@ -4,15 +4,13 @@ p, img, h2{
 
 .portfolio{
     height: 75vh;
-    width: 100%;
+    width: 100vw;
     background-color: var(--color-c);
     padding: 5vh 0;
-    display: flex;
-    align-items: center;
 }
 
 .projetos{
-    height: 67.5vh;
+    height: 65vh;
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -61,8 +59,8 @@ p, img, h2{
     text-align:left;
     font-family: var(--font);
     font-weight: 600;
-    font-size: 1.2em;
-    line-height: 1.3em;
+    font-size: 2.25vh;
+    line-height: 1.5vw;
     user-select: none;
 }
 
@@ -70,13 +68,13 @@ p, img, h2{
     text-align:left;
     font-family: var(--font);
     font-weight: 400;
-    font-size: .8em;
+    font-size: 1.7vh;
     user-select: none;
 }
 
 .btn-project{
-    width: 12%;
-    height: 35%;
+    width: 6vh;
+    height: 6vh;
     transition: all 0.3s ease-in-out;
 }
 
@@ -91,7 +89,7 @@ p, img, h2{
 }
 
 .btn-project i{
-    font-size: var(--size-text);
+    font-size: 2.25vh;
     text-decoration: none;
     color: var(--color-b);
     transform: rotate(45deg);
@@ -99,8 +97,8 @@ p, img, h2{
 }
 
 .btn-project:hover{
-    width: 13%;
-    height: 38%;
+    width: 6.25vh;
+    height: 6.25vh;
     transition: all 0.3s ease-in-out;
 }
 
@@ -219,9 +217,9 @@ p, img, h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1.75em;
-    width: 1.75em;
-    font-size: 1.2em;
+    height: 1.75vw;
+    width: 1.75vw;
+    font-size: 1.2vw;
     text-align: center;
     border-radius: 50%;
     background-color: var(--color-w);
@@ -230,6 +228,124 @@ p, img, h2{
 }
 
 .controls i:hover{
-    height: 1.9em;
-    width: 1.9em;
+    height: 1.9vw;
+    width: 1.9vw;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+    .portfolio{
+        padding: 12.5vh 0;
+    }
+    
+    .projetos{
+        height: 50vh;
+    }
+    
+    .selo h2{
+        font-size: 2.25vh;
+        line-height: 4vw;
+    }
+    
+    .selo p{
+        font-weight: 500;
+        font-size: 1.25vh;
+    }
+
+    .btn-project{
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .btn-project i{
+        font-size: 2vh;
+    }
+
+    .controls{
+        width: 12.5vw;
+    }
+    
+    .controls i{
+        height: 5vw;
+        width: 5vw;
+        font-size: 3.25vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+    .portfolio{
+        padding: 12.5vh 0;
+    }
+    
+    .projetos{
+        height: 50vh;
+    }
+    
+    .selo h2{
+        font-size: 2vh;
+        line-height: 4vw;
+    }
+    
+    .selo p{
+        font-weight: 500;
+        font-size: 1.3vh;
+    }
+
+    .btn-project{
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .btn-project i{
+        font-size: 2vh;
+    }
+
+    .controls{
+        width: 15vw;
+    }
+    
+    .controls i{
+        height: 6vw;
+        width: 6vw;
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px){   /*dispositivos móveis*/
+    .portfolio{
+        height: 75vh;
+        padding: 12.5vh 0;
+    }
+
+    .projetos{
+        height: 50vh;
+    }
+
+    .selo h2{
+        font-size: 2.25vh;
+        line-height: 5vw;
+    }
+    
+    .selo p{
+        font-weight: 500;
+        font-size: 1.4vh;
+    }
+
+    .btn-project{
+        width: 5.5vh;
+        height: 5.5vh;
+    }
+    
+    .btn-project i{
+        font-size: 2.25vh;
+    }
+
+    .controls{
+        width: 17.5vw;
+    }
+    
+    .controls i{
+        height: 7vw;
+        width: 7vw;
+        font-size: 4vw;
+    }
 }

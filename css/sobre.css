@@ -4,38 +4,51 @@
     background-color: var(--color-c);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 15vw;
+    padding: 0 10vw;
+}
+
+.sobre-foto2{
+    display: none;
 }
 
 .sobre-foto{
-    width: 30%;
-    height: 100%;
+    max-width: 35vw;
+    max-height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sobre-foto img{
-    height: 90%;
+.sobre-foto img:nth-child(1){
+    max-height: 65vh;
+    max-width: 20vw;
     filter:brightness(1.1) contrast(1.2) saturate(3) grayscale(.5);
     opacity: .8;
 }
 
+.sobre-foto img:nth-child(2){
+    display: none;
+}
+
 .sobre-conj-texto{
-    width: 60%;
-    height: 90%;
+    max-width: 50vw;
+    max-height: 65vh;
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: space-between;
+}
+
+.sobre-texto{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .sobre-texto h2{
     font-family: var(--font);
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3vw;
     line-height: 120%;
     margin-bottom: 1vw;
     color: var(--color-y);
@@ -43,8 +56,8 @@
 
 .sobre-texto p{
     font-family: var(--font);
-    font-weight: 400;
-    font-size: 1.3em;
+    font-weight: 300;
+    font-size: 1.1vw;
     line-height: 120%;
     margin-bottom: 1vw;
     color: var(--color-w);
@@ -56,14 +69,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    gap: 2em;
 }
 
 .btn-curriculo{
     border-radius: 50px;
     width: 10vw;
-    height: 6vh;
-    padding: 0 4.5%;
+    height: 2.75vw;
+    padding: 0 .75%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -88,15 +100,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 70%;
+    width: 3vw;
+    height: 2.15vw;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     background-color: var(--color-b);
 }
 
 .icon-download i{
-    font-size: var(--size-text);
+    font-size: 1vw;
     text-decoration: none;
     color: var(--color-y);
     transform: rotate(180deg);
@@ -111,4 +123,232 @@
 
 .btn-curriculo:hover .icon-download i{
     transition: all 0.3s ease-in-out; 
+}
+
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+    .sobre-bio{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+    }
+    
+    .sobre-foto{
+        max-width: none;
+        max-height: 30vh;
+        min-width: 80vw;
+    }
+    
+    .sobre-foto img:nth-child(1){
+        display: none;
+    }
+
+    .sobre-foto img:nth-child(2){
+        max-width: none;
+        max-height: none;
+        height: 100%;
+        display: block;
+    }
+
+    .sobre-conj-texto{
+        min-width: 80vw;
+        max-height: 35vh;
+        max-width: none;
+        align-items:center;
+    }
+
+    .sobre-texto{
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .sobre-texto h2{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    
+    .sobre-texto p{
+        font-size: 1.75vw;
+        text-align:justify;
+    }
+
+    .btn-curriculo{
+        width: 23.5vw;
+        height: 7vw;
+        padding: 0 3%;
+    }
+
+    .btn-yellow {
+        padding-left: 1vw;
+    }
+
+
+    .btn-yellow p{
+        font-size: 2.5vw;
+    }
+    
+    .icon-download{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-download i{
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+    .sobre-bio{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+    }
+    
+    .sobre-foto{
+        max-width: none;
+        max-height: 30vh;
+        min-width: 80vw;
+    }
+    
+    .sobre-foto img:nth-child(1){
+        display: none;
+    }
+
+    .sobre-foto img:nth-child(2){
+        max-width: none;
+        max-height: none;
+        height: 100%;
+        display: block;
+    }
+
+    .sobre-conj-texto{
+        min-width: 80vw;
+        max-height: 35vh;
+        max-width: none;
+        align-items:center;
+    }
+
+    .sobre-texto{
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .sobre-texto h2{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    
+    .sobre-texto p{
+        font-size: 1.75vw;
+        text-align:justify;
+        line-height: 130%;
+    }
+
+    .btn-curriculo{
+        width: 23.5vw;
+        height: 7vw;
+        padding: 0 3%;
+    }
+
+    .btn-yellow {
+        padding-left: 1vw;
+    }
+
+
+    .btn-yellow p{
+        font-size: 2.5vw;
+    }
+    
+    .icon-download{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-download i{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px){   /*dispositivos móveis*/
+    .sobre-bio{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+        justify-content: start;
+        
+    }
+    
+    .sobre-foto2{
+        display: block;
+        width: 100vw;
+        height: 22.5vh;
+        background-image: url(../images/foto-bg.jpg);
+        background-size: cover;
+        background-position-y: 55%;
+    }
+    
+    .sobre-foto{
+        display: none;
+    }
+
+    .sobre-conj-texto{
+        max-width: none;
+        max-height: none;
+        width: 80vw;
+        height: 52.5vh;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .sobre-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        max-width: none;
+    }
+    
+    .sobre-texto h2{
+        font-size: 5.5vw;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+    
+    .sobre-texto p{
+        font-size: 2.75vw;
+        text-align:justify;
+        line-height: 130%;
+        margin-bottom: 3vw;
+    }
+
+    .btn-curriculo{
+        width: 23.5vw;
+        height: 7vw;
+        padding: 0 3%;
+    }
+
+    .btn-yellow {
+        padding-left: 1vw;
+    }
+
+
+    .btn-yellow p{
+        font-size: 2.5vw;
+    }
+    
+    .icon-download{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-download i{
+        font-size: 2vw;
+    }
 }

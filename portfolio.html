@@ -136,7 +136,7 @@
                             <div class="selo">
                                 <h2>BOROGODÓ</h2>
                                 <p>CERVEJA ARTESANAL</p>
-                                <p>BRANDING DESIGN // PACKAGING DESIGN</p>
+                                <p>PACKAGING DESIGN</p>
                                 <p>2024</p>
                             </div>
                             <div class="btn-project">
@@ -251,13 +251,25 @@
           slideBy: 1,
           autoplay: true,
           mouseDrag: true,
+          autoplayTimeout: 4000,
           autoplayButtonOutput: false,
           gutter: 30,
+          edgePadding: 100,
           controlsContainer:"#custom-controls",
-          autoWidth: false,
-          fixedWidth: 500,
-          center: true,
-          nav: false
+          nav: false,
+          responsive: {
+                0: {
+                    items: 1,
+                    edgePadding: 40,
+                    gutter: 20
+                },
+                768: {
+                    items: 2
+                },
+                1080: {
+                    items: 3
+                }
+            }
         });
     </script>
 </body>

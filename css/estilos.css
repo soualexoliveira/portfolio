@@ -320,7 +320,7 @@ nav{
     display: flex;
     justify-content: left;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.1vw;
     color: var(--color-w);
     font-family: var(--font);
     transition: all 0.3s ease-in-out;
@@ -350,7 +350,7 @@ nav{
 }
 
 .social i{
-    font-size: 2em;
+    font-size: 2vw;
     color: var(--color-w);
     cursor: pointer;
 }
@@ -370,7 +370,7 @@ nav{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    font-size: .8em;
+    font-size: .8vw;
 }
 
 .open-nav-btn{
@@ -403,13 +403,13 @@ nav{
     position: absolute;
     display: block;
     border-radius: 40px;
-    height: 0.6vh;
-    width: 70%;
+    height: 0.5vh;
+    width: 65%;
     background-color: var(--color-w);
 }
 
 .open-bars:nth-child(1){
-    top: 1.75vh;
+    top: 1.65vh;
 }
 
 .open-bars:nth-child(2){
@@ -417,7 +417,7 @@ nav{
 }
 
 .open-bars:nth-child(3){
-    bottom: 1.75vh;
+    bottom: 1.65vh;
 }
 
 .close-bars:nth-child(1){
@@ -467,8 +467,8 @@ nav{
 }
 
 .hero{
-    width: 100%;
-    height: 65%;
+    width: 100vw;
+    height: 24vw;
     padding: 0 5vw;
     display: flex;
     flex-direction: column;
@@ -479,7 +479,7 @@ nav{
 .titulo{
     font-family: var(--font);
     font-weight: 600;
-    font-size: 7em;
+    font-size: 6.5vw;
     line-height: 95%;
     color: var(--color-y);
     width:fit-content;
@@ -495,8 +495,9 @@ nav{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1vw;
 }
+
 
 .btns{
     margin-top: 2vh;
@@ -504,13 +505,13 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    gap: 2em;
+    gap: 1.5vw;
 }
 
 .btn-port{
     border-radius: 50px;
     width: 10vw;
-    height: 6vh;
+    height: 3vw;
     padding: 0 .5%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -523,7 +524,7 @@ nav{
 
 .btn-about{
     width: 8vw;
-    height: 6vh;
+    height: 3vw;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -547,7 +548,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-left: 1em;
+    padding-left: 1vw;
     align-items: center;
 }
 
@@ -562,7 +563,7 @@ nav{
 
 .btn-yellow p{
     font-family: var(--font);
-    font-size: var(--size-text);
+    font-size: 1vw;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-b);
@@ -571,8 +572,8 @@ nav{
 
 .btn-invi p{
     font-family: var(--font);
-    font-size: var(--size-text);
-    font-weight: 500;
+    font-size: 1vw;
+    font-weight: 400;
     text-decoration: none;
     color: var(--color-w);
     transition: all 0.3s ease-in-out;
@@ -583,15 +584,15 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 70%;
+    width: 3vw;
+    height: 2.15vw;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     background-color: var(--color-b);
 }
 
 .icon-abrir i{
-    font-size: var(--size-text);
+    font-size: 1vw;
     text-decoration: none;
     color: var(--color-y);
     transform: rotate(90deg);
@@ -603,15 +604,15 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 70%;
+    width: 3vw;
+    height: 2.15vw;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     background-color: var(--color-w);
 }
 
 .icon-abrir2 i{
-    font-size: var(--size-text);
+    font-size: 1vw;
     text-decoration: none;
     color: var(--color-b);
     transform: rotate(90deg);
@@ -620,14 +621,14 @@ nav{
 
 .btn-port:hover .icon-abrir{
     transition: all 0.3s ease-in-out;
-    width: 37%;
-    height: 80%;
+    width: 3.25vw;
+    height: 2.3vw;
 }
 
 .btn-about:hover .icon-abrir2{
     transition: all 0.3s ease-in-out;
-    width: 40%;
-    height: 80%;
+    width: 3.25vw;
+    height: 2.3vw;
 }
 
 .btn-port:hover .icon-abrir i{
@@ -649,9 +650,14 @@ footer{
     font-family: var(--font);
     color: var(--color-w);
     text-align: center;
-    font-size: .8em;
+    font-size: .7vw;
     font-weight: 300;
 }
+
+
+
+
+
 
 .cd-top{
     width: 2.3em;
@@ -701,40 +707,267 @@ footer{
     transition: all 0.2s ease-in-out;
 }
 
-@media (min-width: 769px) and (max-width: 1024px){  /*telas pequenas, laptops*/
-    body{
-        width: 100vw;
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+
+    .logo svg{
+        height: 7vw;
     }
 
-    .logo a{
-        font-size: 1.4em;
+    nav{
+        width: 80vw;
+        padding: 0 10vw;
     }
 
-	.project-logo img{
-        width: 8vw;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 768px){   /*iPads, tablets*/
-    body{
-        width: 100vw;
+    .menu-list{
+        margin-top: 11vh;
     }
 
-    .logo a{
-        font-size: 1.4em;
+    .menu-list li a{
+        font-size: 3vw;
     }
 
-    .chamada{
-        height: 83vh;
+    .infos{
+        height: 15vh;
+    }
+
+    .social{
+        width: 40%;
+    }
+
+    .social i{
+        font-size: 5.5vw;
+    }
+
+    .dados p{
+        font-weight: 300;
+        font-size: 2.25vw;
+    }
+
+    .open-bars, .close-bars{
+        border-radius: 50px;
+        height: 0.5vh;
+        width: 80%;
+    }
+
+    .open-bars:nth-child(1){
+        top: 1vw;
+    }
+    
+    .open-bars:nth-child(2){
+        opacity: 1;
+    }
+    
+    .open-bars:nth-child(3){
+        bottom: 1vw;
+    }
+
+    .dgd-chamada{
+        background-image: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 75%, rgb(18, 18, 18) 100%);
+    }
+
+    .bg-chamada{
+        background-position-x: 40%;
+    }
+
+    .hero{
+        height: 45vw;
+        margin-top: 20vh;
+    }
+
+    .titulo{
+        font-size: 12.5vw;
     }
 
     .subtitulo{
-        margin-top: 1vh;
+        width: 70vw;
     }
 
     .subtitulo p{
-        font-size: .9em;
+        font-weight: 400;
+        font-size: 2.75vw;
     }
+
+    .btns{
+        gap: 3vw;
+    }
+
+    .btn-port{
+        width: 23.5vw;
+        height: 7vw;
+        padding: 0 1%;
+    }
+
+    .btn-about{
+        width: 22vw;
+        height: 7vw;
+    }
+
+    .btn-yellow {
+        padding-left: 1vw;
+    }
+
+    .btn-invi{
+        padding-left: 1vw;
+    }
+
+    .btn-yellow p, .btn-invi p{
+        font-size: 2.5vw;
+    }
+    
+    .icon-abrir{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-abrir i{
+        font-size: 2vw;
+    }
+
+    .icon-abrir2{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-abrir2 i{
+        font-size: 2vw;
+    }
+
+    .creditos p{
+        font-size: 1.75vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+
+    .logo svg{
+        height: 8vw;
+    }
+
+    nav{
+        width: 80vw;
+        padding: 0 10vw;
+    }
+
+    .menu-list{
+        margin-top: 12vh;
+    }
+
+    .menu-list li a{
+        font-size: 2.75vw;
+    }
+
+    .infos{
+        height: 15vh;
+    }
+
+    .social{
+        width: 37.5%;
+    }
+
+    .social i{
+        font-size: 5.5vw;
+    }
+
+    .dados p{
+        font-weight: 400;
+        font-size: 2vw;
+    }
+
+    .open-bars, .close-bars{
+        border-radius: 50px;
+        height: 0.5vh;
+        width: 80%;
+    }
+
+    .open-bars:nth-child(1){
+        top: 1.3vw;
+    }
+    
+    .open-bars:nth-child(2){
+        opacity: 1;
+    }
+    
+    .open-bars:nth-child(3){
+        bottom: 1.3vw;
+    }
+
+    .dgd-chamada{
+        background-image: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 75%, rgb(18, 18, 18) 100%);
+    }
+
+    .bg-chamada{
+        background-position-x: 40%;
+    }
+
+    .hero{
+        height: 45vw;
+        margin-top: 20vh;
+    }
+
+    .titulo{
+        font-size: 12.5vw;
+    }
+
+    .subtitulo{
+        width: 70vw;
+    }
+
+    .subtitulo p{
+        font-weight: 400;
+        font-size: 2.75vw;
+    }
+
+    .btns{
+        gap: 3vw;
+    }
+
+    .btn-port{
+        width: 23.5vw;
+        height: 7vw;
+        padding: 0 1%;
+    }
+
+    .btn-about{
+        width: 22vw;
+        height: 7vw;
+    }
+
+    .btn-yellow {
+        padding-left: 1vw;
+    }
+
+    .btn-invi{
+        padding-left: 1vw;
+    }
+
+    .btn-yellow p, .btn-invi p{
+        font-size: 2.5vw;
+    }
+    
+    .icon-abrir{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-abrir i{
+        font-size: 2vw;
+    }
+
+    .icon-abrir2{
+        width: 7.5vw;
+        height: 5.5vw;
+    }
+
+    .icon-abrir2 i{
+        font-size: 2vw;
+    }
+
+    .creditos p{
+        font-size: 2vw;
+    }
+
+
+
 
     .project-logo img{
         width: 10vw;
@@ -754,124 +987,136 @@ footer{
 }
 
 @media (max-width: 480px){   /*dispositivos móveis*/
-    body{
-        width: 100vw;
-    }
-    
-    .logo a{
-        font-size: 1.2em;
+
+    .logo svg{
+        height: 10vw;
     }
 
-    .chamada{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 83vh;
+    nav{
+        width: 80vw;
+        padding: 0 10vw;
+    }
+
+    .menu-list{
+        margin-top: 12vh;
+    }
+
+    .menu-list li a{
+        font-size: 4.25vw;
+    }
+
+    .infos{
+        height: 12.5vh;
+    }
+
+    .social{
+        width: 45%;
+    }
+
+    .social i{
+        font-size: 6.5vw;
+    }
+
+    .dados p{
+        font-weight: 400;
+        font-size: 3vw;
+    }
+
+    .open-bars, .close-bars{
+        border-radius: 50px;
+        height: 0.5vh;
+        width: 65%;
+    }
+
+    .open-bars:nth-child(1){
+        top: 3.5vw;
+    }
+    
+    .open-bars:nth-child(2){
+        opacity: 1;
+    }
+    
+    .open-bars:nth-child(3){
+        bottom: 3.5vw;
+    }
+
+    .bg-chamada{
+        background-image: url(../images/foto-bio.jpg);
+        background-position-x: 100%;
     }
 
     .hero{
+        margin-top: 30vh;
         align-items: center;
         justify-content: center;
     }
 
     .titulo{
-        font-size: 21vw;
+        font-size: 20vw;
         text-align: center;
     }
 
     .subtitulo{
-        margin-top: 1vh;
+        width: 95%;
     }
 
     .subtitulo p{
-        font-size: 3.3vw;
+        font-size: 3.25vw;
         text-align: center;
+        font-weight: 500;
     }
 
-    /*
-.curriculo-archive{
-    margin-top: 15px;
-    width: 180px;
-    height: 45px;
-}
-
-.curriculo-btn {
-    background-color: var(--color-b2);
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-.curriculo-btn p{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font);
-    font-size: var(--size-text);
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--color-w2);
-}
-
-.icon-download{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    border-radius: 0px 5px 5px 0px;
-    background-color: var(--color-b3);
-    transition: all 0.2s ease-in-out;
-}
-
-.icon-download i{
-    font-size: var(--size-text);
-    text-decoration: none;
-    color: var(--color-w2);
-    transform: rotate(45deg);
-    transition: all 0.2s ease-in-out;
-}
-
-    */
-
-    .curriculo-archive {
-        margin-top: 10vh;
-        display: flex;
-        width: 100%;
-        justify-content: center;
+    .btns{
+        gap: 3vw;
     }
 
-    .curriculo-btn {
-        width: 175px;
-        height: 45px;
-        justify-content: space-between;
-        align-items: center;
+    .btn-port{
+        width: 32.5vw;
+        height: 11vw;
+        padding: 0 2%;
+    }
+
+    .btn-about{
+        width: 30vw;
+        height: 11vw;
+    }
+
+    .btn-yellow {
+        padding-left: 2vw;
+    }
+
+    .btn-invi{
+        padding-left: 1vw;
+    }
+
+    .btn-yellow p, .btn-invi p{
+        font-size: 3.5vw;
     }
     
-    .curriculo-btn p{
-        width: 75%;
+    .icon-abrir{
+        width: 10vw;
+        height: 7.5vw;
     }
 
-    .icon-download{
-        justify-content: center;
-        width: 25%;
-        height: 100%;
+    .icon-abrir i{
+        font-size: 2.75vw;
     }
-    
-    .icon-download i{
-        margin: 25%;
+
+    .icon-abrir2{
+        width: 10vw;
+        height: 7.5vw;
     }
+
+    .icon-abrir2 i{
+        font-size: 2.75vw;
+    }
+
+    .creditos p{
+        font-size: 2.75vw;
+    }
+
+
+
 
     .project-logo img{
         width: 18vw;
