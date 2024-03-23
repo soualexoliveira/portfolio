@@ -96,12 +96,6 @@ p, img, h2{
     transition: all 0.3s ease-in-out;
 }
 
-.btn-project:hover{
-    width: 6.25vh;
-    height: 6.25vh;
-    transition: all 0.3s ease-in-out;
-}
-
 .solitude-bg{
     background-color: var(--solitude-bg);
 }
@@ -227,12 +221,20 @@ p, img, h2{
     cursor: pointer;
 }
 
-.controls i:hover{
-    height: 1.9vw;
-    width: 1.9vw;
+@media screen and (min-width: 1024px) {
+    .btn-project:hover{
+        width: 6.25vh;
+        height: 6.25vh;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .controls i:hover{
+        height: 1.9vw;
+        width: 1.9vw;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
     .portfolio{
         padding: 12.5vh 0;
     }
@@ -271,7 +273,7 @@ p, img, h2{
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
     .portfolio{
         padding: 12.5vh 0;
     }
@@ -310,7 +312,7 @@ p, img, h2{
     }
 }
 
-@media (max-width: 480px){   /*dispositivos móveis*/
+@media screen and (max-width: 480px){   /*dispositivos móveis*/
     .portfolio{
         height: 75vh;
         padding: 12.5vh 0;

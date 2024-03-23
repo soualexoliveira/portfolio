@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family:'Okine';
     src: url(../fonts/OkineSans-Thin.otf) format('opentype');
@@ -161,8 +163,10 @@
     --merula-bg: #2C4A28;
     --up-txt: #e8e8e8;
     --up-bg: #071d49;
+    --up-bg2: #ffffff;
     
     --font: 'Poppins', sans-serif;
+    --up-font:'Noto Sans', sans-serif;
     --merula-font: 'Okine', sans-serif;
     --coach-font: 'Gotham', sans-serif;
     --size-text: 1em;
@@ -276,10 +280,6 @@ header{
 .logo svg{
     height: 2.5vw;
 }
-.logo:hover path{
-    fill: var(--color-y);
-    transition: all 0.3s ease-in-out;
-}
 
 .menu{
     position: relative;
@@ -326,11 +326,6 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 
-.menu-list li a:hover{
-    color: var(--color-y);
-    transition: all 0.3s ease-in-out;
-}
-
 .infos{
     width: 100%;
     height: 17.5vh;
@@ -353,10 +348,6 @@ nav{
     font-size: 2vw;
     color: var(--color-w);
     cursor: pointer;
-}
-
-.social i:hover{
-    color: var(--color-y);
 }
 
 .dados{
@@ -426,14 +417,6 @@ nav{
 
 .close-bars:nth-child(2){
     transform: rotate(45deg);
-}
-
-.open-nav-btn:hover .open-bars{
-    background-color: var(--color-y);
-}
-
-.close-nav-btn:hover .close-bars{
-    background-color: var(--color-y);
 }
 
 .chamada{
@@ -619,22 +602,6 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 
-.btn-port:hover .icon-abrir{
-    transition: all 0.3s ease-in-out;
-    width: 3.25vw;
-    height: 2.3vw;
-}
-
-.btn-about:hover .icon-abrir2{
-    transition: all 0.3s ease-in-out;
-    width: 3.25vw;
-    height: 2.3vw;
-}
-
-.btn-port:hover .icon-abrir i{
-    transition: all 0.3s ease-in-out; 
-}
-
 footer{
     display: flex;
     flex-direction: row;
@@ -654,7 +621,48 @@ footer{
     font-weight: 300;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+@media screen and (min-width: 1024px) {
+    .logo:hover path{
+        fill: var(--color-y);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-list li a:hover{
+        color: var(--color-y);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .social i:hover{
+        color: var(--color-y);
+    }
+
+    .open-nav-btn:hover .open-bars{
+        background-color: var(--color-y);
+    }
+    
+    .close-nav-btn:hover .close-bars{
+        background-color: var(--color-y);
+    }
+    
+    .btn-port:hover .icon-abrir{
+        transition: all 0.3s ease-in-out;
+        width: 3.25vw;
+        height: 2.3vw;
+    }
+    
+    .btn-about:hover .icon-abrir2{
+        transition: all 0.3s ease-in-out;
+        width: 3.25vw;
+        height: 2.3vw;
+    }
+    
+    .btn-port:hover .icon-abrir i{
+        transition: all 0.3s ease-in-out; 
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
 
     .logo svg{
         height: 7vw;
@@ -784,7 +792,7 @@ footer{
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
 
     .logo svg{
         height: 8vw;
@@ -912,29 +920,9 @@ footer{
     .creditos p{
         font-size: 2vw;
     }
-
-
-
-
-    .project-logo img{
-        width: 10vw;
-    }
-
-    .projetos{
-        height: 45vh;
-    }
-
-    .cover{
-        display: none;
-    }
-
-    .projetos:hover .project-logo img{
-        opacity: 1;
-    }
 }
 
-@media (max-width: 480px){   /*dispositivos móveis*/
-
+@media screen and (max-width: 480px){   /*dispositivos móveis*/
     .logo svg{
         height: 10vw;
     }
@@ -1060,25 +1048,5 @@ footer{
 
     .creditos p{
         font-size: 2.75vw;
-    }
-
-
-
-
-    .project-logo img{
-        width: 18vw;
-    }
-
-    .projetos{
-        width: 100%;
-        height: 55vh;
-    }
-
-    .cover{
-        display: none;
-    }
-
-    .projetos:hover .project-logo img{
-        opacity: 1;
     }
 }

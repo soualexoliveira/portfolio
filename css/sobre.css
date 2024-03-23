@@ -115,17 +115,19 @@
     transition: all 0.3s ease-in-out;
 }
 
-.btn-curriculo:hover .icon-download{
-    transition: all 0.3s ease-in-out;
-    width: 37%;
-    height: 80%;
+@media screen and (min-width: 1024px) {
+    .btn-curriculo:hover .icon-download{
+        transition: all 0.3s ease-in-out;
+        width: 37%;
+        height: 80%;
+    }
+    
+    .btn-curriculo:hover .icon-download i{
+        transition: all 0.3s ease-in-out; 
+    }
 }
 
-.btn-curriculo:hover .icon-download i{
-    transition: all 0.3s ease-in-out; 
-}
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
     .sobre-bio{
         flex-direction: column;
         justify-content: center;
@@ -200,7 +202,7 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
     .sobre-bio{
         flex-direction: column;
         justify-content: center;
@@ -276,7 +278,7 @@
     }
 }
 
-@media (max-width: 480px){   /*dispositivos móveis*/
+@media screen and (max-width: 480px){   /*dispositivos móveis*/
     .sobre-bio{
         flex-direction: column;
         justify-content: center;
