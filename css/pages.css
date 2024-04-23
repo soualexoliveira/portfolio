@@ -1388,6 +1388,15 @@
     object-fit: cover;
 }
 
+/*MANIFESTO*/
+.manifesto-teste{
+    width: 100vw;
+}
+
+.manifesto-teste img{
+    width: 100vw;
+}
+
 /*FOOTER BACK TO TOP*/
 .cd-top{
     width: 2.3em;
