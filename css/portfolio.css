@@ -1,353 +1,328 @@
-p, img, h2{
-    user-select: none;
+.portfolio-header{
+    height: 20vh;
+    width: 100%;
+    padding: 5vh 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.portfolio{
-    height: 75vh;
-    width: 100vw;
-    background-color: var(--color-c);
-    padding: 5vh 0;
+.header2-title1 h1{
+    font-size: 10vw;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 12vw;
 }
 
-.projetos{
-    height: 65vh;
+.header2-row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.header2-title2{
+    width: 80%;
+}
+
+.header2-title2 h1{
+    font-size: 10vw;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 12vw;
+}
+
+.portfolio-projetos{
+    padding: 0 3.5% 5% 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.portfolio-projetos-default{
+    height: 35vh;
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
 }
 
-.bg-project{
+.portfolio-projetos-bg{
     width: 100%;
-    height: 100%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+    position: relative;
 }
 
-.project-logo{
+.portfolio-projetos-bg a{
     width: 100%;
-    height: 75%;
+}
+
+.portfolio-projetos-logo{
+    width: 7.5vh;
+    height: 7.5vh;
+    left: 5%;
+    top: 5%;
+    border-radius: 15px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    position: absolute;
 }
 
-.project-logo img{
-    user-select: none;
+.portfolio-projetos-foto{
+    width: 92vw;
+    height: 20vh;
 }
 
-.cover{
+.portfolio-projetos-foto img{
+    width: 92vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.portfolio-projetos-cover{
     width: 100%;
-    height: 25%;
+    height: 15vh;
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 10%;
-    background-color: var(--color-w);
+    padding: 0 7.5%;
+    border-radius: 0 0 20px 20px;
 }
 
-.selo{
-    width: 88%;
+.portfolio-projetos-selo{
+    width: 100%;
 }
 
-.selo h2{
+.portfolio-projetos-selo h2{
     text-align:left;
     font-family: var(--font);
     font-weight: 600;
     font-size: 2.25vh;
-    line-height: 1.5vw;
-    user-select: none;
 }
 
-.selo p{
+.portfolio-projetos-selo p{
     text-align:left;
     font-family: var(--font);
     font-weight: 400;
-    font-size: 1.7vh;
-    user-select: none;
+    font-size: 1.5vh;
 }
 
-.btn-project{
-    width: 6vh;
-    height: 6vh;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-project a{
+.portfolio-projetos-tags{
+    height: 15%;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: var(--color-y);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-project i{
-    font-size: 2.25vh;
-    text-decoration: none;
-    color: var(--color-b);
-    transform: rotate(45deg);
-    transition: all 0.3s ease-in-out;
-}
-
-.solitude-bg{
-    background-color: var(--solitude-bg);
-}
-
-.solitude h2{
-    color: var(--solitude-bg);
-}
-
-.solitude img{
-    max-height: 6.5vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.coach-bg{
-    background-color: var(--coach-bg);
-}
-
-.coach h2{
-    color: var(--coach-bg);
-}
-
-.coach img{
-    max-width: 4.75vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.merula-bg{
-    background-color: var(--merula-bg);
-}
-
-.merula h2{
-    color: var(--merula-bg);
-}
-
-.merula img{
-    max-width: 14vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.up-bg{
-    background-color: var(--up-bg);
-}
-
-.up h2{
-    color: var(--up-bg);
-}
-
-.up img{
-    max-height: 6vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.dunkel-bg{
-    background-image: var(--dunkel-bg);
-}
-
-.dunkel h2{
-    color: var(--dunkel-tit);
-}
-
-.dunkel img{
-    max-width: 12vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.borogodo-bg{
-    background-color: var(--borogodo-bg);
-}
-
-.borogodo h2{
-    color: var(--borogodo-bg);
-}
-
-.borogodo img{
-    max-width: 13vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.manifesto-bg{
-    background-color: var(--manifesto-bg);
-}
-
-.manifesto h2{
-    color: var(--manifesto-bg);
-}
-
-.manifesto img{
-    max-width: 13vw;
-    transition: all 0.3s ease-in-out;
-}
-
-.coach p, .solitude p, .merula p, .up p, .dunkel p, .borogodo p, .manifesto p{
-    color: var(--color-b);
-}
-
-.controladores{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content:start;
+    gap: 7.5%;
+    margin-top: 3%;
 }
 
-.controls{
-    width: 5vw;
-    height: 6vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.controls i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.75vw;
-    width: 1.75vw;
-    font-size: 1.2vw;
+.portfolio-projetos-skills p{
+    border: 1px solid;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.25vh;
     text-align: center;
-    border-radius: 50%;
-    background-color: var(--color-w);
-    color: var(--color-b);
-    cursor: pointer;
+    width: 125%;
 }
 
-@media screen and (min-width: 1024px) {
-    .btn-project:hover{
-        width: 6.25vh;
-        height: 6.25vh;
+.coach .portfolio-projetos-cover p{
+    color: var(--coach-txt);
+}
+
+.coach .portfolio-projetos-logo img{
+    max-width: 7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.merula .portfolio-projetos-cover p{
+    color: var(--merula-txt);
+}
+
+.merula .portfolio-projetos-logo img{
+    max-width: 7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.up .portfolio-projetos-cover p{
+    color: var(--up-txt);
+}
+
+.up .portfolio-projetos-logo img{
+    max-height: 7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.borogodo .portfolio-projetos-cover p{
+    color: var(--borogodo-txt);
+}
+
+.borogodo .portfolio-projetos-logo img{
+    max-height: 9vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.manifesto .portfolio-projetos-cover p{
+    color: var(--manifesto-txt);
+}
+
+.manifesto .portfolio-projetos-logo img{
+    max-height: 11vw;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px){ 
+    .portfolio-header{
+        height: 80vh;
+        width: 100%;
+        padding: 0 7.5%;
+    }
+        
+    .header2-title1 h1{
+        font-size: 9vw;
+        line-height: 12vw;
+    }
+
+    .header2-title2 h1{
+        font-size: 9vw;
+        line-height: 12vw;
+    }
+
+    .portfolio-projetos{
+        padding: 0 7.5% 5% 7.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 10vh;
+    }
+    
+    .portfolio-projetos-default{
+        height: 50vh;
+        width: 40vw;
         transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .portfolio-projetos-bg{
+        height: 50vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        position: relative;
     }
 
-    .controls i:hover{
-        height: 1.9vw;
-        width: 1.9vw;
-    }
+    
+.portfolio-projetos-logo{
+    width: 10vh;
+    height: 10vh;
+    left: 5%;
+    top: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
-    .portfolio{
-        padding: 12.5vh 0;
-    }
-    
-    .projetos{
-        height: 50vh;
-    }
-    
-    .selo h2{
-        font-size: 2.25vh;
-        line-height: 4vw;
-    }
-    
-    .selo p{
-        font-weight: 500;
-        font-size: 1.25vh;
-    }
-
-    .btn-project{
-        width: 5vh;
-        height: 5vh;
-    }
-    
-    .btn-project i{
-        font-size: 2vh;
-    }
-
-    .controls{
-        width: 12.5vw;
-    }
-    
-    .controls i{
-        height: 5vw;
-        width: 5vw;
-        font-size: 3.25vw;
-    }
+.portfolio-projetos-foto{
+    width: 100%;
+    height: 35vh;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
-    .portfolio{
-        padding: 12.5vh 0;
-    }
-    
-    .projetos{
-        height: 50vh;
-    }
-    
-    .selo h2{
-        font-size: 2vh;
-        line-height: 4vw;
-    }
-    
-    .selo p{
-        font-weight: 500;
-        font-size: 1.3vh;
-    }
-
-    .btn-project{
-        width: 5vh;
-        height: 5vh;
-    }
-    
-    .btn-project i{
-        font-size: 2vh;
-    }
-
-    .controls{
-        width: 15vw;
-    }
-    
-    .controls i{
-        height: 6vw;
-        width: 6vw;
-        font-size: 3.5vw;
-    }
+.portfolio-projetos-foto img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
-@media screen and (max-width: 480px){   /*dispositivos móveis*/
-    .portfolio{
-        height: 75vh;
-        padding: 12.5vh 0;
-    }
+.portfolio-projetos-cover{
+    width: 100%;
+    height: 15vh;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7.5%;
+    border-radius: 0 0 20px 20px;
+}
 
-    .projetos{
-        height: 50vh;
-    }
+.portfolio-projetos-selo{
+    width: 100%;
+}
 
-    .selo h2{
-        font-size: 2.25vh;
-        line-height: 5vw;
-    }
-    
-    .selo p{
-        font-weight: 500;
-        font-size: 1.4vh;
-    }
+.portfolio-projetos-selo h2{
+    text-align:left;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 2.5vh;
+}
 
-    .btn-project{
-        width: 5.5vh;
-        height: 5.5vh;
-    }
-    
-    .btn-project i{
-        font-size: 2.25vh;
-    }
+.portfolio-projetos-selo p{
+    text-align:left;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.5vh;
+}
 
-    .controls{
-        width: 17.5vw;
-    }
-    
-    .controls i{
-        height: 7vw;
-        width: 7vw;
-        font-size: 4vw;
-    }
+.portfolio-projetos-tags{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    gap: 3.5%;
+    margin-top: 1%;
+}
+
+.portfolio-projetos-skills p{
+    border: 1px solid;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.25vh;
+    text-align: center;
+    width: 125%;
+}
+
+.coach .portfolio-projetos-logo img{
+    max-width: 2vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.merula .portfolio-projetos-logo img{
+    max-width: 2.5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.up .portfolio-projetos-logo img{
+    max-height: 2.5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.borogodo .portfolio-projetos-logo img{
+    max-height: 3vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.manifesto .portfolio-projetos-logo img{
+    max-height: 3.25vw;
+    transition: all 0.3s ease-in-out;
+}
+
 }

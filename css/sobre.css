@@ -1,98 +1,117 @@
-.sobre-bio{
-    height: 75vh;
-    width: 100vw;
-    background-color: var(--color-c);
+.header-sobre{
+    height: 20vh;
+    width: 100%;
+    padding: 5vh 3.5% 0 3.5%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 10vw;
-}
-
-.sobre-foto2{
-    display: none;
-}
-
-.sobre-foto{
-    max-width: 35vw;
-    max-height: 65vh;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.sobre-foto img:nth-child(1){
-    max-height: 65vh;
-    max-width: 20vw;
-    filter:brightness(1.1) contrast(1.2) saturate(3) grayscale(.5);
-    opacity: .8;
+.sobre-imagem{
+    flex-direction: column;
+    justify-content: center;
+    justify-content: start;
 }
 
-.sobre-foto img:nth-child(2){
-    display: none;
+.sobre-foto{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url(../images/foto-bg.jpg);
+    background-size: cover;
+    filter:brightness(1.1) contrast(1.1) saturate(2.75) grayscale(.5);
 }
 
-.sobre-conj-texto{
-    max-width: 50vw;
-    max-height: 65vh;
+.sobre-bio{
+    width: 100vw;
+    padding: 0 3.5%;
+}
+
+.position-sobre{
+    padding: 6% 0% 4% 0%;
+}
+
+.position-sobre h3{
+    font-size: 3.5vw;
+    color: var(--color-y);
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+.sobre-texto{
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.sobre-texto{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.sobre-texto h2{
-    font-family: var(--font);
-    font-weight: 600;
-    font-size: 3vw;
-    line-height: 120%;
-    margin-bottom: 1vw;
-    color: var(--color-y);
-}
-
 .sobre-texto p{
     font-family: var(--font);
     font-weight: 300;
-    font-size: 1.1vw;
-    line-height: 120%;
-    margin-bottom: 1vw;
+    font-size: 5vw;
+    line-height: 125%;
+    margin-bottom: 4vw;
     color: var(--color-w);
 }
 
+.sobre-specs{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sobre-specs p{
+    font-size: 3.5vw;
+}
+
+.sobre-skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-point-skills, .sobre-conhecimentos, .sobre-resource-design, .sobre-all-resource, .sobre-idiomas, .sobre-curriculo{
+    width: 50%;
+}
+
 .btn-sobre{
-    margin-top: 2vh;
+    width: 50%;
+    height: 4vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 .btn-curriculo{
-    border-radius: 50px;
-    width: 10vw;
-    height: 2.75vw;
-    padding: 0 .75%;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 0 3.5%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background-color: var(--color-y);
+    background-color: var(--color-w);
 }
-
 
 .btn-curriculo a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
+}
+
+.btn-yellow p{
+    font-size: 3.5vw;
+    font-family: var(--font);
+    font-weight: 500;
+    padding-left: 1.5vw;
+    color: var(--color-b);
 }
 
 .icon-download{
@@ -100,257 +119,140 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 3vw;
-    height: 2.15vw;
-    border-radius: 50px;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 40px;
     transition: all 0.3s ease-in-out;
     background-color: var(--color-b);
 }
 
 .icon-download i{
-    font-size: 1vw;
+    font-size: 2.5vw;
     text-decoration: none;
-    color: var(--color-y);
+    color: var(--color-w);
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
 }
 
+.sobre-social{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.5%;
+}
+
+.sobre-redes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-redes-sociais{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-redes-sociais i{
+    font-size: 7.5vw;
+    color: var(--color-w);
+    cursor: pointer;
+}
+
+.sobre-contatos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.sobre-dados p{
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 3.25vw;
+    line-height: 125%;
+}
+
 @media screen and (min-width: 1024px) {
-    .btn-curriculo:hover .icon-download{
-        transition: all 0.3s ease-in-out;
-        width: 37%;
-        height: 80%;
+    .header-sobre{
+        height: 80vh;
+        width: 100%;
+        padding: 0 7.5%;
     }
     
-    .btn-curriculo:hover .icon-download i{
-        transition: all 0.3s ease-in-out; 
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
     .sobre-bio{
-        flex-direction: column;
-        justify-content: center;
-        gap: 3vw;
+        padding: 0 7.5%;
     }
     
-    .sobre-foto{
-        max-width: none;
-        max-height: 30vh;
-        min-width: 80vw;
+    .position-sobre{
+        padding: 6% 0% 4% 0%;
     }
     
-    .sobre-foto img:nth-child(1){
-        display: none;
-    }
-
-    .sobre-foto img:nth-child(2){
-        max-width: none;
-        max-height: none;
-        height: 100%;
-        display: block;
-    }
-
-    .sobre-conj-texto{
-        min-width: 80vw;
-        max-height: 35vh;
-        max-width: none;
-        align-items:center;
-    }
-
-    .sobre-texto{
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
-    
-    .sobre-texto h2{
-        font-size: 4.5vw;
-        text-align: center;
+    .position-sobre h3{
+        font-size: 1vw;
     }
     
     .sobre-texto p{
-        font-size: 1.75vw;
-        text-align:justify;
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-bottom: 2.5vw;
+        color: var(--color-w);
+    }
+    
+    .sobre-specs p{
+        font-size: 3vw;
+    }
+
+    .btn-sobre{
+        width: 40%;
+        height: 12.5vh;
     }
 
     .btn-curriculo{
-        width: 23.5vw;
-        height: 7vw;
-        padding: 0 3%;
+        border-radius: 50px;
     }
-
-    .btn-yellow {
-        padding-left: 1vw;
-    }
-
 
     .btn-yellow p{
         font-size: 2.5vw;
+        color: var(--color-b);
     }
-    
+
     .icon-download{
-        width: 7.5vw;
-        height: 5.5vw;
+        width: 4.5vw;
+        height: 4.5vw;
+        border-radius: 50px;
     }
-
+    
     .icon-download i{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
-    .sobre-bio{
-        flex-direction: column;
-        justify-content: center;
-        gap: 3vw;
-    }
-    
-    .sobre-foto{
-        max-width: none;
-        max-height: 30vh;
-        min-width: 80vw;
-    }
-    
-    .sobre-foto img:nth-child(1){
-        display: none;
+        font-size: 2.25vw;
     }
 
-    .sobre-foto img:nth-child(2){
-        max-width: none;
-        max-height: none;
-        height: 100%;
-        display: block;
-    }
-
-    .sobre-conj-texto{
-        min-width: 80vw;
-        max-height: 35vh;
-        max-width: none;
-        align-items:center;
-    }
-
-    .sobre-texto{
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
-    
-    .sobre-texto h2{
-        font-size: 4.5vw;
-        text-align: center;
-    }
-    
-    .sobre-texto p{
-        font-size: 1.75vw;
-        text-align:justify;
-        line-height: 130%;
-    }
-
-    .btn-curriculo{
-        width: 23.5vw;
-        height: 7vw;
-        padding: 0 3%;
-    }
-
-    .btn-yellow {
-        padding-left: 1vw;
-    }
-
-
-    .btn-yellow p{
-        font-size: 2.5vw;
-    }
-    
-    .icon-download{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-download i{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 480px){   /*dispositivos móveis*/
-    .sobre-bio{
-        flex-direction: column;
-        justify-content: center;
-        gap: 3vw;
-        justify-content: start;
-        
-    }
-    
-    .sobre-foto2{
-        display: block;
+    .sobre-social{
         width: 100vw;
-        height: 22.5vh;
-        background-image: url(../images/foto-bg.jpg);
-        background-size: cover;
-        background-position-y: 55%;
+    }
+
+    .sobre-redes-sociais{
+        width: 75%;
     }
     
-    .sobre-foto{
-        display: none;
+    .sobre-redes-sociais i{
+        font-size: 5vw;
     }
 
-    .sobre-conj-texto{
-        max-width: none;
-        max-height: none;
-        width: 80vw;
-        height: 52.5vh;
-        align-items:center;
-        justify-content: center;
-    }
-
-    .sobre-texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: none;
-        max-width: none;
-    }
-    
-    .sobre-texto h2{
-        font-size: 5.5vw;
-        text-align: center;
-        margin-bottom: 5vw;
-    }
-    
-    .sobre-texto p{
-        font-size: 2.75vw;
-        text-align:justify;
-        line-height: 130%;
-        margin-bottom: 3vw;
-    }
-
-    .btn-curriculo{
-        width: 23.5vw;
-        height: 7vw;
-        padding: 0 3%;
-    }
-
-    .btn-yellow {
-        padding-left: 1vw;
-    }
-
-
-    .btn-yellow p{
-        font-size: 2.5vw;
-    }
-    
-    .icon-download{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-download i{
-        font-size: 2vw;
+    .sobre-dados p{
+        color: var(--color-w);
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 2.25vw;
+        line-height: 150%;
     }
 }

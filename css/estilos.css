@@ -144,7 +144,8 @@
     --borogodo-bg: #fab43c;
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
-    --manifesto-txt: #ffae6c;
+    --manifesto-tit: #b58040;
+    --manifesto-txt: #ffffff;
     --manifesto-bg: #000a13;
     --dimaitre-txt: #eac087;
     --dimaitre-bg: #136552;
@@ -264,21 +265,22 @@ body{
 
 header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    height: 12.5vh;
+    justify-content: space-between;
+    height: 5vh;
     width: 100%;
-    padding: 0 5vw;
+    padding: 0 3.5%;
     background-color:var(--color-b);
+    position: fixed;
+    z-index: 2;
 }
 
-.logo a{
-    transition: all 0.3s ease-in-out;
+.logo{
+    z-index: 5;
 }
 
 .logo svg{
-    height: 2.5vw;
+    height: 2.75vh;
 }
 
 .menu{
@@ -288,7 +290,7 @@ header{
 nav{
     position: fixed;
     height: 100vh;
-    min-width: 25vw;
+    width: 100vw;
     top: 0;
     right: 0;
     z-index: 3;
@@ -298,16 +300,17 @@ nav{
     padding: 0 5vw;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-list{
-    width: 100%;
-    height: 22.5vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: left;
-    margin-top: 12.5vh;
+    margin-top: 32.5vh;
+    line-height: 12.5vw;
 }
 
 .menu-list li{
@@ -315,25 +318,21 @@ nav{
 }
 
 .menu-list li a{
-    max-width: 50%;
-    min-height: 6vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 1.1vw;
+    font-size: 10vw;
     color: var(--color-w);
     font-family: var(--font);
+    font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
 
 .infos{
     width: 100%;
-    height: 17.5vh;
+    height: 12.5vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: left;
-    margin-bottom: 12.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .social{
@@ -345,7 +344,7 @@ nav{
 }
 
 .social i{
-    font-size: 2vw;
+    font-size: 8vw;
     color: var(--color-w);
     cursor: pointer;
 }
@@ -361,46 +360,54 @@ nav{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    font-size: .8vw;
+    font-size: 3.75vw;
+    line-height: 125%;
 }
 
 .open-nav-btn{
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     transition: 0.3s ease-in-out;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     cursor: pointer;
 }
 
 .close-nav-btn{
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     transition: 0.3s ease-in-out;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     position: fixed;
     z-index: 4;
     cursor: pointer;
 }
 
-.open-bars, .close-bars{
+.open-bars{
     position: absolute;
     display: block;
-    border-radius: 40px;
-    height: 0.5vh;
-    width: 65%;
+    height: 7.5%;
+    width: 60%;
+    background-color: var(--color-w);
+}
+
+.close-bars{
+    position: absolute;
+    display: block;
+    height: 7.5%;
+    width: 60%;
     background-color: var(--color-w);
 }
 
 .open-bars:nth-child(1){
-    top: 1.65vh;
+    top: 1.15vh;
 }
 
 .open-bars:nth-child(2){
@@ -408,7 +415,7 @@ nav{
 }
 
 .open-bars:nth-child(3){
-    bottom: 1.65vh;
+    bottom: 1.15vh;
 }
 
 .close-bars:nth-child(1){
@@ -419,634 +426,566 @@ nav{
     transform: rotate(45deg);
 }
 
-.chamada{
-    height: 75vh;
+.header2{
+    height: 20vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.dgd-chamada{
-    background-image: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 55%, rgb(18, 18, 18) 100%);
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    position: absolute;
-    opacity: 1;
-}
-
-.bg-chamada{
-    background-image: url(../images/foto-bg.jpg);
-    background-size: cover;
-    background-position-y:35%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    filter:brightness(1.2) contrast(1.2) saturate(3) grayscale(.5);
-    opacity: .5;
-    z-index: -1;
-}
-
-.hero{
-    width: 100vw;
-    height: 24vw;
-    padding: 0 5vw;
+    padding: 5vh 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    z-index: 1;
+    justify-content: center;
 }
 
-.titulo{
-    font-family: var(--font);
-    font-weight: 600;
-    font-size: 6.5vw;
-    line-height: 95%;
-    color: var(--color-y);
-    width:fit-content;
-}
-
-.subtitulo{
-    margin-top: 1vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.subtitulo p{
+.header2-title1 h1{
+    font-size: 10vw;
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
+    line-height: 12vw;
+}
+
+.header2-row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.header2-title2{
+    width: 80%;
+}
+
+.header2-title2 h1{
+    font-size: 10vw;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 12vw;
+}
+
+.header2-infos{
+    width: 20%;
+}
+
+.header2-data{
+    margin-bottom: 20px;
+    display: none;
+}
+
+.header2-data p{
     font-size: 1vw;
+    color: var(--color-y);
+    font-family: var(--font);
+    font-weight: 400;
 }
 
-
-.btns{
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 1.5vw;
+.header2-functions{
+    display: none;
 }
 
-.btn-port{
-    border-radius: 50px;
-    width: 10vw;
-    height: 3vw;
-    padding: 0 .5%;
-    cursor: pointer;
+.header2-functions p{
+    font-size: 2.25vw;
+    line-height: 5.25vh;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+.video-intro{
+    width: 100%;
+    background-color: #333333;
+    aspect-ratio: 16/9;
+}
+
+.position{
+    padding: 6% 3.5% 4% 3.5%;
+}
+
+.position h3{
+    font-size: 3.5vw;
+    color: var(--color-y);
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+.resumo{
+    width: 100%;
+    padding: 0% 3.5%;
+}
+
+.resumo p{
+    font-size: 6vw;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 400;
+    line-height: 6.75vw;
+}
+
+p, img, h2{
+    user-select: none;
+}
+
+.portfolio{
+    width: 100vw;
+    background-color: var(--color-b);
+    margin-bottom: 2.5vh;
+}
+
+.projetos{
+    height: 45vh;
     transition: all 0.3s ease-in-out;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--color-y);
+    flex-direction: column;
 }
 
-.btn-about{
-    width: 8vw;
-    height: 3vw;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.bg-project{
+    width: 100%;
+    height: 45vh;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    border-radius: 30px;
+    position: relative;
 }
 
-.btn-port a, .btn-about a{
+.bg-project a{
+    width: 100%;
+}
+
+.project-logo{
+    width: 7.5vh;
+    height: 7.5vh;
+    left: 5%;
+    top: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.project-foto{
+    width: 100%;
+    height: 30vh;
+}
+
+.project-foto img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+.cover{
+    width: 100%;
+    height: 15vh;
+    transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    padding: 0 7.5%;
+    border-radius: 0 0 30px 30px;
 }
 
-.btn-yellow {
+.selo{
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding-left: 1vw;
-    align-items: center;
 }
 
-.btn-invi {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-.btn-yellow p{
+.selo h2{
+    text-align:left;
     font-family: var(--font);
-    font-size: 1vw;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--color-b);
-    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 2.52vh;
 }
 
-.btn-invi p{
+.selo p{
+    text-align:left;
     font-family: var(--font);
-    font-size: 1vw;
     font-weight: 400;
-    text-decoration: none;
-    color: var(--color-w);
-    transition: all 0.3s ease-in-out;
+    font-size: 1.7vh;
 }
 
-.icon-abrir{
+.project-tags{
+    height: 15%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 3vw;
-    height: 2.15vw;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-b);
+    justify-content:start;
+    gap: 7.5%;
+    margin-top: 3%;
 }
 
-.icon-abrir i{
-    font-size: 1vw;
-    text-decoration: none;
-    color: var(--color-y);
-    transform: rotate(90deg);
+.project-skills p{
+    border: 1px solid;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.25vh;
+    text-align: center;
+    width: 125%;
+}
+
+.coach-bg{
+    background-color: var(--coach-bg);
+}
+
+.coach h2{
+    color: var(--coach-tit);
+}
+
+.coach .cover p{
+    color: var(--coach-txt);
+}
+
+.coach .project-logo img{
+    max-width: 7vw;
     transition: all 0.3s ease-in-out;
 }
 
-.icon-abrir2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 3vw;
-    height: 2.15vw;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-w);
+.merula-bg{
+    background-color: var(--merula-bg);
 }
 
-.icon-abrir2 i{
-    font-size: 1vw;
-    text-decoration: none;
+.merula h2{
+    color: var(--merula-tit);
+}
+
+.merula .cover p{
+    color: var(--merula-txt);
+}
+
+.merula .project-logo img{
+    max-width: 7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.up-bg{
+    background-color: var(--up-bg);
+}
+
+.up h2{
+    color: var(--up-txt);
+}
+
+.up .cover p{
+    color: var(--up-txt);
+}
+
+.up .project-logo img{
+    max-height: 7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.borogodo-bg{
+    background-color: var(--borogodo-bg);
+}
+
+.borogodo h2{
+    color: var(--borogodo-txt);
+}
+
+.borogodo .cover p{
+    color: var(--borogodo-txt);
+}
+
+.borogodo .project-logo img{
+    max-height: 9vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.manifesto-bg{
+    background-color: var(--manifesto-bg);
+}
+
+.manifesto h2{
+    color: var(--manifesto-tit);
+}
+
+.manifesto .cover p{
+    color: var(--manifesto-txt);
+}
+
+.manifesto .project-logo img{
+    max-height: 11vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.coach p, .solitude p, .merula p, .up p, .dunkel p, .borogodo p, .manifesto p{
     color: var(--color-b);
-    transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
+}
+
+.controladores{
+    width: 100vw;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-right: 7.5vw;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1vw;
+}
+
+.controls i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+    width: 2vw;
+    font-size: 1.25vw;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-w);
+    color: var(--color-b);
+    cursor: pointer;
 }
 
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 3.5%;
     width: 100%;
-    height: 12.5vh;
-    background-color: var(--color-b);
+    height: 5vh;
+    border-top: 2px solid var(--color-c);
 }
 
 .creditos p{
     font-family: var(--font);
     color: var(--color-w);
-    text-align: center;
-    font-size: .7vw;
-    font-weight: 300;
+    font-size: 3vw;
+    font-weight: 400;
 }
 
 @media screen and (min-width: 1024px) {
+    header{
+        height: 17.5vh;
+        padding: 0 7.5%;
+    }
+
+    .logo svg{
+        height: 5vh;
+    }
+
     .logo:hover path{
         fill: var(--color-y);
         transition: all 0.3s ease-in-out;
     }
 
+    .open-nav-btn{
+        display: none;
+    }
+
+    .close-nav-btn{
+        display: none;
+    }
+
+    nav{
+        position: relative;
+        height: 5vh;
+        width: 33.3vw;
+        display: flex;
+        background-color: var(--color-b);
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .menu-list{
+        width: 75%;
+        flex-direction: row;
+        margin-top: 0;
+        line-height: 0;
+    }
+    
+    .menu-list li{
+        width: 50%;
+    }
+    
+    .menu-list li a{
+        max-width: 50%;
+        min-height: 6vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 1vw;
+    }
+    
     .menu-list li a:hover{
         color: var(--color-y);
         transition: all 0.3s ease-in-out;
+    }
+
+    .infos{
+        width: 25%;
+        height: 5vh;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .redes{
+        width: 100%;
+    }
+
+    .social{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social i{
+        font-size: 1.5vw;
+        color: var(--color-w);
+        cursor: pointer;
     }
 
     .social i:hover{
         color: var(--color-y);
     }
 
-    .open-nav-btn:hover .open-bars{
-        background-color: var(--color-y);
-    }
-    
-    .close-nav-btn:hover .close-bars{
-        background-color: var(--color-y);
-    }
-    
-    .btn-port:hover .icon-abrir{
-        transition: all 0.3s ease-in-out;
-        width: 3.25vw;
-        height: 2.3vw;
-    }
-    
-    .btn-about:hover .icon-abrir2{
-        transition: all 0.3s ease-in-out;
-        width: 3.25vw;
-        height: 2.3vw;
-    }
-    
-    .btn-port:hover .icon-abrir i{
-        transition: all 0.3s ease-in-out; 
-    }
-}
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){  /*telas pequenas, laptops*/
-
-    .logo svg{
-        height: 7vw;
-    }
-
-    nav{
-        width: 80vw;
-        padding: 0 10vw;
-    }
-
-    .menu-list{
-        margin-top: 11vh;
-    }
-
-    .menu-list li a{
-        font-size: 3vw;
-    }
-
-    .infos{
-        height: 15vh;
-    }
-
-    .social{
-        width: 40%;
-    }
-
-    .social i{
-        font-size: 5.5vw;
-    }
-
-    .dados p{
-        font-weight: 300;
-        font-size: 2.25vw;
-    }
-
-    .open-bars, .close-bars{
-        border-radius: 50px;
-        height: 0.5vh;
-        width: 80%;
-    }
-
-    .open-bars:nth-child(1){
-        top: 1vw;
-    }
-    
-    .open-bars:nth-child(2){
-        opacity: 1;
-    }
-    
-    .open-bars:nth-child(3){
-        bottom: 1vw;
-    }
-
-    .dgd-chamada{
-        background-image: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 75%, rgb(18, 18, 18) 100%);
-    }
-
-    .bg-chamada{
-        background-position-x: 40%;
-    }
-
-    .hero{
-        height: 45vw;
-        margin-top: 20vh;
-    }
-
-    .titulo{
-        font-size: 12.5vw;
-    }
-
-    .subtitulo{
-        width: 70vw;
-    }
-
-    .subtitulo p{
-        font-weight: 400;
-        font-size: 2.75vw;
-    }
-
-    .btns{
-        gap: 3vw;
-    }
-
-    .btn-port{
-        width: 23.5vw;
-        height: 7vw;
-        padding: 0 1%;
-    }
-
-    .btn-about{
-        width: 22vw;
-        height: 7vw;
-    }
-
-    .btn-yellow {
-        padding-left: 1vw;
-    }
-
-    .btn-invi{
-        padding-left: 1vw;
-    }
-
-    .btn-yellow p, .btn-invi p{
-        font-size: 2.5vw;
-    }
-    
-    .icon-abrir{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-abrir i{
-        font-size: 2vw;
-    }
-
-    .icon-abrir2{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-abrir2 i{
-        font-size: 2vw;
-    }
-
-    .creditos p{
-        font-size: 1.75vw;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){   /*iPads, tablets*/
-
-    .logo svg{
-        height: 8vw;
-    }
-
-    nav{
-        width: 80vw;
-        padding: 0 10vw;
-    }
-
-    .menu-list{
-        margin-top: 12vh;
-    }
-
-    .menu-list li a{
-        font-size: 2.75vw;
-    }
-
-    .infos{
-        height: 15vh;
-    }
-
-    .social{
-        width: 37.5%;
-    }
-
-    .social i{
-        font-size: 5.5vw;
-    }
-
-    .dados p{
-        font-weight: 400;
-        font-size: 2vw;
-    }
-
-    .open-bars, .close-bars{
-        border-radius: 50px;
-        height: 0.5vh;
-        width: 80%;
-    }
-
-    .open-bars:nth-child(1){
-        top: 1.3vw;
-    }
-    
-    .open-bars:nth-child(2){
-        opacity: 1;
-    }
-    
-    .open-bars:nth-child(3){
-        bottom: 1.3vw;
-    }
-
-    .dgd-chamada{
-        background-image: linear-gradient(90deg, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 75%, rgb(18, 18, 18) 100%);
-    }
-
-    .bg-chamada{
-        background-position-x: 40%;
-    }
-
-    .hero{
-        height: 45vw;
-        margin-top: 20vh;
-    }
-
-    .titulo{
-        font-size: 12.5vw;
-    }
-
-    .subtitulo{
-        width: 70vw;
-    }
-
-    .subtitulo p{
-        font-weight: 400;
-        font-size: 2.75vw;
-    }
-
-    .btns{
-        gap: 3vw;
-    }
-
-    .btn-port{
-        width: 23.5vw;
-        height: 7vw;
-        padding: 0 1%;
-    }
-
-    .btn-about{
-        width: 22vw;
-        height: 7vw;
-    }
-
-    .btn-yellow {
-        padding-left: 1vw;
-    }
-
-    .btn-invi{
-        padding-left: 1vw;
-    }
-
-    .btn-yellow p, .btn-invi p{
-        font-size: 2.5vw;
-    }
-    
-    .icon-abrir{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-abrir i{
-        font-size: 2vw;
-    }
-
-    .icon-abrir2{
-        width: 7.5vw;
-        height: 5.5vw;
-    }
-
-    .icon-abrir2 i{
-        font-size: 2vw;
-    }
-
-    .creditos p{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 480px){   /*dispositivos móveis*/
-    .logo svg{
-        height: 10vw;
-    }
-
-    nav{
-        width: 80vw;
-        padding: 0 10vw;
-    }
-
-    .menu-list{
-        margin-top: 12vh;
-    }
-
-    .menu-list li a{
-        font-size: 4.25vw;
-    }
-
-    .infos{
-        height: 12.5vh;
-    }
-
-    .social{
-        width: 45%;
-    }
-
-    .social i{
-        font-size: 6.5vw;
-    }
-
-    .dados p{
-        font-weight: 400;
-        font-size: 3vw;
-    }
-
-    .open-bars, .close-bars{
-        border-radius: 50px;
-        height: 0.5vh;
-        width: 65%;
-    }
-
-    .open-bars:nth-child(1){
-        top: 3.5vw;
-    }
-    
-    .open-bars:nth-child(2){
-        opacity: 1;
-    }
-    
-    .open-bars:nth-child(3){
-        bottom: 3.5vw;
-    }
-
-    .bg-chamada{
-        background-image: url(../images/foto-bio.jpg);
-        background-position-x: 100%;
-    }
-
-    .hero{
-        margin-top: 30vh;
-        align-items: center;
+    .dados{
+        display: none;
+    }
+
+    .header2{
+        height: 80vh;
+        width: 100%;
+        padding: 17.5vh 7.5% 0 7.5%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
-    .titulo{
-        font-size: 20vw;
-        text-align: center;
-    }
-
-    .subtitulo{
-        width: 95%;
-    }
-
-    .subtitulo p{
-        font-size: 3.25vw;
-        text-align: center;
-        font-weight: 500;
-    }
-
-    .btns{
-        gap: 3vw;
-    }
-
-    .btn-port{
-        width: 32.5vw;
-        height: 11vw;
-        padding: 0 2%;
-    }
-
-    .btn-about{
-        width: 30vw;
-        height: 11vw;
-    }
-
-    .btn-yellow {
-        padding-left: 2vw;
-    }
-
-    .btn-invi{
-        padding-left: 1vw;
-    }
-
-    .btn-yellow p, .btn-invi p{
-        font-size: 3.5vw;
+    .header2-title1 h1{
+        font-size: 7.5vw;
+        line-height: 7.5vw;
     }
     
-    .icon-abrir{
-        width: 10vw;
-        height: 7.5vw;
+    .header2-title2 h1{
+        font-size: 7.5vw;
+        line-height: 7.5vw;
     }
 
-    .icon-abrir i{
-        font-size: 2.75vw;
+    .header2-data{
+        display: block;
     }
 
-    .icon-abrir2{
-        width: 10vw;
-        height: 7.5vw;
+    .header2-functions{
+        display: block;
     }
 
-    .icon-abrir2 i{
-        font-size: 2.75vw;
+    .position{
+        padding: 4% 7.5% 2% 7.5%;
+    }
+    
+    .position h3{
+        font-size: 1vw;
     }
 
+    .resumo{
+        padding: 0% 7.5%;
+    }
+
+    .resumo p{
+        font-size: 3.25vw;
+        line-height: 4.25vw;
+        font-weight: 300;
+    }
+
+    .portfolio{
+        margin-bottom: 0;
+    }
+
+    .projetos{
+        height: 60vh;
+        margin: 0 0 4vh 0;
+    }
+
+    .bg-project{
+        height: 60vh;
+    }
+
+    .project-logo{
+        width: 8vh;
+        height: 8vh;
+    }
+    
+    .project-foto{
+        height: 40vh;
+    }
+    
+    .project-foto img{
+        height: 40vh;
+    }
+    
+    .cover{
+        height: 20vh;
+    }
+    
+    .selo h2{
+        font-size: 2.5vh;
+    }
+    
+    .selo p{
+        font-size: 1.75vh;
+    }
+
+    .project-tags{
+        height: 20%;
+        gap: 5%;
+        margin-top: 5%;
+    }
+    
+    .project-skills p{
+        font-size: 1.3vh;
+    }
+
+    .coach .project-logo img{
+        max-width: 1.75vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .merula .project-logo img{
+        max-width: 2vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .up .project-logo img{
+        max-height: 2vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .borogodo .project-logo img{
+        max-height: 2.25vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .manifesto .project-logo img{
+        max-height: 3vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .controladores{
+        display: flex;
+        padding: 0 7.5% 1.75% 7.5%;
+    }
+
+    footer{
+        padding: 0 7.5%;
+        height: 10vh;
+    }
+    
     .creditos p{
-        font-size: 2.75vw;
+        font-family: var(--font);
+        color: var(--color-w);
+        font-size: .6vw;
+        font-weight: 400;
     }
 }
