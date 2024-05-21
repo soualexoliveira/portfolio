@@ -1,4 +1,35 @@
-/*PAGINAS DOS PROJETOS*/
+.header2-logo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: center;
+    height: 14vh;
+}
+
+.header2-logo img{
+    width: 15vw;
+}
+
+.header2-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header2-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header2-desc h2{
+    font-size: 2.5vw;
+    color: var(--color-w);
+    font-family: var(--font);
+    font-weight: 300;
+}
+
 .port-container{
     width: 100%;
     display: flex;
@@ -6,50 +37,6 @@
     justify-content: start;
     align-items: center;
     overflow: hidden;
-}
-
-.port-cabecalho{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.port-logo{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.port-logo img{
-    max-width: 26vw;
-    max-height: 24vh;
-}
-
-.overlay-bglogo{
-    width: 100%;
-    height: 100%;
-    opacity: .9;
-    position: absolute;
-    top: 0;
-}
-
-.port-bglogo{
-    width: 100%;
-    height: 100%;
-}
-
-.port-bglogo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 .imgs-project{
@@ -77,8 +64,8 @@
     color: var(--color-w);
     position: absolute;
     top: 0;
-    right: 5vw;
-    font-size: 2.5em;
+    right: 3.5vw;
+    font-size: 10vw;
     cursor: pointer;
     font-family: var(--font);
     font-weight: 300;
@@ -86,16 +73,12 @@
     z-index: 5;
 }
 
-#bt_close:hover, #bt_prev:hover, #bt_next:hover{
-    color: var(--color-y);
-}
-
 #bt_next{
     color: var(--color-w);
     position: absolute;
-    top: 50vh;
-    right: 5vw;
-    font-size: 2.5em;
+    top: 47.25vh;
+    right: 3.5vw;
+    font-size: 10vw;
     cursor: pointer;
     font-family: var(--font);
     font-weight: 400;
@@ -106,9 +89,9 @@
 #bt_prev{
     color: var(--color-w);
     position: absolute;
-    top: 50vh;
-    left: 5vw;
-    font-size: 2.5em;
+    top: 47.25vh;
+    left: 3.5vw;
+    font-size: 10vw;
     cursor: pointer;
     font-family: var(--font);
     font-weight: 400;
@@ -119,9 +102,9 @@
 .modal_content{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width: 90vw;
+    align-items:center;
+    height: 100%;
+    max-width: 100vw;
     z-index: 5;
 }
 
@@ -154,6 +137,20 @@
 }
 
 /*UP*/
+#inicio-up{
+    background-color: var(--up-bg);
+}
+
+.header2-up{
+    height: 30vh;
+    width: 100%;
+    padding: 10vh 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--up-bg);
+}
+
 .port-projeto-up{
     width: 100%;
     display: flex;
@@ -163,14 +160,15 @@
 }
 
 .sobre-up{
-    margin: 1.5% 0;
-    padding: 0 5%;
+    margin: 0;
+    padding: 0 3.5%;
 }
+
 .sobre-up p, .sobre-up ul{
-    margin: 1.5% 0;
+    margin: 3% 0;
     color: var(--up-bg);
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 3vw;
     list-style: none;
 }
 
@@ -179,7 +177,7 @@
 }
 
 .conceito-up{
-    height: 60vh;
+    height: 17.5vh;
     width: 100vw;
 }
 
@@ -190,7 +188,6 @@
 }
 
 .versoes-up{
-    height: 35vh;
     width: 100vw;
 }
 
@@ -202,53 +199,57 @@
 
 .cores-up{
     display: flex;
-    flex-direction: row;
-    height: 65vh;
+    flex-direction: column;
+    height: 40vh;
     width: 100vw;
 }
 
 .cor-up{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    width: 50vw;
+    width: 100vw;
+    height: 7.5vh;
 }
+
 .cor-up-azul{
     background-color: var(--up-bg);
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-left: 5vw;
+    padding-left: 3.5vw;
 }
 
 .cor-up-azul p{
     color: var(--up-txt);
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 2.25vw;
     list-style: none;
 }
 
 .cor-up-branco{
     background-color: var(--up-txt);
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-left: 5vw;
+    padding-left: 3.5vw;
 }
 
 .cor-up-branco p{
     color: var(--up-bg);
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 2.25vw;
     list-style: none;
 }
 
 .papelaria{
-    width: 50vw;
+    width: 100vw;
+    height: 32.5vh;
+    display: flex;
 }
 
 .papelaria img{
@@ -257,9 +258,10 @@
     object-fit: cover;
 }
 
+
 .tipo-up{
     width: 100vw;
-    height: 70vh;
+    height: 25vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -269,7 +271,7 @@
 }
 
 .tipo-up-section1{
-    width: 25%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -280,26 +282,26 @@
 .tipo-up-tit h2{
     color: var(--up-txt);
     font-weight: 400;
-    font-size: 4.5vw;
+    font-size: 8vw;
     list-style: none;
 }
 
 .tipo-up-tit h3{
     color: var(--up-txt);
     font-weight: 300;
-    font-size: 1.1vw;
+    font-size: 2vw;
     list-style: none;
 }
 
 .tipo-up-section1 p{
     color: var(--up-txt);
     font-weight: 400;
-    font-size: 1.1vw;
+    font-size: 2vw;
     list-style: none;
 }
 
 .tipo-up-section2{
-    width: 25%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -316,21 +318,21 @@
 .tipo-up-a p:nth-child(1){
     color: var(--up-txt);
     font-weight: 400;
-    font-size: 9vw;
+    font-size: 13vw;
     list-style: none;
 }
 
 .tipo-up-a p:nth-child(2){
     color: var(--up-txt);
     font-weight: 600;
-    font-size: 9vw;
+    font-size: 13vw;
     list-style: none;
 }
 
 .tipo-up-alfabeto p{
     color: var(--up-txt);
     font-weight: 300;
-    font-size: 1.55vw;
+    font-size: 2.5vw;
     list-style: none;
 }
 
@@ -341,7 +343,7 @@
 
 .tipo-up-pesos p{
     color: var(--up-txt);
-    font-size: 1.25vw;
+    font-size: 2.25vw;
     list-style: none;
 }
 
@@ -379,37 +381,39 @@
 
 .papelaria-n-obrigatoria{
     width: 100vw;
-    height: 90vh;
+    height: 45vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .certificado-up{
-    width: 60%;
+    width: 100%;
+    height: 30vh;
 }
 
 .certificado-up img{
     width: 100%;
-    height: 100%;
+    height: 30vh;
     object-fit: cover;
 }
 
 .livros-up{
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
 }
 
 .livro-up1{
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .livro-up-lado{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .livros-up img{
@@ -422,7 +426,7 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 80vh;
+    height: 20vh;
 }
 
 .camisas{
@@ -431,7 +435,7 @@
 
 .camisas img{
     width: 70vw;
-    height: 80vh;
+    height: 20vh;
     object-fit: cover;
     object-position: top;
 }
@@ -442,13 +446,13 @@
 
 .moletom img{
     width: 30vw;
-    height: 80vh;
+    height: 20vh;
     object-fit: cover;
 }
 
 .mapa-up{
     width: 100vw;
-    height: 85vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,88 +460,88 @@
 }
 
 .mapa-up img{
-    width: 70vw;
-    height: 85vh;
+    width: 93vw;
+    height: 30vh;
     object-fit: cover;
 }
 
 .site-up{
     display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 110vw;
 }
 
 .site-up1{
-    width: 50vw;
-    height: 110vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 .site-up2{
-    width: 50vw;
-    height: 110vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 .site-up1 img{
     width: 100%;
-    height: 110vw;
+    height: 100vh;
     object-fit: cover;
 }
 
 .site-up2 img{
     width: 100%;
-    height: 110vw;
+    height: 100vh;
     object-fit: cover;
 }
 
 .app-up{
     width: 100vw;
-    height: 80vh;
+    height: 22.5vh;
 }
 
 .app-up img{
     width: 100vw;
-    height: 80vh;
+    height: 22.5vh;
     object-fit: cover;
 }
 
 .posts-up{
     width: 100vw;
-    height: 80vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     background-color: var(--up-txt);
 }
 
 .posts-up img{
-    width: 80vw;
-    height: 80vh;
+    width: 93vw;
+    height: 20vh;
     object-fit: cover;
 }
 
 .perfil-up{
     width: 100vw;
-    height: 70vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     background-color: var(--up-txt);
 }
 
 .perfil-up img{
-    width: 80vw;
-    height: 70vh;
+    width: 93vw;
+    height: 25vh;
     object-fit: cover;
 }
 
 .marketing-up{
     width: 100vw;
-    height: 50vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
 }
 
 .metro-up{
     width: 65vw;
-    height: 50vh;
+    height: 20vh;
 }
 
 .metro-up img{
@@ -548,7 +552,7 @@
 
 .onibus-up{
     width: 35vw;
-    height: 50vh;
+    height: 20vh;
 }
 
 .onibus-up img{
@@ -559,17 +563,36 @@
 
 .metro-video-up{
     width: 100vw;
-    height: 60vh;
+    height: 20vh;
 }
 
 .metro-video-up video{
     width: 100vw;
-    height: 60vh;
+    height: 20vh;
     object-fit: cover;
     object-position: top;
 }
 
+.footer-up{
+    background-color: var(--up-bg);
+    border-top: none;
+}
+
 /*MERULA*/
+#inicio-merula{
+    background-color: var(--merula-bg);
+}
+
+.header2-merula{
+    height: 30vh;
+    width: 100%;
+    padding: 10vh 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--merula-bg);
+}
+
 .port-projeto-merula{
     padding: 0%;
     width: 100%;
@@ -580,7 +603,7 @@
 
 .merula-preset1{
     width: 100vw;
-    padding: 5vh 0;
+    padding: 1vh 0;
     background-color: var(--merula-txt);
     display: flex;
     flex-direction: column;
@@ -591,8 +614,8 @@
 .merula-preset1-header{
     display: flex;
     flex-direction: row;
-    height: 5vh;
-    width: 85vw;
+    height: 3vh;
+    width: 93vw;
     align-items: center;
     justify-content: space-between;
     color: var(--merula-bg);
@@ -600,37 +623,39 @@
 
 .merula-preset1-indice h4{
     font-weight: 400;
+    font-size: 2.5vw;
 }
 
 .merula-preset-logo{
-    width: 3vh;
-    height: 3vh;
+    width: 1.5vh;
+    height: 1.5vh;
 }
 
 .merula-sobre{
     display: flex;
-    flex-direction: row;
-    height: 55vh;
-    width: 85vw;
+    flex-direction: column;
+    height: 35vh;
+    width: 93vw;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .merula-sobre-titulo{
-    width: 35%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    margin-bottom: 4vw;   
 }
 
 .merula-sobre-titulo h2{
-    font-size: 4.8em;
+    font-size: 7vw;
     color: var(--merula-bg);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .merula-sobre-texto{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -638,9 +663,10 @@
 }
 
 .merula-sobre-texto p{
-    font-size: 1.2em;
+    font-size: 3.25vw;
     color: var(--merula-txt2);
-    font-weight: 300;
+    font-weight: 200;
+    margin-bottom: 2vw;
 }
 
 .merula-poster{
@@ -653,44 +679,21 @@
     cursor: pointer;
 }
 
-.merula-preset2{
-    width: 100vw;
-    padding: 5vh 0 7.5vh 0;
-    background-color: var(--merula-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.merula-preset2-header{
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 85vw;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--merula-tit);
-}
-
-.merula-preset2-indice h4{
-    font-weight: 400;
-}
-
 .merula-processo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
+    height: 57.5vh;
     align-items: center;
-    padding: 10vh 7.5vw;
+    padding: 3.5vh 0;
     justify-content: space-between;
     background-image: url(../images/pages/merula/bg-project.jpg);
-    background-size: contain;
+    background-size: cover;
     background-color: var(--merula-tit);
 }
 
 .merula-processo img{
-    width: 41.5vw;
+    width: 93vw;
     cursor: pointer;
 }
 
@@ -702,14 +705,16 @@
 
 .merula-papelaria img{
     width: 100%;
+    height: 25vh;
+    object-fit: cover;
     cursor: pointer;
 }
 
 .merula-cores{
     width: 100vw;
-    height: 85vh;
+    height: 25vh;
     background-image: url(../images/pages/merula/bg-color.jpg);
-    background-size: contain;
+    background-size: cover;
     background-color: var(--color-w);
     display: flex;
     justify-content: center;
@@ -717,43 +722,43 @@
 }
 
 .merula-cores-palette img{
-    width: 85vw;
+    width: 93vw;
     cursor: pointer;
 }
 
 .merula-tipografia{
     display: flex;
     flex-direction: column;
-    height: 55vh;
-    width: 85vw;
+    height: 35vh;
+    width: 93vw;
     align-items: center;
     justify-content: center;
     gap: 4vh;
 }
 
 .merula-tipografia-top{
-    width: 80vw;
+    width: 93vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     gap: 5vw;
 }
 
 .merula-tipografia-titulo{
-    width: 40vw;
+    width: 93vw;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .merula-tipografia-titulo p{
-    font-size: 5em;
+    font-size: 7vw;
     color: var(--merula-bg);
     font-weight: 300;
 }
 
 .merula-tipografia-info{
-    width: 40vw;
+    width: 93vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -761,35 +766,35 @@
 }
 
 .merula-tipografia-info p{
-    font-size: 1.15em;
+    font-size: 3.25vw;
     color: var(--merula-txt2);
     font-weight: 200;
 }
 
 .merula-tipografia-bottom{
-    width: 80vw;
+    width: 93vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 5vw;
 }
 
 .merula-tipografia-alfabeto{
-    width: 40vw;
+    width: 93vw;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: end;
+    align-items: center;
 }
 
 .merula-tipografia-alfabeto p{
-    font-size: 1.7em;
+    font-size: 4.25vw;
     color: var(--merula-txt2);
     font-weight: 300;
 }
 
 .merula-tipografia-familyfont{
-    width: 40vw;
+    width: 93vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -801,9 +806,9 @@
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content:left;
+    justify-content:center;
     gap: 3vw;
-    font-size: 1.8em;
+    font-size: 3.25vw;
     color: var(--merula-txt2);
 }
 
@@ -851,23 +856,48 @@
 }
 
 .merula-cards img{
-    width: 85vw;
+    width: 93vw;
     cursor: pointer;
 }
 
-.merula-application{
-    margin-top: 5vh;
+.merula-preset2{
+    width: 100vw;
+    padding: 1vh 0 2vh 0;
+    background-color: var(--merula-bg);
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+.merula-preset2-header{
+    display: flex;
+    flex-direction: row;
+    height: 3vh;
+    width: 93vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.merula-preset2-indice h4{
+    font-weight: 400;
+    color: var(--merula-tit);
+    font-size: 2.5vw;
+}
+
+.merula-application{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     align-items: center;
     background-color: var(--merula-bg);
-    height: 65vh;
+    height: 15vh;
     width: 100vw;
 }
 
 .apl-one, .apl-two{
-    width: 85vw;
+    width: 93vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -879,27 +909,26 @@
     cursor: pointer;
 }
 
-.merula-socialmedia{
-    display: flex;
-    justify-content:center;
-    background-color: var(--merula-txt2);
-}
-
-.merula-socialmedia img{
-    width: 100vw;
-    cursor: pointer;
-}
-
-.merula-frase{
-    display: flex;
-    justify-content:center;
-}
-
-.merula-frase img{
-    width: 100%;
+.footer-merula{
+    background-color: var(--merula-bg);
+    border-top: 2px solid var(--merula-txt2);
 }
 
 /*CELULA COACH*/
+#inicio-coach{
+    background-color: var(--coach-bg);
+}
+
+.header2-coach{
+    height: 30vh;
+    width: 100%;
+    padding: 10vh 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--coach-bg);
+}
+
 .port-projeto-coach{
     font-family: var(--coach-font);
 }
@@ -917,13 +946,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4vh;
-    padding: 10vh 0;
+    gap: 3vh;
+    padding: 5vh 0;
 }
 
 .coach-sobre p, .coach-sobre2 p, .coach-sobre3 p{
-    width:70%;
-    font-size: 1.3em;
+    width:80%;
+    font-size: 4.25vw;
     color: var(--coach-bg);
     font-weight: 200;
     line-height: 115%;
@@ -939,8 +968,8 @@
 }
 
 .tit-coach{
-    height: 35vw;
-    padding-left: 7.5%;
+    height: 20vh;
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -950,13 +979,13 @@
 .tit-coach p{
     font-family: var(--coach-font);
     font-weight: 500;
-    font-size: 6vw;
-    line-height: 110%;
+    font-size: 7vw;
+    line-height: 115%;
     color: var(--color-w);
 }
 
 .tit-coach-bg{
-    padding-right: 7.5%;
+    padding-right: 10%;
     height: 35vw;
 }
 
@@ -967,8 +996,8 @@
 }
 
 .foto-bispo{
-    width: 60vw;
-    height: 25vw;
+    width: 100vw;
+    height: 40vw;
 }
 
 .foto-bispo img{
@@ -980,7 +1009,7 @@
 .foto-povo{
     background-color: var(--coach-bg);
     width: 100vw;
-    height: 35vw;
+    height: 40vw;
 }
 
 .foto-povo img{
@@ -1000,7 +1029,7 @@
 }
 
 .logo-coach-conceito{
-    width: 35vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1012,27 +1041,27 @@
 }
 
 .logo-coach-regras{
-    width: 50vw;
-    margin-top: 5vw;
+    width: 35vw;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5vw;
 }
 
 .logo-coach-grid img{
-    width: 20vw;
+    width: 35vw;
 }
 
 .logo-coach-limite img{
-    width: 20vw;
+    width: 35vw;
 }
 
 .logo-coach-versoes{
     width: 100vw;
-    padding: 0 7.5%;
-    margin-top: 5vw;
+    padding: 0 3.5%;
+    margin-top: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1046,134 +1075,26 @@
 
 .logo-coach-infos{
     width: 100vw;
-    padding: 0 7.5%;
-    margin-top: 5vw;
+    height: 50vh;
+    padding: 0 3.5%;
+    margin-top: 2vw;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5vw;
-}
-
-.logo-coach-cores{
-    width: 50vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2.5vw;
-}
-
-.coach-azul-escuro{
-    width: 11vw;
-    height: 16vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.coach-azul-escuro img{
-    width: 80%;
-}
-
-.texto-azul-escuro{
-    display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-}
-
-.texto-azul-escuro p{
-    font-size: 1em;
-    color: var(--coach-bg);
-    font-weight: 400;
-    line-height: 130%;
-}
-
-.coach-azul-escuro span{
-    width: 100%;
-    height: 5%;
-    background-color: #302e2f;
-}
-
-.coach-azul-claro{
-    width: 11vw;
-    height: 16vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.coach-azul-claro img{
-    width: 80%;
-}
-
-.texto-azul-claro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-azul-claro p{
-    font-size: 1em;
-    color: var(--coach-bg);
-    font-weight: 400;
-    line-height: 130%;
-}
-
-.coach-azul-claro span{
-    width: 100%;
-    height: 5%;
-    background-color: #8e8f91;
-}
-
-.coach-branco{
-    width: 11vw;
-    height: 16vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.coach-branco img{
-    width: 80%;
-}
-
-.texto-branco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-branco p{
-    font-size: 1em;
-    color: var(--coach-bg);
-    font-weight: 400;
-    line-height: 130%;
-}
-
-.coach-branco span{
-    width: 100%;
-    height: 5%;
-    background-color: #c9c9c9;
 }
 
 .logo-coach-tipografia{
-    width: 40vw;
+    width: 93vw;
+    height: 25vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .coach-tipografia-exemplo{
-    width: 11vw;
-    height: 18.5vw;
+    width: 41.5vw;
+    height: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1181,22 +1102,22 @@
 
 .coach-letra p{
     text-align: right;
-    font-size: 6.5em;
+    font-size: 17.5vw;
     color: var(--coach-bg);
     font-weight: 500;
 }
 
 .coach-texto-exemplo p{
     text-align: right;
-    font-size: 1em;
+    font-size: 4vw;
     color: var(--coach-bg);
     font-weight: 400;
-    line-height: 120%;
+    line-height: 115%;
 }
 
 .coach-espessura{
-    margin-top: 1vw;
-    width: 20vw;
+    width: 41.5vw;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1205,9 +1126,8 @@
 
 .coach-espessura p{
     text-align: left;
-    font-size: 2.1em;
+    font-size: 4.25vw;
     color: var(--coach-bg);
-    line-height: 140%;
 }
 
 .coach-espessura p:nth-child(1){
@@ -1234,6 +1154,117 @@
     font-weight: 100;
 }
 
+.logo-coach-cores{
+    width: 85vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-azul-escuro{
+    width: 26vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-azul-escuro img{
+    width: 70%;
+    margin-bottom: 1vh;
+}
+
+.texto-azul-escuro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-azul-escuro p{
+    font-size: 2.5vw;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.coach-azul-escuro span{
+    width: 10vw;
+    height: 5vh;
+    background-color: #302e2f;
+}
+
+.coach-azul-claro{
+    width: 26vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-azul-claro img{
+    width: 70%;
+    margin-bottom: 1vh;
+}
+
+.texto-azul-claro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-azul-claro p{
+    font-size: 2.5vw;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.coach-azul-claro span{
+    width: 100%;
+    height: 5%;
+    background-color: #8e8f91;
+}
+
+.coach-branco{
+    width: 26vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-branco img{
+    width: 70%;
+    margin-bottom: 1vh;
+}
+
+.texto-branco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-branco p{
+    font-size: 2.5vw;
+    color: var(--coach-bg);
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.coach-branco span{
+    width: 100%;
+    height: 5%;
+    background-color: #c9c9c9;
+}
+
 .coach-preset4{
     background-color: var(--coach-txt);
     display: flex;
@@ -1241,51 +1272,43 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    padding:5vw 7.5vw;
+    padding:5vw 3.5vw;
     gap: 3.5vw;
 }
 
-.coach-cartao, .coach-papelaria, .coach-tecido, .coach-outros, .coach-spotify{
+.coach-cartao{
     width: 100%;
+    height: 50vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 .coach-cartao1{
-    width: 48%;
-    height: 35vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .coach-cartao1-chuva{
     width: 100%;
-    height: 15.75vw;
+    height: 24vh;
 }
 
 .coach-cartao1-chuva img{
     width: 100%;
-    height: 15.75vw;
+    height: 100%;
     object-fit:cover;
 }
 
 .coach-cartao1-entrega{
-    width: 100%;
-    height: 15.75vw;
-}
-
-.coach-cartao1-entrega img{
-    width: 100%;
-    height: 15.75vw;
-    object-fit:cover;
+    display: none;
 }
 
 .coach-cartao2{
-    width: 48%;
-    height: 35vw;
+    width: 100%;
+    height: 24vh;
 }
 
 .coach-cartao2 img{
@@ -1294,53 +1317,62 @@
     object-fit: cover;
 }
 
+.coach-papelaria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .coach-biblia{
     width: 37%;
-    height: 30vw;
+    height: 15vh;
 }
 
 .coach-biblia img{
     width: 100%;
-    height: 100%;
+    height: 15vh;
     object-fit: cover;
 }
 
 .coach-quadro{
     width: 25%;
-    height: 30vw;
+    height: 15vh;
 }
 
 .coach-quadro img{
     width: 100%;
-    height: 100%;
+    height: 15vh;
     object-fit: cover;
 }
 
 .coach-caderno{
     width: 30%;
-    height: 30vw;
+    height: 15vh;
 }
 
 .coach-caderno img{
     width: 100%;
-    height: 100%;
+    height: 15vh;
     object-fit: cover;
+}
+
+.coach-tecido{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .coach-carteira{
-    width: 45%;
-    height: 28vw;
-}
-
-.coach-carteira img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
 }
 
 .coach-bolsa{
-    width: 30%;
-    height: 28vw;
+    width: 70%;
+    height: 28vh;
 }
 
 .coach-bolsa img{
@@ -1350,14 +1382,22 @@
 }
 
 .coach-bolsa-detalhe{
-    width: 17%;
-    height: 28vw;
+    width: 26%;
+    height: 28vh;
 }
 
 .coach-bolsa-detalhe img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.coach-outros{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .coach-canecas{
@@ -1382,66 +1422,688 @@
     object-fit: cover;
 }
 
+.coach-spotify{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .coach-spotify img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/*MANIFESTO*/
-.manifesto-teste{
-    width: 100vw;
+.footer-coach{
+    background-color: var(--coach-bg);
+    border-top: none;
 }
 
-.manifesto-teste img{
-    width: 100vw;
+@media screen and (min-width: 1024px){
+
+.header2-logo{
+    height: 37.5vh;
 }
 
-/*FOOTER BACK TO TOP*/
-.cd-top{
-    width: 2.3em;
-    height: 2.3em;
-    border-radius: 45px;
-    border: none;
-    background-color: var(--color-y);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    position: fixed;
-    z-index: 2;
+.header2-logo img{
+    width: 8.5vw;
+}
+
+.header2-desc h2{
+    font-size: .75vw;
+}
+
+/*MODAL*/
+
+#bt_close{
     right: 5vw;
-    bottom: 3.5vh;
+    font-size: 2.5em;
 }
 
-.js .cd-top{
-    visibility:hidden;
-    opacity:0;
-    transition:opacity .3s, visibility .3s, background-color .3s;}
-
-
-.js .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-  
-.js .cd-top--fade-out {
-    opacity: .5;
+#bt_close:hover, #bt_prev:hover, #bt_next:hover{
+    color: var(--color-y);
 }
 
-.js .cd-top:hover{
-    background-color: var(--color-w);
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
+#bt_next{
+    top: 50vh;
+    right: 5vw;
+    font-size: 2.5em;
 }
 
-.cd-top i{
-    font-size: var(--size-text);
-    color: var(--color-w);
-    transition: all 0.2s ease-in-out;
+#bt_prev{
+    top: 50vh;
+    left: 5vw;
+    font-size: 2.5em;
 }
 
-.cd-top:hover i{
-    color: var(--color-b);
-    transition: all 0.2s ease-in-out;
+/*UP*/
+.header2-up{
+    height: 80vh;
+    width: 100%;
+    padding: 17.5vh 7.5% 0 7.5%;
+    justify-content: center;
+}
+
+.sobre-up{
+    margin: 1.5% 0;
+    padding: 0 5%;
+}
+.sobre-up p, .sobre-up ul{
+    margin: 1.5% 0;
+    font-size: 1.2vw;
+}
+
+.conceito-up{
+    height: 60vh;
+}
+
+.versoes-up{
+    height: 35vh;
+}
+
+.cores-up{
+    flex-direction: row;
+    height: 65vh;
+}
+
+.cor-up{
+    flex-direction: column;
+    width: 50vw;
+    height:auto;
+}
+
+.cor-up-azul{
+    height: 50%;
+    padding-left: 5vw;
+}
+
+.cor-up-azul p{
+    font-size: 1vw;
+}
+
+.cor-up-branco{
+    height: 50%;
+    padding-left: 5vw;
+}
+
+.cor-up-branco p{
+    font-size: 1vw;
+}
+
+.papelaria{
+    width: 50vw;
+    height: auto;
+    display: block;
+}
+
+.tipo-up{
+    height: 70vh;
+}
+
+.tipo-up-section1{
+    width: 25%;
+}
+
+.tipo-up-tit h2{
+    font-size: 4.5vw;
+}
+
+.tipo-up-tit h3{
+    font-size: 1.1vw;
+}
+
+.tipo-up-section1 p{
+    font-size: 1.1vw;
+}
+
+.tipo-up-section2{
+    width: 25%;
+}
+
+.tipo-up-a p:nth-child(1){
+    font-size: 9vw;
+}
+
+.tipo-up-a p:nth-child(2){
+    font-size: 9vw;
+}
+
+.tipo-up-alfabeto p{
+    font-size: 1.55vw;
+}
+
+.tipo-up-pesos p{
+    font-size: 1.25vw;
+}
+
+.papelaria-n-obrigatoria{
+    height: 90vh;
+    flex-direction: row;
+}
+
+.certificado-up{
+    width: 60%;
+    height: auto;
+}
+
+.certificado-up img{
+    height: 100%;
+}
+
+.livros-up{
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+
+.livro-up1{
+    height: 50%;
+}
+
+.livro-up-lado{
+    height: 50%;
+}
+
+.vestuário-up{
+    height: 80vh;
+}
+
+.camisas img{
+    height: 80vh;
+}
+
+.moletom img{
+    height: 80vh;
+}
+
+.mapa-up{
+    height: 85vh;
+}
+
+.mapa-up img{
+    width: 70vw;
+    height: 85vh;
+}
+
+.site-up{
+    display: flex;
+    flex-direction: row;
+    height: 110vw;
+}
+
+.site-up1{
+    width: 50vw;
+    height: 110vw;
+}
+
+.site-up2{
+    width: 50vw;
+    height: 110vw;
+}
+
+.site-up1 img{
+    height: 110vw;
+}
+
+.site-up2 img{
+    height: 110vw;
+}
+
+.app-up{
+    height: 80vh;
+}
+
+.app-up img{
+    height: 80vh;
+}
+
+.posts-up{
+    height: 80vh;
+}
+
+.posts-up img{
+    width: 80vw;
+    height: 80vh;
+}
+
+.perfil-up{
+    height: 70vh;
+}
+
+.perfil-up img{
+    width: 80vw;
+    height: 70vh;
+}
+
+.marketing-up{
+    height: 50vh;
+}
+
+.metro-up{
+    height: 50vh;
+}
+
+.onibus-up{
+    height: 50vh;
+}
+
+.metro-video-up{
+    height: 60vh;
+}
+
+.metro-video-up video{
+    height: 60vh;
+}
+
+/*MERULA*/
+.header2-merula{
+    height: 80vh;
+    padding: 17.5vh 7.5% 0 7.5%;
+}
+
+.merula-preset1{
+    padding: 5vh 0;
+}
+
+.merula-preset1-header{
+    height: 5vh;
+    width: 85vw;
+}
+
+.merula-preset1-indice h4{
+    font-weight: 400;
+    font-size: unset;
+}
+
+.merula-preset-logo{
+    width: 3vh;
+    height: 3vh;
+}
+
+.merula-sobre{
+    flex-direction: row;
+    height: 55vh;
+    width: 85vw;
+    justify-content: space-between;
+}
+
+.merula-sobre-titulo{
+    width: 35%; 
+    margin-bottom: unset;  
+}
+
+.merula-sobre-titulo h2{
+    font-size: 4.8em;
+    font-weight: 400;
+}
+
+.merula-sobre-texto{
+    width: 60%;
+}
+
+.merula-sobre-texto p{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: unset;
+}
+
+.merula-processo{
+    flex-direction: row;
+    height: auto;
+    padding: 10vh 7.5vw;
+    background-size: contain;
+}
+
+.merula-processo img{
+    width: 41.5vw;
+}
+
+.merula-papelaria img{
+    height: auto;
+    object-fit:unset;
+}
+
+.merula-cores{
+    height: 85vh;
+    background-size: contain;
+}
+
+.merula-cores-palette img{
+    width: 85vw;
+}
+
+.merula-tipografia{
+    height: 55vh;
+    width: 85vw;
+}
+
+.merula-tipografia-top{
+    width: 80vw;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.merula-tipografia-titulo{
+    width: 40vw;
+    justify-content: right;
+}
+
+.merula-tipografia-titulo p{
+    font-size: 5em;
+}
+
+.merula-tipografia-info{
+    width: 40vw;
+}
+
+.merula-tipografia-info p{
+    font-size: 1.15em;
+}
+
+.merula-tipografia-bottom{
+    width: 80vw;
+    flex-direction: row;
+}
+
+.merula-tipografia-alfabeto{
+    width: 40vw;
+    align-items: end;
+}
+
+.merula-tipografia-alfabeto p{
+    font-size: 1.7em;
+}
+
+.merula-tipografia-familyfont{
+    width: 40vw;
+}
+
+.merula-tipografia-font{
+    justify-content:left;
+    font-size: 1.8em;
+}
+
+.merula-cards img{
+    width: 85vw;
+}
+
+.merula-preset2{
+    padding: 5vh 0 2vh 0;
+}
+
+.merula-preset2-header{
+    height: 5vh;
+    width: 85vw;
+}
+
+.merula-preset2-indice h4{
+    font-weight: 400;
+    font-size: unset;
+}
+
+.merula-application{
+    margin-top: 5vh;
+    justify-content:space-evenly;
+    height: 65vh;
+}
+
+.apl-one, .apl-two{
+    width: 85vw;
+}
+
+/*CELULA COACH*/
+.header2-coach{
+    height: 80vh;
+    padding: 17.5vh 7.5% 0 7.5%;
+    justify-content: center;
+}
+
+.coach-sobre, .coach-sobre2, .coach-sobre3{
+    gap: 4vh;
+    padding: 10vh 0;
+}
+
+.coach-sobre p, .coach-sobre2 p, .coach-sobre3 p{
+    width:70%;
+    font-size: 1.3em;
+}
+
+.tit-coach{
+    height: 35vw;
+    padding-left: 7.5%;
+}
+
+.tit-coach p{
+    font-size: 6vw;
+    line-height: 110%;
+}
+
+.tit-coach-bg{
+    padding-right: 7.5%;
+}
+
+.foto-bispo{
+    width: 60vw;
+    height: 25vw;
+}
+
+.foto-povo{
+    height: 35vw;
+}
+
+.logo-coach-conceito{
+    width: 35vw;
+}
+
+.logo-coach-regras{
+    width: 50vw;
+    margin-top: 5vw;
+}
+
+.logo-coach-grid img{
+    width: 20vw;
+}
+
+.logo-coach-limite img{
+    width: 20vw;
+}
+
+.logo-coach-versoes{
+    padding: 0 7.5%;
+    margin-top: 5vw;
+}
+
+.logo-coach-infos{
+    height: auto;
+    padding: 0 7.5%;
+    margin-top: 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.logo-coach-cores{
+    width: 50vw;
+    height: auto;
+    margin-top: 2.5vw;
+}
+
+.coach-azul-escuro{
+    width: 11vw;
+}
+
+.coach-azul-escuro img{
+    width: 80%;
+    margin-bottom: unset;
+}
+
+.texto-azul-escuro p{
+    font-size: 1em;
+    line-height: 130%;
+}
+
+.coach-azul-claro{
+    width: 11vw;
+}
+
+.coach-azul-claro img{
+    width: 80%;
+    margin-bottom: unset;
+}
+
+.texto-azul-claro p{
+    font-size: 1em;
+    line-height: 130%;
+}
+
+.coach-branco{
+    width: 11vw;
+}
+
+.coach-branco img{
+    width: 80%;
+    margin-bottom: unset;
+}
+
+.texto-branco p{
+    font-size: 1em;
+    line-height: 130%;
+}
+
+.logo-coach-tipografia{
+    width: 40vw;
+    height: auto;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.coach-tipografia-exemplo{
+    width: 11vw;
+    height: 18.5vw;
+}
+
+.coach-letra p{
+    font-size: 6.5em;
+}
+
+.coach-texto-exemplo p{
+    font-size: 1em;
+    line-height: 120%;
+}
+
+.coach-espessura{
+    margin-top: 1vw;
+    width: 20vw;
+    height: auto;
+}
+
+.coach-espessura p{
+    font-size: 2.1em;
+    line-height: 140%;
+}
+
+.coach-preset4{
+    padding:5vw 7.5vw;
+}
+
+.coach-cartao, .coach-papelaria, .coach-tecido, .coach-outros, .coach-spotify{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach-cartao1{
+    width: 48%;
+    height: 35vw;
+}
+
+.coach-cartao1-chuva{
+    height: 15.75vw;
+}
+
+.coach-cartao1-chuva img{
+    height: 15.75vw;
+}
+
+.coach-cartao1-entrega{
+    width: 100%;
+    height: 15.75vw;
+    display: block;
+}
+
+.coach-cartao1-entrega img{
+    width: 100%;
+    height: 15.75vw;
+    object-fit:cover;
+}
+
+.coach-cartao2{
+    width: 48%;
+    height: 35vw;
+}
+
+.coach-biblia{
+    height: 30vw;
+}
+
+.coach-biblia img{
+    height: 100%;
+}
+
+.coach-quadro{
+    height: 30vw;
+}
+
+.coach-quadro img{
+    height: 100%;
+}
+
+.coach-caderno{
+    height: 30vw;
+}
+
+.coach-caderno img{
+    height: 100%;
+}
+
+.coach-carteira{
+    width: 45%;
+    height: 28vw;
+    display: block;
+}
+
+.coach-carteira img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coach-bolsa{
+    width: 30%;
+    height: 28vw;
+}
+
+.coach-bolsa-detalhe{
+    width: 17%;
+    height: 28vw;
+}
+
+.coach-spotify{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.coach-spotify img{
+    width: 85vw;
+    object-fit: cover;
+}
 }

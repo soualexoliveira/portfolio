@@ -267,7 +267,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     padding: 0 3.5%;
     background-color:var(--color-b);
@@ -310,7 +310,7 @@ nav{
     justify-content:space-between;
     align-items: left;
     margin-top: 32.5vh;
-    line-height: 12.5vw;
+    line-height: 17.5vw;
 }
 
 .menu-list li{
@@ -321,7 +321,7 @@ nav{
     font-size: 10vw;
     color: var(--color-w);
     font-family: var(--font);
-    font-weight: 400;
+    font-weight: 300;
     transition: all 0.3s ease-in-out;
 }
 
@@ -336,7 +336,7 @@ nav{
 }
 
 .social{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -356,7 +356,7 @@ nav{
     justify-content: space-between;
 }
 
-.dados p{
+.dados a, .dados p{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
@@ -473,7 +473,7 @@ nav{
     font-size: 1vw;
     color: var(--color-y);
     font-family: var(--font);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .header2-functions{
@@ -490,8 +490,11 @@ nav{
 
 .video-intro{
     width: 100%;
-    background-color: #333333;
-    aspect-ratio: 16/9;
+}
+
+.video-intro video{
+    width: 100%;
+    height:fit-content;
 }
 
 .position{
@@ -515,7 +518,7 @@ nav{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    line-height: 6.75vw;
+    line-height: 7.25vw;
 }
 
 p, img, h2{
@@ -752,13 +755,52 @@ footer{
     width: 100%;
     height: 5vh;
     border-top: 2px solid var(--color-c);
+    background-color: var(--color-b);
 }
 
 .creditos p{
     font-family: var(--font);
     color: var(--color-w);
-    font-size: 3vw;
-    font-weight: 400;
+    font-size: 3.25vw;
+    font-weight: 300;
+}
+
+/*FOOTER BACK TO TOP*/
+.cd-top{
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-w);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    z-index: 3;
+    right: 3.5vw;
+    bottom: 1vh;
+}
+
+.js .cd-top{
+    visibility:hidden;
+    opacity:0;
+    transition:opacity .3s, visibility .3s, background-color .3s;}
+
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.js .cd-top--fade-out {
+    opacity: .5;
+}
+
+.cd-top i{
+    font-size: 3.25vw;
+    color: var(--color-b);
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
@@ -789,7 +831,7 @@ footer{
         height: 5vh;
         width: 33.3vw;
         display: flex;
-        background-color: var(--color-b);
+        background-color: transparent;
         flex-direction: row;
         padding: 0;
     }
@@ -976,6 +1018,11 @@ footer{
         display: flex;
         padding: 0 7.5% 1.75% 7.5%;
     }
+    .controls i:hover{
+        background-color: var(--color-y);
+        color: var(--color-w);
+        transition: all 0.2s ease-in-out;
+    }
 
     footer{
         padding: 0 7.5%;
@@ -985,7 +1032,54 @@ footer{
     .creditos p{
         font-family: var(--font);
         color: var(--color-w);
-        font-size: .6vw;
-        font-weight: 400;
+        font-size: .75vw;
+    }
+
+    .cd-top{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50px;
+        border: none;
+        background-color: var(--color-w);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        position: fixed;
+        z-index: 3;
+        right: 7.5vw;
+        bottom: 3vh;
+    }
+    
+    .js .cd-top{
+        visibility:hidden;
+        opacity:0;
+        transition:opacity .3s, visibility .3s, background-color .3s;}
+    
+    
+    .js .cd-top--is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+      
+    .js .cd-top--fade-out {
+        opacity: .5;
+    }
+    
+    .cd-top i{
+        font-size: 1vw;
+        color: var(--color-b);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .js .cd-top:hover{
+        background-color: var(--color-y);
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+    
+    .cd-top:hover i{
+        color: var(--color-w);
+        transition: all 0.2s ease-in-out;
     }
 }

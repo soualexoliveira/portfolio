@@ -23,7 +23,7 @@
 }
 
 .sobre-bio{
-    width: 100vw;
+    width: 100%;
     padding: 0 3.5%;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .sobre-texto{
-    max-width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,7 +55,7 @@
 }
 
 .sobre-specs{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -135,7 +135,7 @@
 }
 
 .sobre-social{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 3.5%;
@@ -148,7 +148,7 @@
 }
 
 .sobre-redes-sociais{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,12 +174,12 @@
     justify-content: space-between;
 }
 
-.sobre-dados p{
+.sobre-dados a, .sobre-dados p{
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    font-size: 3.25vw;
-    line-height: 125%;
+    font-size: 3.5vw;
+    line-height: 150%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -241,14 +241,14 @@
     }
 
     .sobre-redes-sociais{
-        width: 75%;
+        width: 25%;
     }
     
     .sobre-redes-sociais i{
         font-size: 5vw;
     }
 
-    .sobre-dados p{
+    .sobre-dados a, .sobre-dados p{
         color: var(--color-w);
         font-family: var(--font);
         font-weight: 400;
