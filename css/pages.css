@@ -48,6 +48,63 @@
     cursor: pointer;
 }
 
+/*PAGINAÇÃO*/
+.pag-project{
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5%;
+    border: none;
+}
+
+.prev-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.next-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.prev-project h4, .next-project h4{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.btn-previous-project, .btn-next-project{
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    gap: 2.5vw;
+}
+
+.btn-previous-project-i, .btn-next-project-i{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-w);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.prev-project i, .next-project i{
+    font-size: 3vw;
+    color: var(--color-b);
+    transition: all 0.2s ease-in-out;
+}
+
 /*MODAL*/
 .modal{
     position: fixed;
@@ -165,7 +222,7 @@
 }
 
 .sobre-up p, .sobre-up ul{
-    margin: 3% 0;
+    margin: 3.5% 0;
     color: var(--up-bg);
     font-weight: 400;
     font-size: 3vw;
@@ -200,7 +257,7 @@
 .cores-up{
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -209,7 +266,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 7.5vh;
+    height: 10vh;
 }
 
 .cor-up-azul{
@@ -248,26 +305,26 @@
 
 .papelaria{
     width: 100vw;
-    height: 32.5vh;
+    height: 40vh;
     display: flex;
 }
 
 .papelaria img{
-    min-width: 100%;
-    max-height: 100%;
+    width: 100vw;
+    height: 40vh;
     object-fit: cover;
+    object-position: center;
 }
-
 
 .tipo-up{
     width: 100vw;
-    height: 25vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10vw;
     background-color: var(--up-bg);
+    padding: 5vw 0;
 }
 
 .tipo-up-section1{
@@ -276,7 +333,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4vw 0vw;
 }
 
 .tipo-up-tit h2{
@@ -306,7 +362,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2.5vw 0 4vw 0;
 }
 
 .tipo-up-a{
@@ -381,19 +436,19 @@
 
 .papelaria-n-obrigatoria{
     width: 100vw;
-    height: 45vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
 
 .certificado-up{
     width: 100%;
-    height: 30vh;
+    height: 35vh;
 }
 
 .certificado-up img{
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     object-fit: cover;
 }
 
@@ -401,19 +456,19 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 15vh;
+    height: auto;
 }
 
 .livro-up1{
-    width: 100%;
-    height: 100%;
+    width: 45vw;
+    height: auto;
 }
 
 .livro-up-lado{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
+    width: 55vw;
+    height: auto;
 }
 
 .livros-up img{
@@ -467,54 +522,53 @@
 
 .site-up{
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: row;
+    height: 110vw;
 }
 
 .site-up1{
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 100%;
 }
 
 .site-up2{
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 100%;
 }
 
 .site-up1 img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
 .site-up2 img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
 .app-up{
     width: 100vw;
-    height: 22.5vh;
+    height: 25vh;
 }
 
 .app-up img{
     width: 100vw;
-    height: 22.5vh;
+    height: 25vh;
     object-fit: cover;
 }
 
 .posts-up{
     width: 100vw;
-    height: 20vh;
     display: flex;
     justify-content: center;
     background-color: var(--up-txt);
 }
 
 .posts-up img{
-    width: 93vw;
-    height: 20vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -627,8 +681,14 @@
 }
 
 .merula-preset-logo{
+    display: flex;
     width: 1.5vh;
     height: 1.5vh;
+}
+
+.merula-preset-logo img{
+    width: 100%;
+    height: 100%;
 }
 
 .merula-sobre{
@@ -683,8 +743,8 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 57.5vh;
     align-items: center;
+    gap: 3.5vh;
     padding: 3.5vh 0;
     justify-content: space-between;
     background-image: url(../images/pages/merula/bg-project.jpg);
@@ -701,11 +761,11 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    width: 100vw;
 }
 
 .merula-papelaria img{
     width: 100%;
-    height: 25vh;
     object-fit: cover;
     cursor: pointer;
 }
@@ -729,7 +789,7 @@
 .merula-tipografia{
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 40vh;
     width: 93vw;
     align-items: center;
     justify-content: center;
@@ -774,27 +834,27 @@
 .merula-tipografia-bottom{
     width: 93vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 5vw;
 }
 
 .merula-tipografia-alfabeto{
-    width: 93vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    justify-content:start;
+    align-items: end;
 }
 
 .merula-tipografia-alfabeto p{
-    font-size: 4.25vw;
+    font-size: 3.25vw;
     color: var(--merula-txt2);
     font-weight: 300;
 }
 
 .merula-tipografia-familyfont{
-    width: 93vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -805,8 +865,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items:center;
-    justify-content:center;
+    justify-content:left;
     gap: 3vw;
     font-size: 3.25vw;
     color: var(--merula-txt2);
@@ -889,10 +950,10 @@
     margin-top: 1vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     background-color: var(--merula-bg);
-    height: 15vh;
+    gap: 2.5vh;
     width: 100vw;
 }
 
@@ -911,7 +972,7 @@
 
 .footer-merula{
     background-color: var(--merula-bg);
-    border-top: 2px solid var(--merula-txt2);
+    border-top: none;
 }
 
 /*CELULA COACH*/
@@ -1075,7 +1136,6 @@
 
 .logo-coach-infos{
     width: 100vw;
-    height: 50vh;
     padding: 0 3.5%;
     margin-top: 2vw;
     display: flex;
@@ -1086,18 +1146,20 @@
 
 .logo-coach-tipografia{
     width: 93vw;
-    height: 25vh;
+    height: 27.5vh;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    align-items: center;
+    margin-top: 2.5vh;
 }
 
 .coach-tipografia-exemplo{
     width: 41.5vw;
-    height: 25vw;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .coach-letra p{
@@ -1117,7 +1179,7 @@
 
 .coach-espessura{
     width: 41.5vw;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1156,7 +1218,7 @@
 
 .logo-coach-cores{
     width: 85vw;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1455,6 +1517,39 @@
     font-size: .75vw;
 }
 
+/*PAGINAÇÃO*/
+.pag-project{
+    height: 20vh;
+    padding: 0 7.5%;
+}
+
+.prev-project h4, .next-project h4{
+    font-size: 1.25vw;
+}
+
+.btn-previous-project, .btn-next-project{
+    gap: 1.5vw;
+}
+
+.btn-previous-project-i, .btn-next-project-i{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.prev-project i, .next-project i{
+    font-size: 1.25vw;
+}
+
+.btn-previous-project:hover .btn-previous-project-i, .btn-next-project:hover .btn-next-project-i{
+    background-color: var(--color-y);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-previous-project:hover i, .btn-next-project:hover i{
+    color: var(--color-w);
+    transition: all 0.2s ease-in-out;
+}
+
 /*MODAL*/
 
 #bt_close{
@@ -1538,6 +1633,11 @@
     display: block;
 }
 
+.papelaria img{
+    width: 100%;
+    height: 100%;
+}
+
 .tipo-up{
     height: 70vh;
 }
@@ -1599,11 +1699,13 @@
 }
 
 .livro-up1{
+    width: 100%;
     height: 50%;
 }
 
 .livro-up-lado{
     height: 50%;
+    width: 100%;
 }
 
 .vestuário-up{
@@ -1627,19 +1729,11 @@
     height: 85vh;
 }
 
-.site-up{
-    display: flex;
-    flex-direction: row;
-    height: 110vw;
-}
-
 .site-up1{
-    width: 50vw;
     height: 110vw;
 }
 
 .site-up2{
-    width: 50vw;
     height: 110vw;
 }
 
@@ -1751,9 +1845,9 @@
 
 .merula-processo{
     flex-direction: row;
-    height: auto;
     padding: 10vh 7.5vw;
     background-size: contain;
+    gap:unset;
 }
 
 .merula-processo img{
@@ -1761,7 +1855,6 @@
 }
 
 .merula-papelaria img{
-    height: auto;
     object-fit:unset;
 }
 
@@ -1804,16 +1897,15 @@
 
 .merula-tipografia-bottom{
     width: 80vw;
-    flex-direction: row;
 }
 
 .merula-tipografia-alfabeto{
     width: 40vw;
-    align-items: end;
 }
 
 .merula-tipografia-alfabeto p{
     font-size: 1.7em;
+    justify-content: center;
 }
 
 .merula-tipografia-familyfont{
@@ -1821,8 +1913,8 @@
 }
 
 .merula-tipografia-font{
-    justify-content:left;
     font-size: 1.8em;
+    flex-wrap:unset;
 }
 
 .merula-cards img{
@@ -1847,6 +1939,7 @@
     margin-top: 5vh;
     justify-content:space-evenly;
     height: 65vh;
+    gap: unset;
 }
 
 .apl-one, .apl-two{
@@ -1977,6 +2070,7 @@
     height: auto;
     align-items: center;
     justify-content:space-around;
+    margin-top: 0;
 }
 
 .coach-tipografia-exemplo{

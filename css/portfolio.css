@@ -1,35 +1,10 @@
 .portfolio-header{
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     padding: 5vh 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.header2-title1 h1{
-    font-size: 10vw;
-    color: var(--color-w);
-    font-family: var(--font);
-    font-weight: 400;
-    line-height: 12vw;
-}
-
-.header2-row2{
-    display: flex;
-    flex-direction: row;
-}
-
-.header2-title2{
-    width: 80%;
-}
-
-.header2-title2 h1{
-    font-size: 10vw;
-    color: var(--color-w);
-    font-family: var(--font);
-    font-weight: 400;
-    line-height: 12vw;
 }
 
 .portfolio-projetos{
@@ -188,13 +163,13 @@
     }
         
     .header2-title1 h1{
-        font-size: 9vw;
-        line-height: 12vw;
+        font-size: 7.5vw;
+        line-height: 7.5vw;
     }
 
     .header2-title2 h1{
-        font-size: 9vw;
-        line-height: 12vw;
+        font-size: 7.5vw;
+        line-height: 7.5vw;
     }
 
     .portfolio-projetos{
@@ -225,104 +200,102 @@
         position: relative;
     }
 
-    
-.portfolio-projetos-logo{
-    width: 10vh;
-    height: 10vh;
-    left: 3%;
-    top: 5%;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
+    .portfolio-projetos-logo{
+        width: 10vh;
+        height: 10vh;
+        left: 3%;
+        top: 5%;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
 
-.portfolio-projetos-foto{
-    width: 100%;
-    height: 35vh;
-}
+    .portfolio-projetos-foto{
+        width: 100%;
+        height: 35vh;
+    }
 
-.portfolio-projetos-foto img{
-    width: 100%;
-    height: 35vh;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
+    .portfolio-projetos-foto img{
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
 
-.portfolio-projetos-cover{
-    width: 100%;
-    height: 15vh;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3%;
-    border-radius: 0 0 20px 20px;
-}
+    .portfolio-projetos-cover{
+        width: 100%;
+        height: 15vh;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+        border-radius: 0 0 20px 20px;
+    }
 
-.portfolio-projetos-selo{
-    width: 100%;
-}
+    .portfolio-projetos-selo{
+        width: 100%;
+    }
 
-.portfolio-projetos-selo h2{
-    text-align:left;
-    font-family: var(--font);
-    font-weight: 600;
-    font-size: 2.5vh;
-}
+    .portfolio-projetos-selo h2{
+        text-align:left;
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 2.5vh;
+    }
 
-.portfolio-projetos-selo p{
-    text-align:left;
-    font-family: var(--font);
-    font-weight: 400;
-    font-size: 1.5vh;
-}
+    .portfolio-projetos-selo p{
+        text-align:left;
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 1.5vh;
+    }
 
-.portfolio-projetos-tags{
-    height: 15%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:start;
-    gap: 3.5%;
-    margin-top: 1%;
-}
+    .portfolio-projetos-tags{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:start;
+        gap: 3.5%;
+        margin-top: 1%;
+    }
 
-.portfolio-projetos-skills p{
-    border: 1px solid;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 1.25vh;
-    text-align: center;
-    width: 125%;
-}
+    .portfolio-projetos-skills p{
+        border: 1px solid;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 1.25vh;
+        text-align: center;
+        width: 125%;
+    }
 
-.coach .portfolio-projetos-logo img{
-    max-width: 2vw;
-    transition: all 0.3s ease-in-out;
-}
+    .coach .portfolio-projetos-logo img{
+        max-width: 2vw;
+        transition: all 0.3s ease-in-out;
+    }
 
-.merula .portfolio-projetos-logo img{
-    max-width: 2.5vw;
-    transition: all 0.3s ease-in-out;
-}
+    .merula .portfolio-projetos-logo img{
+        max-width: 2.5vw;
+        transition: all 0.3s ease-in-out;
+    }
 
-.up .portfolio-projetos-logo img{
-    max-height: 2.5vw;
-    transition: all 0.3s ease-in-out;
-}
+    .up .portfolio-projetos-logo img{
+        max-height: 2.5vw;
+        transition: all 0.3s ease-in-out;
+    }
 
-.borogodo .portfolio-projetos-logo img{
-    max-height: 3vw;
-    transition: all 0.3s ease-in-out;
-}
+    .borogodo .portfolio-projetos-logo img{
+        max-height: 3vw;
+        transition: all 0.3s ease-in-out;
+    }
 
-.manifesto .portfolio-projetos-logo img{
-    max-height: 3.25vw;
-    transition: all 0.3s ease-in-out;
-}
-
+    .manifesto .portfolio-projetos-logo img{
+        max-height: 3.25vw;
+        transition: all 0.3s ease-in-out;
+    }
 }
