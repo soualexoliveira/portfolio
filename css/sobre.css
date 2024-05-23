@@ -75,8 +75,8 @@
 }
 
 .btn-sobre{
-    width: 50%;
-    height: 4vh;
+    width: 42.5%;
+    height: 3vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +89,6 @@
     height: 100%;
     padding: 0 3.5%;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -107,7 +106,7 @@
 }
 
 .btn-yellow p{
-    font-size: 3.5vw;
+    font-size: 2.75vw;
     font-family: var(--font);
     font-weight: 500;
     padding-left: 1.5vw;
@@ -119,15 +118,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 6vw;
-    height: 6vw;
+    width: 4.5vw;
+    height: 4.5vw;
     border-radius: 40px;
     transition: all 0.3s ease-in-out;
     background-color: var(--color-b);
 }
 
 .icon-download i{
-    font-size: 2.5vw;
+    font-size: 2.25vw;
     text-decoration: none;
     color: var(--color-w);
     transform: rotate(180deg);
@@ -213,27 +212,48 @@
     }
 
     .btn-sobre{
-        width: 40%;
-        height: 12.5vh;
+        width: 30%;
+        height: 8.75vh;
     }
 
     .btn-curriculo{
         border-radius: 50px;
+        padding: 0 4.75%;
+    }
+
+    .btn-curriculo a{
+        justify-content: space-between;
     }
 
     .btn-yellow p{
-        font-size: 2.5vw;
-        color: var(--color-b);
+        font-size: 1.75vw;
+        padding-left: 1.25vw;
     }
 
     .icon-download{
-        width: 4.5vw;
-        height: 4.5vw;
+        width: 3vw;
+        height: 3vw;
         border-radius: 50px;
     }
     
     .icon-download i{
-        font-size: 2.25vw;
+        font-size: 1.75vw;
+    }
+
+    .btn-curriculo:hover{
+        background-color: var(--color-w);
+    }
+
+    .btn-curriculo:hover .icon-download{
+        background-color: var(--color-y);
+    }
+
+    .btn-curriculo:hover .icon-download i{
+        color: var(--color-w);
+    }
+
+    .btn-curriculo:hover .btn-yellow p{
+        color: var(--color-b);
     }
 
     .sobre-social{
@@ -248,11 +268,19 @@
         font-size: 5vw;
     }
 
+    .sobre-redes-sociais i:hover{
+        color: var(--color-y);
+    }
+
     .sobre-dados a, .sobre-dados p{
         color: var(--color-w);
         font-family: var(--font);
         font-weight: 400;
         font-size: 2.25vw;
         line-height: 150%;
+    }
+
+    .sobre-dados a:hover{
+        color: var(--color-y);
     }
 }

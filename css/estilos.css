@@ -140,8 +140,9 @@
     --dunkel-txt: #fff;
     --dunkel-tit: #2d1102;
     --dunkel-bg: linear-gradient(-45deg, #2d1802 0%, #2d1102 50%, #2d1802 100%);
-    --borogodo-txt: #fcfaf0;
-    --borogodo-bg: #fab43c;
+    --borogodo-txt: #fdfaf1;
+    --borogodo-txt2:#000000;
+    --borogodo-bg: #fac03d;
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
     --manifesto-tit: #b58040;
@@ -170,6 +171,7 @@
     --up-font:'Noto Sans', sans-serif;
     --merula-font: 'Okine', sans-serif;
     --coach-font: 'Gotham', sans-serif;
+    --borogodo-font:#;
     --size-text: 1em;
 }
 
@@ -548,6 +550,31 @@ p, img, h2{
     position: relative;
 }
 
+.grayscale{
+    filter: grayscale();
+}
+
+.em-breve{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    background-color: #212121f9;
+    z-index: 1;
+}
+
+.em-breve h6{
+    font-size: 11vw;
+    font-family: var(--font);
+    color: var(--color-w);
+    font-weight: 700;
+    user-select: none;
+}
+
 .bg-project a{
     width: 100%;
 }
@@ -681,8 +708,12 @@ p, img, h2{
     background-color: var(--borogodo-bg);
 }
 
-.borogodo h2, .borogodo h4{
+.borogodo h2{
     color: var(--borogodo-txt);
+}
+
+.borogodo h4{
+    color: var(--borogodo-txt2);
 }
 
 .borogodo .cover p{
@@ -953,6 +984,12 @@ footer{
 
     .bg-project{
         height: 60vh;
+    }
+    
+    .em-breve h6{
+        font-size: 3.25vw;
+        font-family: var(--font);
+        color: var(--color-w);
     }
 
     .project-logo{

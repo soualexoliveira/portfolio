@@ -8,7 +8,8 @@
 }
 
 .header2-logo img{
-    width: 15vw;
+    max-height: 6.5vh;
+    max-width: 35vw;
 }
 
 .header2-row{
@@ -25,7 +26,6 @@
 
 .header2-desc h2{
     font-size: 2.5vw;
-    color: var(--color-w);
     font-family: var(--font);
     font-weight: 300;
 }
@@ -206,6 +206,10 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--up-bg);
+}
+
+.header2-up-desc h2{
+    color: var(--up-txt);
 }
 
 .port-projeto-up{
@@ -647,6 +651,10 @@
     background-color: var(--merula-bg);
 }
 
+.header2-merula-desc h2{
+    color: var(--merula-tit);
+}
+
 .port-projeto-merula{
     padding: 0%;
     width: 100%;
@@ -988,6 +996,10 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--coach-bg);
+}
+
+.header2-coach-desc h2{
+    color: var(--coach-tit);
 }
 
 .port-projeto-coach{
@@ -1503,18 +1515,396 @@
     border-top: none;
 }
 
+/*BOROGODÓ*/
+#inicio-borogodo{
+    background-color: var(--borogodo-bg);
+}
+
+.header2-borogodo{
+    height: 30vh;
+    width: 100%;
+    padding: 12.5vh 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--borogodo-bg);
+}
+
+.header2-borogodo-desc h2{
+    color: var(--borogodo-txt2);
+}
+
+.port-projeto-borogodo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    background-color: var(--borogodo-txt);
+}
+
+.logo-aplicado-borogodo{
+    height: 20vh;
+    width: 100vw;
+}
+
+.logo-aplicado-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.sobre-borogodo{
+    margin: 0;
+    padding: 0 3.5%;
+}
+
+.sobre-borogodo p{
+    margin: 3.5% 0;
+    color: var(--borogodo-txt2);
+    font-weight: 400;
+    font-size: 3vw;
+    list-style: none;
+}
+
+.sobre-borogodo strong{
+    color: var(--borogodo-bg);
+}
+
+.conceito-borogodo{
+    height: 10vh;
+    width: 100vw;
+}
+
+.conceito-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.versoes-borogodo{
+    width: 100vw;
+    height: 15vh;
+}
+
+.versoes-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.papelaria-borogodo{
+    height: 30vh;
+    width: 100vw;
+}
+
+.papelaria-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.cores-tipografias-borogodo{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 100vw;
+}
+
+.cores-borogodo{
+    background-color: var(--borogodo-bg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 3.5vw;
+}
+
+.cores-borogodo p{
+    color: var(--borogodo-txt);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+}
+
+.tipografias-borogodo{
+    background-color: var(--borogodo-txt);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 3.5vw;
+}
+
+.tipografias-borogodo p{
+    color: var(--borogodo-bg);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+}
+
+.banner-borogodo{
+    height: 25vh;
+    width: 100vw;
+}
+
+.banner-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.foto-rotulo-borogodo{
+    height: 22.5vh;
+    width: 100vw;
+}
+
+.foto-rotulo-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.design-rotulo-borogodo{
+    width: 100vw;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-rotulo-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.cores-rotulos-borogodo{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-cores-rotulos-borogodo{
+    width: 100%;
+    height: 80%;
+}
+
+.foto-cores-rotulos-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:#aaaaaa;
+}
+
+.todas-cores-rotulos-borogodo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rótulo-borogodo-cor1{
+    background-color: var(--borogodo-bg);
+    width: 16.66%;
+}
+
+.rótulo-borogodo-cor2{
+    background-color: var(--borogodo-txt);
+    width: 16.66%;
+}
+
+.rótulo-borogodo-cor3{
+    background-color: var(--borogodo-txt2);
+    width: 16.66%;
+}
+
+.rótulo-borogodo-cor4{
+    background-color: var(--borogodo-bg);
+    width: 16.66%;
+}
+
+.rótulo-borogodo-cor5{
+    background-color: var(--borogodo-txt);
+    width: 16.66%;
+}
+
+.rótulo-borogodo-cor6{
+    background-color: var(--borogodo-txt2);
+    width: 16.66%;
+}
+
+.cerveja-frontal-borogodo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 30vh;
+}
+
+.cerveja-frente-borogodo{
+    width: 50vw;
+}
+
+.cerveja-frente-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color:#aaaaaa;
+}
+
+.cerveja-costas-borogodo{
+    width: 50vw;
+}
+
+.cerveja-costas-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:#aaaaaa;
+}
+
+.cerveja-360-borogodo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 20vh;
+}
+
+.cerveja-pilsen-360-borogodo{
+    width: 33.3%;
+}
+
+.cerveja-pilsen-360-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color:#666666;
+}
+
+.cerveja-bock-360-borogodo{
+    width: 33.3%;
+}
+
+.cerveja-bock-360-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color:#666666;
+}
+
+.cerveja-fruitbeer-360-borogodo{
+    width: 33.3%;
+}
+
+.cerveja-fruitbeer-360-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color:#666666;
+}
+
+.foto-conceitual-borogodo{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-conceitual-borogodo img:nth-child(1){
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    background-color:#aaaaaa;
+}
+
+.foto-conceitual-borogodo img:nth-child(2){
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    background-color:#aaaaaa;
+}
+
+.stories-borogodo{
+    height: 22.5vh;
+    width: 100vw;
+}
+
+.stories-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color:#666666;
+}
+
+.posts-borogodo{
+    height: 17.5vh;
+    width: 100vw;
+}
+
+.posts-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.banners2-borogodo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 17.5vh;
+}
+
+.meio-banner-borogodo{
+    width: 50vw;
+}
+
+.meio-banner-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color: #222222;
+}
+
+.footer-borogodo{
+    background-color: var(--borogodo-bg);
+    border-top: none;
+}
+
 @media screen and (min-width: 1024px){
 
 .header2-logo{
-    height: 37.5vh;
+    height: 52.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 18.75vh;
+    justify-content: center;
 }
 
 .header2-logo img{
-    width: 8.5vw;
+    max-height: 15vh;
+    max-width: 25vw;
+}
+
+.header2-row{
+    height: 10vh;
+    padding-top: 2vh;
 }
 
 .header2-desc h2{
-    font-size: .75vw;
+    font-size: .8vw;
 }
 
 /*PAGINAÇÃO*/
@@ -2200,4 +2590,140 @@
     width: 85vw;
     object-fit: cover;
 }
+
+/*BOROGODÓ*/
+.header2-borogodo{
+    height: 80vh;
+    width: 100%;
+    padding: 17.5vh 7.5% 0 7.5%;
+    justify-content: center;
+}
+
+.logo-aplicado-borogodo{
+    height: 90vh;
+}
+
+.sobre-borogodo{
+    margin: 1.5% 0;
+    padding: 0 7.5%;
+}
+.sobre-borogodo p{
+    margin: 1.5% 0;
+    font-size: 1.2vw;
+}
+
+.conceito-borogodo{
+    height: 45vh;
+}
+
+.versoes-borogodo{
+    height: 60vh;
+}
+
+.papelaria-borogodo{
+    height: 100vh;
+}
+
+.cores-tipografias-borogodo{
+    height: 50vh;
+}
+
+.banner-borogodo{
+    height: 100vh;
+}
+
+.foto-rotulo-borogodo{
+    height: 70vh;
+}
+
+.design-rotulo-borogodo{
+    flex-direction: row;
+}
+
+.design-rotulo-borogodo img{
+    height: 45vh;
+    width: 33.3vw;
+}
+
+.cores-rotulos-borogodo{
+    height: 90vh;
+    flex-direction: row;
+}
+
+.foto-cores-rotulos-borogodo{
+    width: 85%;
+    height: 100%;
+}
+
+.todas-cores-rotulos-borogodo{
+    width: 15%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.rótulo-borogodo-cor1{
+    width: 100%;
+    height: 16.66%;
+}
+
+.rótulo-borogodo-cor2{
+    width: 100%;
+    height: 16.66%;
+}
+
+.rótulo-borogodo-cor3{
+    width: 100%;
+    height: 16.66%;
+}
+
+.rótulo-borogodo-cor4{
+    width: 100%;
+    height: 16.66%;
+}
+
+.rótulo-borogodo-cor5{
+    width: 100%;
+    height: 16.66%;
+}
+
+.rótulo-borogodo-cor6{
+    width: 100%;
+    height: 16.66%;
+}
+
+.cerveja-frontal-borogodo{
+    height: 75vh;
+}
+
+.cerveja-360-borogodo{
+    height: 65vh;
+}
+
+.foto-conceitual-borogodo{
+    height: 60vh;
+    flex-direction: row;
+}
+
+.foto-conceitual-borogodo img:nth-child(1){
+    height: 60vh;
+    width: 50vw;
+}
+
+.foto-conceitual-borogodo img:nth-child(2){
+    height: 60vh;
+    width: 50vw;
+}
+
+.stories-borogodo{
+    height: 75vh;
+}
+
+.posts-borogodo{
+    height: 60vh;
+}
+
+.banners2-borogodo{
+    height: 65vh;
+}
+
 }
