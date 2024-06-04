@@ -1649,7 +1649,7 @@
 }
 
 .banner-borogodo{
-    height: 25vh;
+    height: 22.5vh;
     width: 100vw;
 }
 
@@ -1660,7 +1660,7 @@
 }
 
 .foto-rotulo-borogodo{
-    height: 22.5vh;
+    height: 18vh;
     width: 100vw;
 }
 
@@ -1755,7 +1755,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
     background-color:#aaaaaa;
 }
 
@@ -1768,6 +1767,17 @@
     height: 100%;
     object-fit: cover;
     background-color:#aaaaaa;
+}
+
+.seis-cervejas-borogodo{
+    height: 25vh;
+    width: 100vw;
+}
+
+.seis-cervejas-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .cerveja-360-borogodo{
@@ -1834,8 +1844,19 @@
     background-color:#aaaaaa;
 }
 
+.tampinha-borogodo{
+    height: 25vh;
+    width: 100vw;
+}
+
+.tampinha-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .stories-borogodo{
-    height: 22.5vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -1847,7 +1868,7 @@
 }
 
 .posts-borogodo{
-    height: 17.5vh;
+    height: 20vh;
     width: 100vw;
 }
 
@@ -1858,6 +1879,17 @@
     background-color: #222222;
 }
 
+.banner-metro-borogodo{
+    height: 19vh;
+    width: 100vw;
+}
+
+.banner-metro-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .banners2-borogodo{
     display: flex;
     flex-direction: row;
@@ -1866,7 +1898,7 @@
 }
 
 .meio-banner-borogodo{
-    width: 50vw;
+    width: 33.3vw;
 }
 
 .meio-banner-borogodo img{
@@ -2600,7 +2632,7 @@
 }
 
 .logo-aplicado-borogodo{
-    height: 90vh;
+    height: 75vh;
 }
 
 .sobre-borogodo{
@@ -2633,7 +2665,7 @@
 }
 
 .foto-rotulo-borogodo{
-    height: 70vh;
+    height: 77.5vh;
 }
 
 .design-rotulo-borogodo{
@@ -2695,6 +2727,10 @@
     height: 75vh;
 }
 
+.seis-cervejas-borogodo{
+    height: 100vh;
+}
+
 .cerveja-360-borogodo{
     height: 65vh;
 }
@@ -2714,12 +2750,20 @@
     width: 50vw;
 }
 
+.tampinha-borogodo{
+    height: 100vh;
+}
+
 .stories-borogodo{
     height: 75vh;
 }
 
 .posts-borogodo{
-    height: 60vh;
+    height: 85vh;
+}
+
+.banner-metro-borogodo{
+    height: 85vh;
 }
 
 .banners2-borogodo{
