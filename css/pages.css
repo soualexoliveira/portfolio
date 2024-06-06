@@ -1547,7 +1547,7 @@
     width: 100vw;
 }
 
-.logo-aplicado-borogodo img{
+.logo-aplicado-borogodo video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1711,17 +1711,17 @@
 }
 
 .rótulo-borogodo-cor1{
-    background-color: var(--borogodo-bg);
+    background-color: #e77122;
     width: 16.66%;
 }
 
 .rótulo-borogodo-cor2{
-    background-color: var(--borogodo-txt);
+    background-color: #6422c9;
     width: 16.66%;
 }
 
 .rótulo-borogodo-cor3{
-    background-color: var(--borogodo-txt2);
+    background-color: #0e6d17;
     width: 16.66%;
 }
 
