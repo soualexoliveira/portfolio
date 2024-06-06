@@ -173,12 +173,24 @@
     z-index: 5;
 }
 
+#modal_video{
+    max-width: 75vw;
+    max-height: 85vh;
+    transform: scale(0);
+    transition: all linear 0.3s;
+    z-index: 5;
+}
+
 .modal.active{
     pointer-events: auto;
     opacity: 1;
 }
 
 .modal.active #modal_img{
+    transform: scale(1);
+}
+
+.modal.active #modal_video{
     transform: scale(1);
 }
 
@@ -1879,17 +1891,6 @@
     background-color: #222222;
 }
 
-.banner-metro-borogodo{
-    height: 19vh;
-    width: 100vw;
-}
-
-.banner-metro-borogodo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .banners2-borogodo{
     display: flex;
     flex-direction: row;
@@ -1897,8 +1898,15 @@
     height: 17.5vh;
 }
 
+.banners3-borogodo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+}
+
 .meio-banner-borogodo{
-    width: 33.3vw;
+    width: 50vw;
 }
 
 .meio-banner-borogodo img{
@@ -2631,6 +2639,21 @@
     justify-content: center;
 }
 
+.logo-site-borogodo:hover path{
+    fill: var(--color-b);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-borogodo li a:hover{
+    color: var(--color-b);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-borogodo i:hover{
+    color: var(--color-b);
+    transition: all 0.3s ease-in-out;
+}
+
 .logo-aplicado-borogodo{
     height: 75vh;
 }
@@ -2762,11 +2785,11 @@
     height: 85vh;
 }
 
-.banner-metro-borogodo{
-    height: 85vh;
+.banners2-borogodo{
+    height: 70vh;
 }
 
-.banners2-borogodo{
+.banners3-borogodo{
     height: 65vh;
 }
 

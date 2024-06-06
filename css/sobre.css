@@ -61,8 +61,13 @@
     justify-content: space-between;
 }
 
-.sobre-specs p{
-    font-size: 3.5vw;
+.sobre-texto-skills p{
+    font-family: var(--font);
+    font-weight: 300;
+    font-size: 3.25vw;
+    line-height: 125%;
+    margin-bottom: 3vw;
+    color: var(--color-w);
 }
 
 .sobre-skills{
@@ -193,7 +198,7 @@
     }
     
     .position-sobre{
-        padding: 6% 0% 4% 0%;
+        padding: 4% 0% 2% 0%;
     }
     
     .position-sobre h3{
@@ -207,13 +212,17 @@
         color: var(--color-w);
     }
     
-    .sobre-specs p{
-        font-size: 3vw;
+    .sobre-texto-skills p{
+        font-size: 2.25vw;
+        line-height: 100%;
+        margin-bottom: 2vw;
+        margin-top: 1vw;
     }
 
     .btn-sobre{
         width: 30%;
         height: 8.75vh;
+        margin-top: 1vw;
     }
 
     .btn-curriculo{
@@ -275,7 +284,7 @@
     .sobre-dados a, .sobre-dados p{
         color: var(--color-w);
         font-family: var(--font);
-        font-weight: 400;
+        font-weight: 300;
         font-size: 2.25vw;
         line-height: 150%;
     }

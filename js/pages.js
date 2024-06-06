@@ -2,6 +2,7 @@
 const gallery = document.querySelectorAll('.imgs-project'),
 modal = document.querySelector('.modal'),
 modalImg = modal.querySelector('#modal_img'),
+modalVideo = modal.querySelector('#modal_video'),
 btClose = modal.querySelector('#bt_close'),
 shadow = document.querySelector('.bg-modal');
 
@@ -13,8 +14,16 @@ window.onload = ()=>{
             clickImgIndex = newIndex;
             console.log(i);
             function preview(){
-                let selectedImgUrl = gallery[newIndex].querySelector("img").src;
-                modalImg.src = selectedImgUrl;
+                let selectedNode = gallery[newIndex].querySelector("img, video");
+                if (selectedNode.tagName === 'IMG') {
+                    modalImg.src = selectedNode.src;
+                    modalImg.style.display = 'block';
+                    modalVideo.style.display = 'none';
+                } else if (selectedNode.tagName === 'VIDEO') {
+                    modalVideo.src = selectedNode.querySelector('source').src;
+                    modalImg.style.display = 'none';
+                    modalVideo.style.display = 'block';
+                }
             }
 
             const prevBtn = document.querySelector("#bt_prev");
