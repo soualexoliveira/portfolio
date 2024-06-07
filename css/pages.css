@@ -1543,7 +1543,7 @@
 }
 
 .header2-borogodo-desc h2{
-    color: var(--borogodo-txt2);
+    color: var(--color-w);
 }
 
 .port-projeto-borogodo{
@@ -1567,15 +1567,16 @@
 }
 
 .sobre-borogodo{
-    margin: 0;
-    padding: 0 3.5%;
+    margin: 3.5% 0;
+    padding: 0 8%;
 }
 
 .sobre-borogodo p{
     margin: 3.5% 0;
     color: var(--borogodo-txt2);
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 2.75vw;
+    text-align:left;
     list-style: none;
 }
 
@@ -1867,28 +1868,16 @@
     object-fit: cover;
 }
 
-.stories-borogodo{
-    height: 25vh;
+.social-borogodo{
+    height: 27.5vh;
     width: 100vw;
 }
 
-.stories-borogodo img{
+.social-borogodo img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     background-color:#666666;
-}
-
-.posts-borogodo{
-    height: 20vh;
-    width: 100vw;
-}
-
-.posts-borogodo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-color: #222222;
 }
 
 .banners2-borogodo{
@@ -2660,11 +2649,11 @@
 
 .sobre-borogodo{
     margin: 1.5% 0;
-    padding: 0 7.5%;
+    padding: 0 10%;
 }
 .sobre-borogodo p{
     margin: 1.5% 0;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 
 .conceito-borogodo{
@@ -2777,12 +2766,8 @@
     height: 100vh;
 }
 
-.stories-borogodo{
-    height: 75vh;
-}
-
-.posts-borogodo{
-    height: 85vh;
+.social-borogodo{
+    height: 115vh;
 }
 
 .banners2-borogodo{
