@@ -112,7 +112,7 @@
                         <div class="em-breve">
                             <h6>EM BREVE</h6>
                         </div>
-                        <a href="trampos/manifesto.html">
+                        <a href="trampos/manifesto.html" disabled>
                             <div class="project-logo manifesto-bg">
                                 <img src="images/carrossel/manifesto/manifesto1.svg" alt="Manifesto">
                             </div>
@@ -140,9 +140,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="projetos borogodo">
+                <div class="projetos borogodo grayscale">
                     <div class="bg-project borogodo-bg">
-                        <a href="trampos/borogodo.html">
+                        <div class="em-breve">
+                            <h6>EM BREVE</h6>
+                        </div>
+                        <a href="trampos/borogodo.html" disabled>
                             <div class="project-logo borogodo-bg">
                                 <img src="images/carrossel/borogodo/borogodo.svg" alt="Borogodó">
                             </div>
@@ -314,11 +317,12 @@
                     gutter: 20
                 },
                 768: {
-                    items: 2
+                    edgePadding: 50,
+                    gutter: 25
                 },
-                1080: {
+                1024: {
                     items: 3,
-                    edgePadding: 120,
+                    edgePadding: 125,
                     gutter: 60
                 }
             }

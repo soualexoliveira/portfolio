@@ -186,6 +186,82 @@
     line-height: 150%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .header-sobre{
+        height: 35vh;
+        padding: 11vh 5% 0 5%;
+    }
+
+    .sobre-bio{
+        padding: 0 5%;
+    }
+
+    .position-sobre{
+        padding: 4% 0%;
+    }
+    
+    .position-sobre h3{
+        font-size: 2.5vw;
+    }
+
+    .sobre-texto p{
+        font-size: 3.25vw;
+        line-height: 4.75vw;
+    }
+    
+    .sobre-texto-skills{
+        margin-top: 1vh;
+    }
+
+    .sobre-texto-skills p{
+        font-size: 2.75vw;
+        line-height: 115%;
+        margin-bottom: 2vw;
+    }
+
+    .btn-sobre{
+        width: 35%;
+        height: 4vh;
+        margin-top: .5vw;
+    }
+
+    .btn-curriculo{
+        border-radius: 45px;
+        padding: 0 4.75%;
+    }
+
+    .btn-yellow p{
+        font-size: 2vw;
+        padding-left: .75vw;
+    }
+
+    .icon-download{
+        width: 3.75vw;
+        height: 3.75vw;
+        border-radius: 45px;
+    }
+    
+    .icon-download i{
+        font-size: 1.75vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-redes-sociais{
+        width: 27.5%;
+    }
+    
+    .sobre-redes-sociais i{
+        font-size: 5vw;
+    }
+
+    .sobre-dados a, .sobre-dados p{
+        font-size: 2.25vw;
+        line-height: 170%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .header-sobre{
         height: 80vh;

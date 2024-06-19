@@ -431,7 +431,7 @@ nav{
 .header2{
     height: 25vh;
     width: 100%;
-    padding: 5vh 3.5% 0 3.5%;
+    padding: 6vh 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -555,13 +555,13 @@ p, img, h2{
 }
 
 .em-breve{
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 25px;
     position: absolute;
     background-color: #212121f9;
     z-index: 1;
@@ -577,6 +577,10 @@ p, img, h2{
 
 .bg-project a{
     width: 100%;
+}
+
+a[disabled]{
+    pointer-events: none;
 }
 
 .project-logo{
@@ -834,6 +838,174 @@ footer{
     transition: all 0.2s ease-in-out;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        height: 11vh;
+        padding: 0 5%;
+    }
+
+    .logo svg{
+        height: 3.5vh;
+    }
+
+    .menu-list li a{
+        font-size: 5vw;
+    }
+
+    .social{
+        width: 30%;
+    }
+
+    .social i{
+        font-size: 5vw;
+    }
+
+    .dados a, .dados p{
+        font-size: 2.5vw;
+        line-height: 140%;
+    }
+
+    .open-nav-btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .close-nav-btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .open-bars{
+        width: 65%;
+    }
+    
+    .close-bars{
+        width: 65%;
+    }
+
+    .header2{
+        height: 35vh;
+        padding: 11vh 5% 0 5%;
+    }
+
+    .header2-title1 h1{
+        font-size: 8.5vw;
+        line-height: 9vw;
+    }
+
+    .header2-title2 h1{
+        font-size: 8.5vw;
+        line-height: 9vw;
+    }
+
+    .position{
+        padding: 4% 5%;
+    }
+    
+    .position h3{
+        font-size: 2.5vw;
+    }
+    
+    .resumo{
+        padding: 0% 5%;
+    }
+    
+    .resumo p{
+        font-size: 4.5vw;
+        line-height: 6.25vw;
+    }
+    
+    .projetos{
+        height: 50vh;
+    }
+
+    .bg-project{
+        height: 50vh;
+    }
+
+    .em-breve h6{
+        font-size: 8.5vw;
+    }
+    
+    .project-logo{
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .project-foto{
+        height: 32.5vh;
+    }
+    
+    .project-foto img{
+        height: 32.5vh;
+    }
+    
+    .cover{
+        height: 17.5vh;
+        padding: 0 5%;
+    }
+    
+    .selo h2{
+        font-size: 2.5vh;
+    }
+    
+    .selo p{
+        font-size: 1.75vh;
+    }
+
+    .project-tags{
+        height: 30%;
+        gap: 5.5%;
+        margin-top: 3.5%;
+    }
+    
+    .project-skills p{
+        font-size: 1.5vh;
+    }
+
+    .coach .project-logo img{
+        max-width: 4.5vw;
+    }
+
+    .merula .project-logo img{
+        max-width: 5vw;
+    }
+
+    .up .project-logo img{
+        max-height: 5.25vw;
+    }
+
+    .borogodo .project-logo img{
+        max-height: 6vw;
+    }
+
+    .manifesto .project-logo img{
+        max-height: 6.75vw;
+    }
+
+    footer{
+        padding: 0 5%;
+        height: 11vh;
+    }
+    
+    .creditos p{
+        font-family: var(--font);
+        color: var(--color-w);
+        font-size: 1.75vw;
+    }
+
+    .cd-top{
+        width: 5.5vw;
+        height: 5.5vw;
+        right: 5vw;
+        bottom: 3vh;
+    }
+    
+    .cd-top i{
+        font-size: 2.25vw;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     header{
         height: 17.5vh;
@@ -988,8 +1160,6 @@ footer{
     
     .em-breve h6{
         font-size: 3.25vw;
-        font-family: var(--font);
-        color: var(--color-w);
     }
 
     .project-logo{
@@ -1076,38 +1246,12 @@ footer{
     .cd-top{
         width: 2vw;
         height: 2vw;
-        border-radius: 50px;
-        border: none;
-        background-color: var(--color-w);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.2s ease-in-out;
-        position: fixed;
-        z-index: 3;
         right: 7.5vw;
         bottom: 3vh;
     }
     
-    .js .cd-top{
-        visibility:hidden;
-        opacity:0;
-        transition:opacity .3s, visibility .3s, background-color .3s;}
-    
-    
-    .js .cd-top--is-visible {
-        visibility: visible;
-        opacity: 1;
-    }
-      
-    .js .cd-top--fade-out {
-        opacity: .5;
-    }
-    
     .cd-top i{
         font-size: 1vw;
-        color: var(--color-b);
-        transition: all 0.2s ease-in-out;
     }
 
     .js .cd-top:hover{
