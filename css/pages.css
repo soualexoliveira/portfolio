@@ -3324,7 +3324,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.social-borogodo i:hover{
+.redes-borogodo i:hover{
     color: var(--color-b);
     transition: all 0.3s ease-in-out;
 }
