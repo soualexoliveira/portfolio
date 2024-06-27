@@ -1673,7 +1673,7 @@
 }
 
 .foto-rotulo-borogodo{
-    height: 18vh;
+    height: 20.5vh;
     width: 100vw;
 }
 
@@ -1681,6 +1681,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .design-rotulo-borogodo{
@@ -1782,75 +1783,25 @@
     background-color:#aaaaaa;
 }
 
-.seis-cervejas-borogodo{
+.tres-cervejas-borogodo{
     height: 25vh;
     width: 100vw;
 }
 
-.seis-cervejas-borogodo img{
+.tres-cervejas-borogodo img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.cerveja-360-borogodo{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 20vh;
-}
-
-.cerveja-pilsen-360-borogodo{
-    width: 33.3%;
-}
-
-.cerveja-pilsen-360-borogodo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    background-color:#666666;
-}
-
-.cerveja-bock-360-borogodo{
-    width: 33.3%;
-}
-
-.cerveja-bock-360-borogodo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    background-color:#666666;
-}
-
-.cerveja-fruitbeer-360-borogodo{
-    width: 33.3%;
-}
-
-.cerveja-fruitbeer-360-borogodo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    background-color:#666666;
 }
 
 .foto-conceitual-borogodo{
-    height: 50vh;
+    height: 25vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-.foto-conceitual-borogodo img:nth-child(1){
-    height: 25vh;
-    width: 100%;
-    object-fit: cover;
-    background-color:#aaaaaa;
-}
-
-.foto-conceitual-borogodo img:nth-child(2){
+.foto-conceitual-borogodo img{
     height: 25vh;
     width: 100%;
     object-fit: cover;
@@ -1904,6 +1855,20 @@
     object-fit: cover;
     object-position: top;
     background-color: #222222;
+}
+
+.foto-cheers{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-cheers img{
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    background-color:#aaaaaa;
 }
 
 .footer-borogodo{
@@ -3363,7 +3328,7 @@
 }
 
 .foto-rotulo-borogodo{
-    height: 77.5vh;
+    height: 91vh;
 }
 
 .design-rotulo-borogodo{
@@ -3425,8 +3390,8 @@
     height: 75vh;
 }
 
-.seis-cervejas-borogodo{
-    height: 100vh;
+.tres-cervejas-borogodo{
+    height: 105vh;
 }
 
 .cerveja-360-borogodo{
@@ -3434,18 +3399,13 @@
 }
 
 .foto-conceitual-borogodo{
-    height: 60vh;
+    height: 80vh;
     flex-direction: row;
 }
 
-.foto-conceitual-borogodo img:nth-child(1){
-    height: 60vh;
-    width: 50vw;
-}
-
-.foto-conceitual-borogodo img:nth-child(2){
-    height: 60vh;
-    width: 50vw;
+.foto-conceitual-borogodo img{
+    height: 80vh;
+    width: 100vw;
 }
 
 .tampinha-borogodo{
@@ -3462,6 +3422,14 @@
 
 .banners3-borogodo{
     height: 65vh;
+}
+
+.foto-cheers{
+    height: 80vh;
+}
+
+.foto-cheers img{
+    height: 80vh;
 }
 
 }
