@@ -1,21 +1,23 @@
 .header2-logo{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items:start;
+    align-items: center;
     justify-content: center;
-    height: 14vh;
+    margin-top: 6vh;
+    height: 18vh;
 }
 
 .header2-logo img{
-    max-height: 6.5vh;
-    max-width: 35vw;
+    max-height: 50%;
+    max-width: 50%;
 }
 
 .header2-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 6vh;
 }
 
 .header2-desc{
@@ -213,10 +215,10 @@
 .header2-up{
     height: 30vh;
     width: 100%;
-    padding: 10vh 3.5% 0 3.5%;
+    padding: 0 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--up-bg);
 }
 
@@ -656,10 +658,10 @@
 .header2-merula{
     height: 30vh;
     width: 100%;
-    padding: 10vh 3.5% 0 3.5%;
+    padding: 0 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--merula-bg);
 }
 
@@ -1003,10 +1005,10 @@
 .header2-coach{
     height: 30vh;
     width: 100%;
-    padding: 10vh 3.5% 0 3.5%;
+    padding: 0 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--coach-bg);
 }
 
@@ -1535,10 +1537,10 @@
 .header2-borogodo{
     height: 30vh;
     width: 100%;
-    padding: 12.5vh 3.5% 0 3.5%;
+    padding: 0 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--borogodo-bg);
 }
 
@@ -1876,17 +1878,202 @@
     border-top: none;
 }
 
+/*RUPTURA*/
+#inicio-ruptura{
+    background-color: var(--ruptura-bg);
+}
+
+.header2-ruptura{
+    height: 30vh;
+    width: 100%;
+    padding: 0 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--ruptura-bg);
+}
+
+.header2-ruptura-desc h2{
+    color: var(--ruptura-txt);
+}
+
+.port-projeto-ruptura{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ruptura-font);
+    background-color: var(--ruptura-bg);
+}
+
+.site-exposicao-ruptura{
+    height: 25vh;
+    width: 100vw;
+}
+
+.site-exposicao-ruptura img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.sobre-ruptura{
+    margin: 3.5% 0;
+    padding: 0 10%;
+}
+
+.sobre-ruptura p{
+    margin: 3.5% 0;
+    color: var(--ruptura-txt);
+    font-weight: 300;
+    font-size: 3.2vw;
+    text-align:left;
+    list-style: none;
+}
+
+.sobre-ruptura strong{
+    color: var(--ruptura-bg2);
+    font-weight: 600;
+}
+
+.strong2{
+    font-weight: 500;
+}
+
+/*.conceito-borogodo{
+    height: 10vh;
+    width: 100vw;
+}
+
+.conceito-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.versoes-borogodo{
+    width: 100vw;
+    height: 15vh;
+}
+
+.versoes-borogodo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.papelaria-borogodo{
+    height: 30vh;
+    width: 100vw;
+}
+
+.papelaria-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.cores-tipografias-borogodo{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 100vw;
+}
+
+.cores-borogodo{
+    background-color: var(--borogodo-bg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 3.5vw;
+}
+
+.cores-borogodo p{
+    color: var(--borogodo-txt);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+}
+
+.tipografias-borogodo{
+    background-color: var(--borogodo-txt);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 3.5vw;
+}
+
+.tipografias-borogodo p{
+    color: var(--borogodo-bg);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+}
+
+.banner-borogodo{
+    height: 22.5vh;
+    width: 100vw;
+}
+
+.banner-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.foto-rotulo-borogodo{
+    height: 20.5vh;
+    width: 100vw;
+}
+
+.foto-rotulo-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.design-rotulo-borogodo{
+    width: 100vw;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-rotulo-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000000;
+}*/
+
+.footer-ruptura{
+    background-color: var(--ruptura-bg);
+    border-top: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .header2-logo{
-        height: 35vh;
-        padding-top: 10vh;
+        height: 28vh;
+        margin-top: 11vh;
     }
     
     .header2-logo img{
-        max-height: 9.75vh;
-        max-width: 35vw;
+        max-height: 45%;
+        max-width: 45%;
     }
-    
+
+    .header2-row{
+        height: 11vh;
+    }
+
     .header2-desc h2{
         font-size: 2vw;
     }
@@ -1935,8 +2122,7 @@
     /*UP*/
     .header2-up{
         height: 50vh;
-        padding: 10vh 5% 0 5%;
-        justify-content: center;
+        padding: 0 5% 0 5%;
     }
 
     .sobre-up{
@@ -2157,7 +2343,7 @@
     /*MERULA*/
     .header2-merula{
         height: 50vh;
-        padding: 10vh 5% 0 5%;
+        padding: 0 5% 0 5%;
     }
 
     .merula-preset1{
@@ -2313,7 +2499,7 @@
     /*CELULA COACH*/
     .header2-coach{
         height: 50vh;
-        padding: 10vh 5% 0 5%;
+        padding: 0 5% 0 5%;
     }
 
     .coach-sobre, .coach-sobre2, .coach-sobre3{
@@ -2560,876 +2746,908 @@
         width: 100%;
         object-fit: cover;
     }
+
+    /*BOROGODÓ*/
+
+    /*RUPTURA*/
+    .header2-ruptura{
+        height: 50vh;
+        padding: 0 5% 0 5%;
+    }
+    
+    .site-exposicao-ruptura{
+        height: 35vh;
+    }
+    
+    .sobre-ruptura{
+        margin: 5% 0;
+        padding: 0 12%;
+    }
+    
+    .sobre-ruptura p{
+        margin: 5% 0;
+        font-size: 2.75vw;
+    }
 }
 
 @media screen and (min-width: 1024px){
-
-.header2-logo{
-    height: 52.5vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 18.75vh;
-    justify-content: center;
-}
-
-.header2-logo img{
-    max-height: 15vh;
-    max-width: 25vw;
-}
-
-.header2-row{
-    height: 10vh;
-    padding-top: 2vh;
-}
-
-.header2-desc h2{
-    font-size: .8vw;
-}
-
-/*PAGINAÇÃO*/
-.pag-project{
-    height: 20vh;
-    padding: 0 7.5%;
-}
-
-.prev-project h4, .next-project h4{
-    font-size: 1.25vw;
-}
-
-.btn-previous-project, .btn-next-project{
-    gap: 1.5vw;
-}
-
-.btn-previous-project-i, .btn-next-project-i{
-    width: 2.5vw;
-    height: 2.5vw;
-}
-
-.prev-project i, .next-project i{
-    font-size: 1.25vw;
-}
-
-.btn-previous-project:hover .btn-previous-project-i, .btn-next-project:hover .btn-next-project-i{
-    background-color: var(--color-y);
-    transition: all 0.2s ease-in-out;
-}
-
-.btn-previous-project:hover i, .btn-next-project:hover i{
-    color: var(--color-w);
-    transition: all 0.2s ease-in-out;
-}
-
-/*MODAL*/
-
-#bt_close{
-    right: 5vw;
-    font-size: 2.5em;
-}
-
-#bt_close:hover, #bt_prev:hover, #bt_next:hover{
-    color: var(--color-y);
-}
-
-#bt_next{
-    top: 50vh;
-    right: 5vw;
-    font-size: 2.5em;
-}
-
-#bt_prev{
-    top: 50vh;
-    left: 5vw;
-    font-size: 2.5em;
-}
-
-/*UP*/
-.header2-up{
-    height: 80vh;
-    width: 100%;
-    padding: 17.5vh 7.5% 0 7.5%;
-    justify-content: center;
-}
-
-.sobre-up{
-    margin: 1.5% 0;
-    padding: 0 5%;
-}
-.sobre-up p, .sobre-up ul{
-    margin: 1.5% 0;
-    font-size: 1.2vw;
-}
-
-.conceito-up{
-    height: 60vh;
-}
-
-.versoes-up{
-    height: 35vh;
-}
-
-.cores-up{
-    flex-direction: row;
-    height: 65vh;
-}
-
-.cor-up{
-    flex-direction: column;
-    width: 50vw;
-    height:auto;
-}
-
-.cor-up-azul{
-    height: 50%;
-    padding-left: 5vw;
-}
-
-.cor-up-azul p{
-    font-size: 1vw;
-}
-
-.cor-up-branco{
-    height: 50%;
-    padding-left: 5vw;
-}
-
-.cor-up-branco p{
-    font-size: 1vw;
-}
-
-.papelaria{
-    width: 50vw;
-    height: auto;
-    display: block;
-}
-
-.papelaria img{
-    width: 100%;
-    height: 100%;
-}
-
-.tipo-up{
-    height: 70vh;
-}
-
-.tipo-up-section1{
-    width: 25%;
-}
-
-.tipo-up-tit h2{
-    font-size: 4.5vw;
-}
-
-.tipo-up-tit h3{
-    font-size: 1.1vw;
-}
-
-.tipo-up-section1 p{
-    font-size: 1.1vw;
-}
-
-.tipo-up-section2{
-    width: 25%;
-}
-
-.tipo-up-a p:nth-child(1){
-    font-size: 9vw;
-}
-
-.tipo-up-a p:nth-child(2){
-    font-size: 9vw;
-}
-
-.tipo-up-alfabeto p{
-    font-size: 1.55vw;
-}
-
-.tipo-up-pesos p{
-    font-size: 1.25vw;
-}
-
-.papelaria-n-obrigatoria{
-    height: 90vh;
-    flex-direction: row;
-}
-
-.certificado-up{
-    width: 60%;
-    height: auto;
-}
-
-.certificado-up img{
-    height: 100%;
-}
-
-.livros-up{
-    flex-direction: column;
-    width: 40%;
-    height: auto;
-}
-
-.livro-up1{
-    width: 100%;
-    height: 50%;
-}
-
-.livro-up-lado{
-    height: 50%;
-    width: 100%;
-}
-
-.vestuário-up{
-    height: 80vh;
-}
-
-.camisas img{
-    height: 80vh;
-}
-
-.moletom img{
-    height: 80vh;
-}
-
-.mapa-up{
-    height: 85vh;
-}
-
-.mapa-up img{
-    width: 70vw;
-    height: 85vh;
-}
-
-.site-up1{
-    height: 110vw;
-}
-
-.site-up2{
-    height: 110vw;
-}
-
-.site-up1 img{
-    height: 110vw;
-}
-
-.site-up2 img{
-    height: 110vw;
-}
-
-.app-up{
-    height: 80vh;
-}
-
-.app-up img{
-    height: 80vh;
-}
-
-.posts-up{
-    height: 80vh;
-}
-
-.posts-up img{
-    width: 80vw;
-    height: 80vh;
-}
-
-.perfil-up{
-    height: 70vh;
-}
-
-.perfil-up img{
-    width: 80vw;
-    height: 70vh;
-}
-
-.marketing-up{
-    height: 50vh;
-}
-
-.metro-up{
-    height: 50vh;
-}
-
-.onibus-up{
-    height: 50vh;
-}
-
-.metro-video-up{
-    height: 60vh;
-}
-
-.metro-video-up video{
-    height: 60vh;
-}
-
-/*MERULA*/
-.header2-merula{
-    height: 80vh;
-    padding: 17.5vh 7.5% 0 7.5%;
-}
-
-.merula-preset1{
-    padding: 5vh 0;
-}
-
-.merula-preset1-header{
-    height: 5vh;
-    width: 85vw;
-}
-
-.merula-preset1-indice h4{
-    font-weight: 400;
-    font-size: unset;
-}
-
-.merula-preset-logo{
-    width: 3vh;
-    height: 3vh;
-}
-
-.merula-sobre{
-    flex-direction: row;
-    height: 55vh;
-    width: 85vw;
-    justify-content: space-between;
-}
-
-.merula-sobre-titulo{
-    width: 35%; 
-    margin-bottom: unset;  
-}
-
-.merula-sobre-titulo h2{
-    font-size: 4.8em;
-    font-weight: 400;
-}
-
-.merula-sobre-texto{
-    width: 60%;
-}
-
-.merula-sobre-texto p{
-    font-size: 1.2em;
-    font-weight: 300;
-    margin-bottom: unset;
-}
-
-.merula-processo{
-    flex-direction: row;
-    padding: 10vh 7.5vw;
-    background-size: contain;
-    gap:unset;
-}
-
-.merula-processo img{
-    width: 41.5vw;
-}
-
-.merula-papelaria img{
-    object-fit:unset;
-}
-
-.merula-cores{
-    height: 85vh;
-    background-size: contain;
-}
-
-.merula-cores-palette img{
-    width: 85vw;
-}
-
-.merula-tipografia{
-    height: 55vh;
-    width: 85vw;
-}
-
-.merula-tipografia-top{
-    width: 80vw;
-    flex-direction: row;
-    gap: 5vw;
-}
-
-.merula-tipografia-titulo{
-    width: 40vw;
-    justify-content: right;
-}
-
-.merula-tipografia-titulo p{
-    font-size: 5em;
-}
-
-.merula-tipografia-info{
-    width: 40vw;
-}
-
-.merula-tipografia-info p{
-    font-size: 1.15em;
-}
-
-.merula-tipografia-bottom{
-    width: 80vw;
-}
-
-.merula-tipografia-alfabeto{
-    width: 40vw;
-}
-
-.merula-tipografia-alfabeto p{
-    font-size: 1.7em;
-    justify-content: center;
-}
-
-.merula-tipografia-familyfont{
-    width: 40vw;
-}
-
-.merula-tipografia-font{
-    font-size: 1.8em;
-    flex-wrap:unset;
-}
-
-.merula-cards img{
-    width: 85vw;
-}
-
-.merula-preset2{
-    padding: 5vh 0 2vh 0;
-}
-
-.merula-preset2-header{
-    height: 5vh;
-    width: 85vw;
-}
-
-.merula-preset2-indice h4{
-    font-weight: 400;
-    font-size: unset;
-}
-
-.merula-application{
-    margin-top: 5vh;
-    justify-content:space-evenly;
-    height: 65vh;
-    gap: unset;
-}
-
-.apl-one, .apl-two{
-    width: 85vw;
-}
-
-/*CELULA COACH*/
-.header2-coach{
-    height: 80vh;
-    padding: 17.5vh 7.5% 0 7.5%;
-    justify-content: center;
-}
-
-.coach-sobre, .coach-sobre2, .coach-sobre3{
-    gap: 4vh;
-    padding: 10vh 0;
-}
-
-.coach-sobre p, .coach-sobre2 p, .coach-sobre3 p{
-    width:70%;
-    font-size: 1.3em;
-}
-
-.tit-coach{
-    height: 35vw;
-    padding-left: 7.5%;
-}
-
-.tit-coach p{
-    font-size: 6vw;
-    line-height: 110%;
-}
-
-.tit-coach-bg{
-    padding-right: 7.5%;
-}
-
-.foto-bispo{
-    width: 60vw;
-    height: 25vw;
-}
-
-.foto-povo{
-    height: 35vw;
-}
-
-.logo-coach-conceito{
-    width: 35vw;
-}
-
-.logo-coach-regras{
-    width: 50vw;
-    margin-top: 5vw;
-}
-
-.logo-coach-grid img{
-    width: 20vw;
-}
-
-.logo-coach-limite img{
-    width: 20vw;
-}
-
-.logo-coach-versoes{
-    padding: 0 7.5%;
-    margin-top: 5vw;
-}
-
-.logo-coach-infos{
-    height: auto;
-    padding: 0 7.5%;
-    margin-top: 5vw;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5vw;
-}
-
-.logo-coach-cores{
-    width: 50vw;
-    height: auto;
-    margin-top: 2.5vw;
-}
-
-.coach-azul-escuro{
-    width: 11vw;
-}
-
-.coach-azul-escuro img{
-    width: 80%;
-    margin-bottom: unset;
-}
-
-.texto-azul-escuro p{
-    font-size: 1em;
-    line-height: 130%;
-}
-
-.coach-azul-claro{
-    width: 11vw;
-}
-
-.coach-azul-claro img{
-    width: 80%;
-    margin-bottom: unset;
-}
-
-.texto-azul-claro p{
-    font-size: 1em;
-    line-height: 130%;
-}
-
-.coach-branco{
-    width: 11vw;
-}
-
-.coach-branco img{
-    width: 80%;
-    margin-bottom: unset;
-}
-
-.texto-branco p{
-    font-size: 1em;
-    line-height: 130%;
-}
-
-.logo-coach-tipografia{
-    width: 40vw;
-    height: auto;
-    align-items: center;
-    justify-content:space-around;
-    margin-top: 0;
-}
-
-.coach-tipografia-exemplo{
-    width: 11vw;
-    height: 18.5vw;
-}
-
-.coach-letra p{
-    font-size: 6.5em;
-}
-
-.coach-texto-exemplo p{
-    font-size: 1em;
-    line-height: 120%;
-}
-
-.coach-espessura{
-    margin-top: 1vw;
-    width: 20vw;
-    height: auto;
-}
-
-.coach-espessura p{
-    font-size: 2.1em;
-    line-height: 140%;
-}
-
-.coach-preset4{
-    padding:5vw 7.5vw;
-}
-
-.coach-cartao, .coach-papelaria, .coach-tecido, .coach-outros, .coach-spotify{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.coach-cartao1{
-    width: 48%;
-    height: 35vw;
-}
-
-.coach-cartao1-chuva{
-    height: 15.75vw;
-}
-
-.coach-cartao1-chuva img{
-    height: 15.75vw;
-}
-
-.coach-cartao1-entrega{
-    width: 100%;
-    height: 15.75vw;
-    display: block;
-}
-
-.coach-cartao1-entrega img{
-    width: 100%;
-    height: 15.75vw;
-    object-fit:cover;
-}
-
-.coach-cartao2{
-    width: 48%;
-    height: 35vw;
-}
-
-.coach-biblia{
-    height: 30vw;
-}
-
-.coach-biblia img{
-    height: 100%;
-}
-
-.coach-quadro{
-    height: 30vw;
-}
-
-.coach-quadro img{
-    height: 100%;
-}
-
-.coach-caderno{
-    height: 30vw;
-}
-
-.coach-caderno img{
-    height: 100%;
-}
-
-.coach-carteira{
-    width: 45%;
-    height: 28vw;
-    display: block;
-}
-
-.coach-carteira img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.coach-bolsa{
-    width: 30%;
-    height: 28vw;
-}
-
-.coach-bolsa-detalhe{
-    width: 17%;
-    height: 28vw;
-}
-
-.coach-spotify{
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.coach-spotify img{
-    width: 85vw;
-    object-fit: cover;
-}
-
-/*BOROGODÓ*/
-.header2-borogodo{
-    height: 80vh;
-    width: 100%;
-    padding: 17.5vh 7.5% 0 7.5%;
-    justify-content: center;
-}
-
-.logo-site-borogodo:hover path{
-    fill: var(--color-b);
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-borogodo li a:hover{
-    color: var(--color-b);
-    transition: all 0.3s ease-in-out;
-}
-
-.redes-borogodo i:hover{
-    color: var(--color-b);
-    transition: all 0.3s ease-in-out;
-}
-
-.logo-aplicado-borogodo{
-    height: 75vh;
-}
-
-.sobre-borogodo{
-    margin: 1.5% 0;
-    padding: 0 10%;
-}
-.sobre-borogodo p{
-    margin: 1.5% 0;
-    font-size: 1.3vw;
-}
-
-.conceito-borogodo{
-    height: 45vh;
-}
-
-.versoes-borogodo{
-    height: 60vh;
-}
-
-.papelaria-borogodo{
-    height: 100vh;
-}
-
-.cores-tipografias-borogodo{
-    height: 50vh;
-}
-
-.banner-borogodo{
-    height: 100vh;
-}
-
-.foto-rotulo-borogodo{
-    height: 91vh;
-}
-
-.design-rotulo-borogodo{
-    flex-direction: row;
-}
-
-.design-rotulo-borogodo img{
-    height: 45vh;
-    width: 33.3vw;
-}
-
-.cores-rotulos-borogodo{
-    height: 90vh;
-    flex-direction: row;
-}
-
-.foto-cores-rotulos-borogodo{
-    width: 85%;
-    height: 100%;
-}
-
-.todas-cores-rotulos-borogodo{
-    width: 15%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.rótulo-borogodo-cor1{
-    width: 100%;
-    height: 16.66%;
-}
-
-.rótulo-borogodo-cor2{
-    width: 100%;
-    height: 16.66%;
-}
-
-.rótulo-borogodo-cor3{
-    width: 100%;
-    height: 16.66%;
-}
-
-.rótulo-borogodo-cor4{
-    width: 100%;
-    height: 16.66%;
-}
-
-.rótulo-borogodo-cor5{
-    width: 100%;
-    height: 16.66%;
-}
-
-.rótulo-borogodo-cor6{
-    width: 100%;
-    height: 16.66%;
-}
-
-.cerveja-frontal-borogodo{
-    height: 75vh;
-}
-
-.tres-cervejas-borogodo{
-    height: 105vh;
-}
-
-.cerveja-360-borogodo{
-    height: 65vh;
-}
-
-.foto-conceitual-borogodo{
-    height: 80vh;
-    flex-direction: row;
-}
-
-.foto-conceitual-borogodo img{
-    height: 80vh;
-    width: 100vw;
-}
-
-.tampinha-borogodo{
-    height: 100vh;
-}
-
-.social-borogodo{
-    height: 115vh;
-}
-
-.banners2-borogodo{
-    height: 70vh;
-}
-
-.banners3-borogodo{
-    height: 65vh;
-}
-
-.foto-cheers{
-    height: 80vh;
-}
-
-.foto-cheers img{
-    height: 80vh;
-}
-
+    .header2-logo{
+        height: 45vh;
+        margin-top: 17.5vh;
+    }
+
+    .header2-logo img{
+        max-height: 35%;
+        max-width: 25%;
+    }
+
+    .header2-row{
+        height: 17.5vh;
+    }
+
+    .header2-desc h2{
+        font-size: .8vw;
+    }
+
+    /*PAGINAÇÃO*/
+    .pag-project{
+        height: 20vh;
+        padding: 0 7.5%;
+    }
+
+    .prev-project h4, .next-project h4{
+        font-size: 1.25vw;
+    }
+
+    .btn-previous-project, .btn-next-project{
+        gap: 1.5vw;
+    }
+
+    .btn-previous-project-i, .btn-next-project-i{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .prev-project i, .next-project i{
+        font-size: 1.25vw;
+    }
+
+    .btn-previous-project:hover .btn-previous-project-i, .btn-next-project:hover .btn-next-project-i{
+        background-color: var(--color-y);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-previous-project:hover i, .btn-next-project:hover i{
+        color: var(--color-w);
+        transition: all 0.2s ease-in-out;
+    }
+
+    /*MODAL*/
+
+    #bt_close{
+        right: 5vw;
+        font-size: 2.5em;
+    }
+
+    #bt_close:hover, #bt_prev:hover, #bt_next:hover{
+        color: var(--color-y);
+    }
+
+    #bt_next{
+        top: 50vh;
+        right: 5vw;
+        font-size: 2.5em;
+    }
+
+    #bt_prev{
+        top: 50vh;
+        left: 5vw;
+        font-size: 2.5em;
+    }
+
+    /*UP*/
+    .header2-up{
+        height: 80vh;
+        width: 100%;
+        padding: 0 7.5% 0 7.5%;
+        justify-content: center;
+    }
+
+    .sobre-up{
+        margin: 1.5% 0;
+        padding: 0 5%;
+    }
+    .sobre-up p, .sobre-up ul{
+        margin: 1.5% 0;
+        font-size: 1.2vw;
+    }
+
+    .conceito-up{
+        height: 60vh;
+    }
+
+    .versoes-up{
+        height: 35vh;
+    }
+
+    .cores-up{
+        flex-direction: row;
+        height: 65vh;
+    }
+
+    .cor-up{
+        flex-direction: column;
+        width: 50vw;
+        height:auto;
+    }
+
+    .cor-up-azul{
+        height: 50%;
+        padding-left: 5vw;
+    }
+
+    .cor-up-azul p{
+        font-size: 1vw;
+    }
+
+    .cor-up-branco{
+        height: 50%;
+        padding-left: 5vw;
+    }
+
+    .cor-up-branco p{
+        font-size: 1vw;
+    }
+
+    .papelaria{
+        width: 50vw;
+        height: auto;
+        display: block;
+    }
+
+    .papelaria img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tipo-up{
+        height: 70vh;
+    }
+
+    .tipo-up-section1{
+        width: 25%;
+    }
+
+    .tipo-up-tit h2{
+        font-size: 4.5vw;
+    }
+
+    .tipo-up-tit h3{
+        font-size: 1.1vw;
+    }
+
+    .tipo-up-section1 p{
+        font-size: 1.1vw;
+    }
+
+    .tipo-up-section2{
+        width: 25%;
+    }
+
+    .tipo-up-a p:nth-child(1){
+        font-size: 9vw;
+    }
+
+    .tipo-up-a p:nth-child(2){
+        font-size: 9vw;
+    }
+
+    .tipo-up-alfabeto p{
+        font-size: 1.55vw;
+    }
+
+    .tipo-up-pesos p{
+        font-size: 1.25vw;
+    }
+
+    .papelaria-n-obrigatoria{
+        height: 90vh;
+        flex-direction: row;
+    }
+
+    .certificado-up{
+        width: 60%;
+        height: auto;
+    }
+
+    .certificado-up img{
+        height: 100%;
+    }
+
+    .livros-up{
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+    }
+
+    .livro-up1{
+        width: 100%;
+        height: 50%;
+    }
+
+    .livro-up-lado{
+        height: 50%;
+        width: 100%;
+    }
+
+    .vestuário-up{
+        height: 80vh;
+    }
+
+    .camisas img{
+        height: 80vh;
+    }
+
+    .moletom img{
+        height: 80vh;
+    }
+
+    .mapa-up{
+        height: 85vh;
+    }
+
+    .mapa-up img{
+        width: 70vw;
+        height: 85vh;
+    }
+
+    .site-up1{
+        height: 110vw;
+    }
+
+    .site-up2{
+        height: 110vw;
+    }
+
+    .site-up1 img{
+        height: 110vw;
+    }
+
+    .site-up2 img{
+        height: 110vw;
+    }
+
+    .app-up{
+        height: 80vh;
+    }
+
+    .app-up img{
+        height: 80vh;
+    }
+
+    .posts-up{
+        height: 80vh;
+    }
+
+    .posts-up img{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .perfil-up{
+        height: 70vh;
+    }
+
+    .perfil-up img{
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .marketing-up{
+        height: 50vh;
+    }
+
+    .metro-up{
+        height: 50vh;
+    }
+
+    .onibus-up{
+        height: 50vh;
+    }
+
+    .metro-video-up{
+        height: 60vh;
+    }
+
+    .metro-video-up video{
+        height: 60vh;
+    }
+
+    /*MERULA*/
+    .header2-merula{
+        height: 80vh;
+        padding: 0 7.5% 0 7.5%;
+    }
+
+    .merula-preset1{
+        padding: 5vh 0;
+    }
+
+    .merula-preset1-header{
+        height: 5vh;
+        width: 85vw;
+    }
+
+    .merula-preset1-indice h4{
+        font-weight: 400;
+        font-size: unset;
+    }
+
+    .merula-preset-logo{
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .merula-sobre{
+        flex-direction: row;
+        height: 55vh;
+        width: 85vw;
+        justify-content: space-between;
+    }
+
+    .merula-sobre-titulo{
+        width: 35%; 
+        margin-bottom: unset;  
+    }
+
+    .merula-sobre-titulo h2{
+        font-size: 4.8em;
+        font-weight: 400;
+    }
+
+    .merula-sobre-texto{
+        width: 60%;
+    }
+
+    .merula-sobre-texto p{
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-bottom: unset;
+    }
+
+    .merula-processo{
+        flex-direction: row;
+        padding: 10vh 7.5vw;
+        background-size: contain;
+        gap:unset;
+    }
+
+    .merula-processo img{
+        width: 41.5vw;
+    }
+
+    .merula-papelaria img{
+        object-fit:unset;
+    }
+
+    .merula-cores{
+        height: 85vh;
+        background-size: contain;
+    }
+
+    .merula-cores-palette img{
+        width: 85vw;
+    }
+
+    .merula-tipografia{
+        height: 55vh;
+        width: 85vw;
+    }
+
+    .merula-tipografia-top{
+        width: 80vw;
+        flex-direction: row;
+        gap: 5vw;
+    }
+
+    .merula-tipografia-titulo{
+        width: 40vw;
+        justify-content: right;
+    }
+
+    .merula-tipografia-titulo p{
+        font-size: 5em;
+    }
+
+    .merula-tipografia-info{
+        width: 40vw;
+    }
+
+    .merula-tipografia-info p{
+        font-size: 1.15em;
+    }
+
+    .merula-tipografia-bottom{
+        width: 80vw;
+    }
+
+    .merula-tipografia-alfabeto{
+        width: 40vw;
+    }
+
+    .merula-tipografia-alfabeto p{
+        font-size: 1.7em;
+        justify-content: center;
+    }
+
+    .merula-tipografia-familyfont{
+        width: 40vw;
+    }
+
+    .merula-tipografia-font{
+        font-size: 1.8em;
+        flex-wrap:unset;
+    }
+
+    .merula-cards img{
+        width: 85vw;
+    }
+
+    .merula-preset2{
+        padding: 5vh 0 2vh 0;
+    }
+
+    .merula-preset2-header{
+        height: 5vh;
+        width: 85vw;
+    }
+
+    .merula-preset2-indice h4{
+        font-weight: 400;
+        font-size: unset;
+    }
+
+    .merula-application{
+        margin-top: 5vh;
+        justify-content:space-evenly;
+        height: 65vh;
+        gap: unset;
+    }
+
+    .apl-one, .apl-two{
+        width: 85vw;
+    }
+
+    /*CELULA COACH*/
+    .header2-coach{
+        height: 80vh;
+        padding: 0 7.5% 0 7.5%;
+    }
+
+    .coach-sobre, .coach-sobre2, .coach-sobre3{
+        gap: 4vh;
+        padding: 10vh 0;
+    }
+
+    .coach-sobre p, .coach-sobre2 p, .coach-sobre3 p{
+        width:70%;
+        font-size: 1.3em;
+    }
+
+    .tit-coach{
+        height: 35vw;
+        padding-left: 7.5%;
+    }
+
+    .tit-coach p{
+        font-size: 6vw;
+        line-height: 110%;
+    }
+
+    .tit-coach-bg{
+        padding-right: 7.5%;
+    }
+
+    .foto-bispo{
+        width: 60vw;
+        height: 25vw;
+    }
+
+    .foto-povo{
+        height: 35vw;
+    }
+
+    .logo-coach-conceito{
+        width: 35vw;
+    }
+
+    .logo-coach-regras{
+        width: 50vw;
+        margin-top: 5vw;
+    }
+
+    .logo-coach-grid img{
+        width: 20vw;
+    }
+
+    .logo-coach-limite img{
+        width: 20vw;
+    }
+
+    .logo-coach-versoes{
+        padding: 0 7.5%;
+        margin-top: 5vw;
+    }
+
+    .logo-coach-infos{
+        height: auto;
+        padding: 0 7.5%;
+        margin-top: 5vw;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5vw;
+    }
+
+    .logo-coach-cores{
+        width: 50vw;
+        height: auto;
+        margin-top: 2.5vw;
+    }
+
+    .coach-azul-escuro{
+        width: 11vw;
+    }
+
+    .coach-azul-escuro img{
+        width: 80%;
+        margin-bottom: unset;
+    }
+
+    .texto-azul-escuro p{
+        font-size: 1em;
+        line-height: 130%;
+    }
+
+    .coach-azul-claro{
+        width: 11vw;
+    }
+
+    .coach-azul-claro img{
+        width: 80%;
+        margin-bottom: unset;
+    }
+
+    .texto-azul-claro p{
+        font-size: 1em;
+        line-height: 130%;
+    }
+
+    .coach-branco{
+        width: 11vw;
+    }
+
+    .coach-branco img{
+        width: 80%;
+        margin-bottom: unset;
+    }
+
+    .texto-branco p{
+        font-size: 1em;
+        line-height: 130%;
+    }
+
+    .logo-coach-tipografia{
+        width: 40vw;
+        height: auto;
+        align-items: center;
+        justify-content:space-around;
+        margin-top: 0;
+    }
+
+    .coach-tipografia-exemplo{
+        width: 11vw;
+        height: 18.5vw;
+    }
+
+    .coach-letra p{
+        font-size: 6.5em;
+    }
+
+    .coach-texto-exemplo p{
+        font-size: 1em;
+        line-height: 120%;
+    }
+
+    .coach-espessura{
+        margin-top: 1vw;
+        width: 20vw;
+        height: auto;
+    }
+
+    .coach-espessura p{
+        font-size: 2.1em;
+        line-height: 140%;
+    }
+
+    .coach-preset4{
+        padding:5vw 7.5vw;
+    }
+
+    .coach-cartao, .coach-papelaria, .coach-tecido, .coach-outros, .coach-spotify{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .coach-cartao1{
+        width: 48%;
+        height: 35vw;
+    }
+
+    .coach-cartao1-chuva{
+        height: 15.75vw;
+    }
+
+    .coach-cartao1-chuva img{
+        height: 15.75vw;
+    }
+
+    .coach-cartao1-entrega{
+        width: 100%;
+        height: 15.75vw;
+        display: block;
+    }
+
+    .coach-cartao1-entrega img{
+        width: 100%;
+        height: 15.75vw;
+        object-fit:cover;
+    }
+
+    .coach-cartao2{
+        width: 48%;
+        height: 35vw;
+    }
+
+    .coach-biblia{
+        height: 30vw;
+    }
+
+    .coach-biblia img{
+        height: 100%;
+    }
+
+    .coach-quadro{
+        height: 30vw;
+    }
+
+    .coach-quadro img{
+        height: 100%;
+    }
+
+    .coach-caderno{
+        height: 30vw;
+    }
+
+    .coach-caderno img{
+        height: 100%;
+    }
+
+    .coach-carteira{
+        width: 45%;
+        height: 28vw;
+        display: block;
+    }
+
+    .coach-carteira img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .coach-bolsa{
+        width: 30%;
+        height: 28vw;
+    }
+
+    .coach-bolsa-detalhe{
+        width: 17%;
+        height: 28vw;
+    }
+
+    .coach-spotify{
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;
+    }
+
+    .coach-spotify img{
+        width: 85vw;
+        object-fit: cover;
+    }
+
+    /*BOROGODÓ*/
+    .header2-borogodo{
+        height: 80vh;
+        padding: 0 7.5% 0 7.5%;
+    }
+
+    .logo-site-borogodo:hover path{
+        fill: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-borogodo li a:hover{
+        color: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .redes-borogodo i:hover{
+        color: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo-aplicado-borogodo{
+        height: 75vh;
+    }
+
+    .sobre-borogodo{
+        margin: 1.5% 0;
+        padding: 0 10%;
+    }
+    .sobre-borogodo p{
+        margin: 1.5% 0;
+        font-size: 1.3vw;
+    }
+
+    .conceito-borogodo{
+        height: 45vh;
+    }
+
+    .versoes-borogodo{
+        height: 60vh;
+    }
+
+    .papelaria-borogodo{
+        height: 100vh;
+    }
+
+    .cores-tipografias-borogodo{
+        height: 50vh;
+    }
+
+    .banner-borogodo{
+        height: 100vh;
+    }
+
+    .foto-rotulo-borogodo{
+        height: 91vh;
+    }
+
+    .design-rotulo-borogodo{
+        flex-direction: row;
+    }
+
+    .design-rotulo-borogodo img{
+        height: 45vh;
+        width: 33.3vw;
+    }
+
+    .cores-rotulos-borogodo{
+        height: 90vh;
+        flex-direction: row;
+    }
+
+    .foto-cores-rotulos-borogodo{
+        width: 85%;
+        height: 100%;
+    }
+
+    .todas-cores-rotulos-borogodo{
+        width: 15%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .rótulo-borogodo-cor1{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .rótulo-borogodo-cor2{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .rótulo-borogodo-cor3{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .rótulo-borogodo-cor4{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .rótulo-borogodo-cor5{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .rótulo-borogodo-cor6{
+        width: 100%;
+        height: 16.66%;
+    }
+
+    .cerveja-frontal-borogodo{
+        height: 75vh;
+    }
+
+    .tres-cervejas-borogodo{
+        height: 105vh;
+    }
+
+    .cerveja-360-borogodo{
+        height: 65vh;
+    }
+
+    .foto-conceitual-borogodo{
+        height: 80vh;
+        flex-direction: row;
+    }
+
+    .foto-conceitual-borogodo img{
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .tampinha-borogodo{
+        height: 100vh;
+    }
+
+    .social-borogodo{
+        height: 115vh;
+    }
+
+    .banners2-borogodo{
+        height: 70vh;
+    }
+
+    .banners3-borogodo{
+        height: 65vh;
+    }
+
+    .foto-cheers{
+        height: 80vh;
+    }
+
+    .foto-cheers img{
+        height: 80vh;
+    }
+
+    /*RUPTURA*/
+    .header2-ruptura{
+        height: 80vh;
+        padding: 0 7.5% 0 7.5%;
+    }
+    
+    .site-exposicao-ruptura{
+        height: 70vh;
+    }
+    
+    .sobre-ruptura{
+        margin: 5% 0;
+        padding: 0 20%;
+    }
+    
+    .sobre-ruptura p{
+        margin: 5% 0;
+        font-size: 1.5vw;
+    }
 }

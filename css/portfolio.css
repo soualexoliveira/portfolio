@@ -136,7 +136,7 @@
 }
 
 .coach .portfolio-projetos-logo img{
-    max-width: 7vw;
+    max-height: 50%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .merula .portfolio-projetos-logo img{
-    max-width: 7vw;
+    max-height: 50%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .up .portfolio-projetos-logo img{
-    max-height: 7vw;
+    max-height: 50%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -163,16 +163,16 @@
 }
 
 .borogodo .portfolio-projetos-logo img{
-    max-height: 9vw;
+    max-height: 50%;
     transition: all 0.3s ease-in-out;
 }
 
-.manifesto .portfolio-projetos-cover p{
-    color: var(--manifesto-txt);
+.ruptura .portfolio-projetos-cover p{
+    color: var(--ruptura-txt);
 }
 
-.manifesto .portfolio-projetos-logo img{
-    max-height: 11vw;
+.ruptura .portfolio-projetos-logo img{
+    max-height: 50%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -229,27 +229,27 @@
     }
 
     .coach .portfolio-projetos-logo img{
-        max-width: 5vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .merula .portfolio-projetos-logo img{
-        max-width: 5.5vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .up .portfolio-projetos-logo img{
-        max-height: 5.75vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .borogodo .portfolio-projetos-logo img{
-        max-height: 6.5vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
-    .manifesto .portfolio-projetos-logo img{
-        max-height: 7.25vw;
+    .ruptura .portfolio-projetos-logo img{
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 }
@@ -380,27 +380,27 @@
     }
 
     .coach .portfolio-projetos-logo img{
-        max-width: 2vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .merula .portfolio-projetos-logo img{
-        max-width: 2.5vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .up .portfolio-projetos-logo img{
-        max-height: 2.5vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
     .borogodo .portfolio-projetos-logo img{
-        max-height: 3vw;
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 
-    .manifesto .portfolio-projetos-logo img{
-        max-height: 3.25vw;
+    .ruptura .portfolio-projetos-logo img{
+        max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
 }
