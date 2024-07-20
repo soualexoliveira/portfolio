@@ -1906,15 +1906,13 @@
 }
 
 .site-exposicao-ruptura{
-    height: 25vh;
     width: 100vw;
 }
 
-.site-exposicao-ruptura img{
+.site-exposicao-ruptura video{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-color: #222222;
 }
 
 .sobre-ruptura{
@@ -1932,7 +1930,7 @@
 }
 
 .sobre-ruptura strong{
-    color: var(--ruptura-bg2);
+    color: var(--ruptura-txt);
     font-weight: 600;
 }
 
@@ -1940,17 +1938,40 @@
     font-weight: 500;
 }
 
-/*.conceito-borogodo{
-    height: 10vh;
+.conceito-ruptura{
     width: 100vw;
+    background-color: #ffffff;
 }
 
-.conceito-borogodo img{
+.conceito-ruptura img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-color: #000000;
 }
+
+.tipografia-ruptura{
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+.tipografia-ruptura img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cores-ruptura{
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+.cores-ruptura img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*
 
 .versoes-borogodo{
     width: 100vw;
@@ -2753,10 +2774,6 @@
     .header2-ruptura{
         height: 50vh;
         padding: 0 5% 0 5%;
-    }
-    
-    .site-exposicao-ruptura{
-        height: 35vh;
     }
     
     .sobre-ruptura{
@@ -3635,10 +3652,6 @@
     .header2-ruptura{
         height: 80vh;
         padding: 0 7.5% 0 7.5%;
-    }
-    
-    .site-exposicao-ruptura{
-        height: 70vh;
     }
     
     .sobre-ruptura{

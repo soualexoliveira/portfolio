@@ -148,8 +148,7 @@
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
     --ruptura-txt: #ffffff;
-    --ruptura-bg: #04090c;
-    --ruptura-bg2: #b8803c;
+    --ruptura-bg: #060c12;
     --dimaitre-txt: #eac087;
     --dimaitre-bg: #136552;
     --daroca-txt: #ffffff;
@@ -737,7 +736,7 @@ a[disabled]{
 }
 
 .ruptura h2, .ruptura h4{
-    color: var(--ruptura-bg2);
+    color: var(--ruptura-txt);
 }
 
 .ruptura .cover p{
