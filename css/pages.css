@@ -1915,13 +1915,28 @@
     object-fit: cover;
 }
 
-.sobre-ruptura{
-    margin: 3.5% 0;
-    padding: 0 10%;
+.sections-ruptura{
+    width: 100%;
+    margin-bottom: 3vw;
+    display: flex;
+    align-items: center;
+    padding: 5vw 5vw 0vw 5vw;
 }
 
-.sobre-ruptura p{
-    margin: 3.5% 0;
+.sections-ruptura h3{
+    font-size: 2vw;
+    color: var(--ruptura-txt);
+    font-weight: 500;
+}
+
+.sobre-ruptura{
+    width: 100vw;
+}
+
+.sobre-ruptura-texto{
+    padding: 0 10vw;
+}
+.sobre-ruptura-texto p{
     color: var(--ruptura-txt);
     font-weight: 300;
     font-size: 3.2vw;
@@ -1929,7 +1944,11 @@
     list-style: none;
 }
 
-.sobre-ruptura strong{
+.sobre-ruptura-texto p:nth-child(1), .sobre-ruptura-texto p:nth-child(2){
+    margin-bottom: 3.5%;
+}
+
+.sobre-ruptura-texto strong{
     color: var(--ruptura-txt);
     font-weight: 600;
 }
@@ -1940,51 +1959,303 @@
 
 .conceito-ruptura{
     width: 100vw;
-    background-color: #ffffff;
 }
 
 .conceito-ruptura img{
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.conceito-ruptura-blocos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+.conceito-ruptura-bloco1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48.5%;
+}
+
+.conceito-ruptura-bloco1-parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+}
+
+.conceito-ruptura-foto1, .conceito-ruptura-logo{
+    width: 100%;
+    height: 47%;
+}
+
+.conceito-ruptura-bloco1-parte2{
+    width: 47%;
+}
+
+.conceito-ruptura-foto2{
+    width: 100%;
+    height: 100%;
+}
+
+.conceito-ruptura-bloco2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48.5%;
+}
+
+.conceito-ruptura-bloco2-parte1{
+    height: 47%;
+}
+
+.conceito-ruptura-ideia{
+    width: 100%;
+    height: 100%;
+}
+
+.conceito-ruptura-bloco2-parte2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 47%;
+}
+
+.conceito-ruptura-icones, .conceito-ruptura-foto3{
+    width: 47%;
+    height: 100%;
+}
+
+.grid-ruptura{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-ruptura img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-ruptura-imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 0 10vw 1.5vw 10vw;
+}
+
+.grid-ruptura-simbolo{
+    width: 50%;
+    height: 100%;
+}
+
+.grid-ruptura-logo{
+    width: 50%;
+    height: 100%;
+}
+
+.versoes-ruptura{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.versoes-ruptura img, .versoes-ruptura video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.versoes-ruptura-linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    padding: 0 10vw 1.5vw 10vw;
+}
+
+.versoes-ruptura-simbolo{
+    width: 30%;
+    height: 100%;
+}
+
+.versoes-ruptura-foto4{
+    width: 67%;
+    height: 100%;
+}
+
+.versoes-ruptura-linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5vw 10vw 0 10vw;
+    height: 12vh;
+}
+
+.versoes-ruptura-foto5{
+    width: 67%;
+    height: 100%;
+}
+
+.versoes-ruptura-logo{
+    width: 30%;
+    height: 100%;
 }
 
 .tipografia-ruptura{
     width: 100vw;
-    background-color: #ffffff;
+    padding: 2.5vw 0 0 0;
 }
 
-.tipografia-ruptura img{
+.tipografia-ruptura-foto{
+    padding: 0 5vw;
+}
+
+.tipografia-ruptura-foto img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.cores-ruptura{
+.caracteres-ruptura-foto{
+    padding: 0 5vw;
+}
+
+.caracteres-ruptura-foto img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cor-ruptura{
     width: 100vw;
-    background-color: #ffffff;
 }
 
-.cores-ruptura img{
+.ruptura-cores-bloco{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+
+.ruptura-cor-primaria{
+    width: 43.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ruptura-cor-preta {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--ruptura-bg);
+    position: relative;
+    border: 1px solid #ffffff33;
+}
+
+.ruptura-cor-preta img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.ruptura-cor-preta span:nth-child(2){
+    opacity: 0;
+}
+
+.ruptura-cores-secundarias{
+    width: 53.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ruptura-cor-branca{
+    height: 47%;
+    width: 100%;
+    background-color: var(--ruptura-txt);
+    border-radius: 10px;
+}
+
+.ruptura-cor-branca img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+    border-radius: 10px;
+}
+
+.ruptura-outras-cores{
+    display: flex;
+    flex-direction: row;
+    height: 47%;
+    justify-content: space-between;
+}
+
+.ruptura-cor-amarela{
+    width: 29.5%;
+    border-radius: 10px;
+    background-color: var(--ruptura-color1);
+}
+
+.ruptura-cor-amarela img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: left;
+    border-radius: 10px;
+}
+
+.ruptura-cor-vermelha{
+    width: 29.5%;
+    border-radius: 10px;
+    background-color: var(--ruptura-color2);
+}
+
+.ruptura-cor-vermelha img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 10px;
+}
+
+.ruptura-cor-azul{
+    width: 29.5%;
+    border-radius: 10px;
+    background-color: var(--ruptura-color3);
+}
+
+.ruptura-cor-azul img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 10px;
 }
 
 /*
-
-.versoes-borogodo{
-    width: 100vw;
-    height: 15vh;
-}
-
-.versoes-borogodo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #000000;
-}
-
 .papelaria-borogodo{
     height: 30vh;
     width: 100vw;
@@ -1995,47 +2266,6 @@
     width: 100%;
     object-fit: cover;
     background-color: #222222;
-}
-
-.cores-tipografias-borogodo{
-    display: flex;
-    flex-direction: row;
-    height: 20vh;
-    width: 100vw;
-}
-
-.cores-borogodo{
-    background-color: var(--borogodo-bg);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding-left: 3.5vw;
-}
-
-.cores-borogodo p{
-    color: var(--borogodo-txt);
-    font-weight: 500;
-    font-size: 2.25vw;
-    list-style: none;
-}
-
-.tipografias-borogodo{
-    background-color: var(--borogodo-txt);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding-left: 3.5vw;
-}
-
-.tipografias-borogodo p{
-    color: var(--borogodo-bg);
-    font-weight: 500;
-    font-size: 2.25vw;
-    list-style: none;
 }
 
 .banner-borogodo{
@@ -2776,14 +3006,92 @@
         padding: 0 5% 0 5%;
     }
     
-    .sobre-ruptura{
-        margin: 5% 0;
-        padding: 0 12%;
+    .sobre-ruptura-texto{
+        padding: 0 12.5vw;
     }
     
-    .sobre-ruptura p{
-        margin: 5% 0;
+    .sobre-ruptura-texto p{
         font-size: 2.75vw;
+    }
+
+    .sobre-ruptura-texto p:nth-child(1), .sobre-ruptura-texto p:nth-child(2){
+        margin-bottom: 5%;
+    }
+
+    .conceito-ruptura-blocos{
+        padding: 0 12.5vw;
+    }
+
+    .conceito-ruptura img, .grid-ruptura img, .versoes-ruptura img, .versoes-ruptura video{
+        border-radius: 22.5px;
+    }
+
+    .grid-ruptura-imagens{
+        height: 22.5vh;
+        padding: 0 12.5vw 1.5vw 12.5vw;
+    }
+
+    .versoes-ruptura-linha1{
+        height: 18vh;
+        padding: 0 12.5vw 1.5vw 12.5vw;
+    }
+
+    .versoes-ruptura-linha2{
+        height: 18vh;
+        padding: 1.5vw 12.5vw 0 12.5vw;
+    }
+
+    .tipografia-ruptura-foto{
+        padding: 0 7.5vw;
+    }
+
+    .caracteres-ruptura-foto{
+        padding: 0 7.5vw;
+    }
+
+    .ruptura-cores-bloco{
+        height: 30vh;
+        padding: 0 12.5vw;
+    }
+
+    .ruptura-cor-preta {
+        border-radius: 22.5px;
+    }
+
+    .ruptura-cor-preta img{
+        border-radius: 22.5px;
+    }
+
+    .ruptura-cor-branca {
+        border-radius: 22.5px;
+    }
+    
+    .ruptura-cor-branca img{
+        border-radius: 22.5px;
+    }
+
+    .ruptura-cor-amarela {
+        border-radius: 22.5px;
+    }
+    
+    .ruptura-cor-amarela img{
+        border-radius: 22.5px;
+    }
+
+    .ruptura-cor-vermelha {
+        border-radius: 22.5px;
+    }
+    
+    .ruptura-cor-vermelha img{
+        border-radius: 22.5px;
+    }
+
+    .ruptura-cor-azul {
+        border-radius: 22.5px;
+    }
+    
+    .ruptura-cor-azul img{
+        border-radius: 22.5px;
     }
 }
 
@@ -3654,13 +3962,91 @@
         padding: 0 7.5% 0 7.5%;
     }
     
-    .sobre-ruptura{
-        margin: 5% 0;
-        padding: 0 20%;
+    .sobre-ruptura-texto{
+        padding: 0 15vw;
     }
     
-    .sobre-ruptura p{
-        margin: 5% 0;
+    .sobre-ruptura-texto p{
         font-size: 1.5vw;
+    }
+
+    .sobre-ruptura-texto p:nth-child(1), .sobre-ruptura-texto p:nth-child(2){
+        margin-bottom: 3%;
+    }
+
+    .conceito-ruptura-blocos{
+        padding: 0 15vw;
+    }
+
+    .conceito-ruptura img, .grid-ruptura img, .versoes-ruptura img, .versoes-ruptura video{
+        border-radius: 35px;
+    }
+
+    .grid-ruptura-imagens{
+        height: 60vh;
+        padding: 0 15vw
+    }
+
+    .versoes-ruptura-linha1{
+        height: 47vh;
+        padding: 0 15vw 1.5vw 15vw;
+    }
+
+    .versoes-ruptura-linha2{
+        height: 47vh;
+        padding: 1.5vw 15vw 0 15vw;
+    }
+
+    .tipografia-ruptura-foto{
+        padding: 0 11vw;
+    }
+
+    .caracteres-ruptura-foto{
+        padding: 0 11vw;
+    }
+
+    .ruptura-cores-bloco{
+        height: 70vh;
+        padding: 0 15vw;
+    }
+
+    .ruptura-cor-preta {
+        border-radius: 35px;;
+    }
+
+    .ruptura-cor-preta img{
+        border-radius: 35px;;
+    }
+
+    .ruptura-cor-branca {
+        border-radius: 35px;;
+    }
+    
+    .ruptura-cor-branca img{
+        border-radius: 35px;;
+    }
+
+    .ruptura-cor-amarela {
+        border-radius: 35px;;
+    }
+    
+    .ruptura-cor-amarela img{
+        border-radius: 35px;;
+    }
+
+    .ruptura-cor-vermelha {
+        border-radius: 35px;;
+    }
+    
+    .ruptura-cor-vermelha img{
+        border-radius: 35px;;
+    }
+
+    .ruptura-cor-azul {
+        border-radius: 35px;;
+    }
+    
+    .ruptura-cor-azul img{
+        border-radius: 35px;;
     }
 }
