@@ -1906,7 +1906,7 @@
 }
 
 .site-exposicao-ruptura{
-    width: 100vw;
+    width: 100%;
 }
 
 .site-exposicao-ruptura video{
@@ -2119,7 +2119,6 @@
 
 .tipografia-ruptura{
     width: 100vw;
-    padding: 2.5vw 0 0 0;
 }
 
 .tipografia-ruptura-foto{
@@ -2255,55 +2254,207 @@
     border-radius: 10px;
 }
 
-/*
-.papelaria-borogodo{
-    height: 30vh;
+.papelaria-ruptura-foto{
     width: 100vw;
+    padding: 0vw 10vw;
 }
 
-.papelaria-borogodo img{
-    height: 100%;
+.papelaria-ruptura-foto img{
     width: 100%;
     object-fit: cover;
-    background-color: #222222;
+    border-radius: 10px;
 }
 
-.banner-borogodo{
-    height: 22.5vh;
+.brindes-ruptura{
     width: 100vw;
-}
-
-.banner-borogodo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.foto-rotulo-borogodo{
-    height: 20.5vh;
-    width: 100vw;
-}
-
-.foto-rotulo-borogodo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
-}
-
-.design-rotulo-borogodo{
-    width: 100vw;
-    max-height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.design-rotulo-borogodo img{
-    height: 100%;
+.brindes-ruptura img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    background-color: #000000;
-}*/
+    border-radius: 10px;
+}
+
+.brindes-ruptura-linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 13vh;
+    padding: 0 10vw 1.5vw 10vw;
+}
+
+.brindes-ruptura-livreto{
+    width: 48.5%;
+    height: 100%;
+}
+
+.brindes-ruptura-garrafa{
+    width: 48.5%;
+    height: 100%;
+}
+
+.brindes-ruptura-linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5vw 10vw 0 10vw;
+    height: 13vh;
+}
+
+.brindes-ruptura-moletom{
+    width: 48.5%;
+    height: 100%;
+}
+
+.brindes-ruptura-bolsa{
+    width: 48.5%;
+    height: 100%;
+}
+
+.website-ruptura{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.website-ruptura img, .versoes-ruptura video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.website-ruptura-bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 65vh;
+    padding: 0 10vw 1.5vw 10vw;
+}
+
+.website-ruptura-inicio{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1.5%;
+}
+
+.website-ruptura-exposicoes{
+    width: 100%;
+    height: 98.5%;
+    padding: 1.5% 0;
+}
+
+.website-ruptura-conjunto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5%;
+}
+
+.website-ruptura-shows{
+    width: 33.3%;
+    height: 100%;
+    padding-right: 1.5%;
+}
+
+.website-ruptura-cursos-lightmode{
+    width: 33.3%;
+    height: 100%;
+    padding: 0 1.5%;
+}
+
+.website-ruptura-detalhes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.3%;
+    height: 100%;
+    padding-left: 1.5%;
+}
+
+.website-ruptura-login{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+.website-ruptura-icones{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.social-ruptura{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-ruptura img, .social-ruptura video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.social-ruptura-linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 0 10vw 1.5vw 10vw;
+}
+
+.social-ruptura-post1{
+    width: 100%;
+    height: 100%;
+    padding-right: 1.5%;
+}
+
+.social-ruptura-post2{
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5%;
+}
+
+.social-ruptura-post3{
+    width: 100%;
+    height: 100%;
+    padding-left: 1.5%;
+}
+
+.social-ruptura-linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 1.5vw 10vw 0 10vw;
+}
+
+.social-ruptura-instagram{
+    width: 100%;
+    height: 100%;
+    padding-right: 1.5%;
+}
+
+.social-ruptura-tiktok{
+    width: 100%;
+    height: 100%;
+    padding-left: 1.5%;
+}
 
 .footer-ruptura{
     background-color: var(--ruptura-bg);
