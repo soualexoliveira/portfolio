@@ -1909,7 +1909,7 @@
     width: 100%;
 }
 
-.site-exposicao-ruptura video{
+.site-exposicao-ruptura video, .site-exposicao-ruptura img{
     height: 100%;
     width: 100%;
     object-fit: cover;
