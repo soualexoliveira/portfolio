@@ -2324,11 +2324,12 @@
     justify-content: space-between;
 }
 
-.website-ruptura img, .versoes-ruptura video{
+.website-ruptura img, .website-ruptura video{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    border: 1px solid var(--ruptura-txt);
 }
 
 .website-ruptura-bloco{
@@ -2336,7 +2337,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 65vh;
     padding: 0 10vw 1.5vw 10vw;
 }
 
@@ -2362,36 +2362,32 @@
 }
 
 .website-ruptura-shows{
-    width: 33.3%;
+    width: 48.5%;
     height: 100%;
-    padding-right: 1.5%;
 }
 
 .website-ruptura-cursos-lightmode{
-    width: 33.3%;
+    width: 48.5%;
     height: 100%;
-    padding: 0 1.5%;
 }
 
 .website-ruptura-detalhes{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    width: 33.3%;
+    width: 100%;
     height: 100%;
-    padding-left: 1.5%;
+    padding-top: 3%;
 }
 
 .website-ruptura-login{
-    width: 100%;
+    width: 48.5%;
     height: 100%;
-    padding-bottom: 5%;
 }
 
 .website-ruptura-icones{
-    width: 100%;
+    width: 48.5%;
     height: 100%;
-    padding-top: 5%;
 }
 
 .social-ruptura{
