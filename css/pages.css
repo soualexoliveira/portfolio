@@ -2260,42 +2260,51 @@
     border-radius: 10px;
 }
 
-.brindes-ruptura-linha1{
+.brindes-ruptura-linha{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 13vh;
-    padding: 0 10vw 1.5vw 10vw;
+    padding: 1.5vw 10vw 1.5vw 10vw;
 }
 
-.brindes-ruptura-livreto{
-    width: 48.5%;
-    height: 100%;
-}
-
-.brindes-ruptura-camiseta{
-    width: 48.5%;
-    height: 100%;
-}
-
-.brindes-ruptura-linha2{
+.brindes-ruptura-coluna1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    width: 48.5%;
+    height: 30vh;
+}
+
+.brindes-ruptura-garrafa{
     width: 100%;
-    padding: 1.5vw 10vw 0 10vw;
-    height: 13vh;
+    height: 56%;
 }
 
 .brindes-ruptura-moletom{
+    width: 100%;
+    height: 40%;
+}
+
+.brindes-ruptura-moletom img{
+    object-position: top;
+}
+
+.brindes-ruptura-coluna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 48.5%;
-    height: 100%;
+    height: 30vh;
+}
+
+.brindes-ruptura-touca{
+    width: 100%;
+    height: 40%;
 }
 
 .brindes-ruptura-bolsa{
-    width: 48.5%;
-    height: 100%;
+    width: 100%;
+    height: 56%;
 }
 
 .website-ruptura{
@@ -2331,13 +2340,13 @@
 .website-ruptura-inicio{
     width: 100%;
     height: 100%;
-    padding-bottom: 1.5%;
+    padding-bottom: 1%;
 }
 
 .website-ruptura-exposicoes{
     width: 100%;
     height: 98.5%;
-    padding: 1.5% 0;
+    padding: 1% 0;
 }
 
 .website-ruptura-conjunto{
@@ -2346,7 +2355,7 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-top: 1.5%;
+    padding-top: 1%;
     flex-wrap: wrap;
 }
 
@@ -2366,7 +2375,7 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-top: 3%;
+    padding-top: 2%;
 }
 
 .website-ruptura-login{
@@ -2418,11 +2427,8 @@
 }
 
 .social-ruptura-linha2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
-    height: 15vh;
+    height: 100%;
     padding: 1.5vw 10vw 0 10vw;
 }
 
@@ -2433,16 +2439,10 @@
     border-radius: 10px;
 }
 
-.social-ruptura-instagram{
+.social-ruptura-redes{
     width: 100%;
     height: 100%;
     padding-right: 1.5%;
-}
-
-.social-ruptura-tiktok{
-    width: 100%;
-    height: 100%;
-    padding-left: 1.5%;
 }
 
 .footer-ruptura{
