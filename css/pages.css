@@ -1909,7 +1909,7 @@
     width: 100%;
 }
 
-.site-exposicao-ruptura video, .site-exposicao-ruptura img{
+.site-exposicao-ruptura video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -2051,7 +2051,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 45vh;
     padding: 0 10vw 1.5vw 10vw;
 }
 
@@ -2240,7 +2239,7 @@
     padding: 0vw 10vw;
 }
 
-.papelaria-ruptura-foto img{
+.papelaria-ruptura-foto video{
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -2272,7 +2271,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 48.5%;
-    height: 30vh;
 }
 
 .brindes-ruptura-garrafa{
@@ -2294,7 +2292,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 48.5%;
-    height: 30vh;
 }
 
 .brindes-ruptura-touca{
@@ -2432,7 +2429,7 @@
     padding: 1.5vw 10vw 0 10vw;
 }
 
-.social-ruptura-linha2 img{
+.social-ruptura-linha2 video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -3167,18 +3164,12 @@
     }
 
     .grid-ruptura-imagens{
-        height: 22.5vh;
         padding: 0 12.5vw 1.5vw 12.5vw;
     }
 
     .versoes-ruptura-linha1{
-        height: 18vh;
+        height: 27vh;
         padding: 0 12.5vw 1.5vw 12.5vw;
-    }
-
-    .versoes-ruptura-linha2{
-        height: 18vh;
-        padding: 1.5vw 12.5vw 0 12.5vw;
     }
 
     .tipografia-ruptura-foto{
@@ -4123,18 +4114,23 @@
     }
 
     .grid-ruptura-imagens{
-        height: 60vh;
-        padding: 0 15vw
+        flex-direction: row;
+        padding: 0 15vw;
+    }
+
+    .grid-ruptura-simbolo{
+        width: 48.5%;
+        height: 100%;
+    }
+    
+    .grid-ruptura-logo{
+        width: 48.5%;
+        height: 100%;
     }
 
     .versoes-ruptura-linha1{
-        height: 47vh;
+        height: 70vh;
         padding: 0 15vw 1.5vw 15vw;
-    }
-
-    .versoes-ruptura-linha2{
-        height: 47vh;
-        padding: 1.5vw 15vw 0 15vw;
     }
 
     .tipografia-ruptura-foto{
@@ -4189,4 +4185,33 @@
     .ruptura-cor-azul img{
         border-radius: 35px;;
     }
+
+    .website-ruptura-conjunto{
+        flex-wrap: nowrap;
+    }
+
+    .website-ruptura-shows{
+        width: 32%;
+    }
+    
+    .website-ruptura-cursos-lightmode{
+        width: 32%;
+    }
+
+    .website-ruptura-detalhes{
+        width: 32%;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .website-ruptura-login{
+        width: 85%;
+        margin-bottom: 3%;
+    }
+    
+    .website-ruptura-icones{
+        width: 85%;
+        margin-top: 3%;
+    }
+
 }
