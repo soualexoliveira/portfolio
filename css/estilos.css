@@ -193,6 +193,8 @@ body{
     overflow-x: hidden;
     background-color:var(--color-b);
     scroll-behavior: smooth;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #preloader{
@@ -268,6 +270,14 @@ body{
     to {
         opacity: 0;
     }
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 header{
