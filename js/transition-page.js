@@ -31,3 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
     isNavigating = false; // Permite novas navegações
 });
+
+window.addEventListener('pageshow', (event) => {
+    // Remove a classe 'fade-out' quando a página é reexibida (ex: ao voltar no histórico)
+    document.body.classList.remove('fade-out');
+});
