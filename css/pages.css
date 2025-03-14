@@ -1625,41 +1625,116 @@
 .cores-tipografias-borogodo{
     display: flex;
     flex-direction: row;
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
 }
 
 .cores-borogodo{
-    background-color: var(--borogodo-bg);
     height: 100%;
-    width: 100%;
+    width: 50vw;
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding-left: 3.5vw;
+    flex-direction: row;
 }
 
-.cores-borogodo p{
-    color: var(--borogodo-txt);
-    font-weight: 500;
-    font-size: 2.25vw;
-    list-style: none;
-}
-
-.tipografias-borogodo{
+.cores-borogodo-branco{
     background-color: var(--borogodo-txt);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-left: 3.5vw;
+    align-items: center;
 }
 
-.tipografias-borogodo p{
+.cores-borogodo-branco p{
     color: var(--borogodo-bg);
     font-weight: 500;
     font-size: 2.25vw;
+    list-style: none;
+    width: 80%;
+}
+
+.cores-borogodo-amarelo{
+    background-color: var(--borogodo-bg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.cores-borogodo-amarelo p{
+    color: var(--borogodo-txt);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+    width: 80%;
+}
+
+.tipografias-borogodo{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--borogodo-txt);
+    justify-content:center;
+    align-items: center;
+    gap: 5%;
+    padding: 1% 0;
+}
+
+.tipografias-borogodo-tit{
+    width: 90%;
+}
+
+.tipografias-borogodo-tit p{
+    color: var(--borogodo-bg);
+    font-weight: 600;
+    font-size: 3vw;
+    list-style: none;
+}
+
+.tipografias-borogodo-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.tipografias-borogodo-info-normal{
+    width: 100%;
+}
+
+.tipografias-borogodo-info-normal p{
+    color: var(--borogodo-bg);
+    font-weight: 500;
+    font-size: 2.75vw;
+    list-style: none;
+}
+
+.tipografias-borogodo-info-italico{
+    width: 50%;
+    display: none;
+}
+
+.tipografias-borogodo-info-italico p{
+    color: var(--borogodo-bg);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3vw;
+    list-style: none;
+}
+
+.tipografias-borogodo-text{
+    width: 90%;
+    display: none;
+}
+
+.tipografias-borogodo-text p{
+    color: var(--borogodo-bg);
+    font-weight: 400;
+    font-size: 1vw;
     list-style: none;
 }
 
@@ -1702,6 +1777,21 @@
     background-color:#aaaaaa;
 }
 
+.foto-conceitual-borogodo{
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-conceitual-borogodo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color:#aaaaaa;
+}
+
 .cerveja-frontal-borogodo{
     display: flex;
     flex-direction: row;
@@ -1729,21 +1819,6 @@
     height: 100%;
     object-fit: cover;
     object-position: 0 80%;
-    background-color:#aaaaaa;
-}
-
-.foto-conceitual-borogodo{
-    height: 25vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.foto-conceitual-borogodo img{
-    height: 25vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
     background-color:#aaaaaa;
 }
 
@@ -3074,6 +3149,86 @@
     }
 
     /*BOROGODÓ*/
+    .header2-borogodo{
+        height: 50vh;
+        padding: 0 5% 0 5%;
+    }
+    
+    .logo-aplicado-borogodo{
+        height: 30vh;
+    }
+
+    .sobre-borogodo{
+        padding: 0 12.5vw;
+    }
+    
+    .conceito-borogodo{
+        height: 25vh;
+    }
+
+    .versoes-borogodo{
+        height: 22.5vh;
+    }
+
+    .papelaria-borogodo{
+        height: 37.5vh;
+    }
+
+    .cores-tipografias-borogodo{
+        height: 22.5vh;
+    }
+
+    .cores-borogodo-branco p{
+        font-size: 2.3vw;
+    }
+
+    .cores-borogodo-amarelo p{
+        font-size: 2.3vw;
+    }
+
+    .tipografias-borogodo-tit p{
+        font-size: 2.75vw;
+    }
+
+    .tipografias-borogodo-info-normal p{
+        font-size: 2.6vw;
+    }
+
+    .banners1-borogodo{
+        height: 40vh;
+    }
+
+    .cores-rotulos-borogodo{
+        height: 45vh;
+    }
+
+    .foto-conceitual-borogodo{
+        height: 40vh;
+    }
+
+    .cerveja-frontal-borogodo{
+        height: 40vh;
+    }
+
+    .tampinha-borogodo{
+        height: 40vh;
+    }
+
+    .social-borogodo{
+        height: 45vh;
+    }
+
+    .banners2-borogodo{
+        height: 40vh;
+    }
+
+    .banners3-borogodo{
+        height: 50vh;
+    }
+
+    .banners4-borogodo{
+        height: 35vh;
+    }
 
     /*RUPTURA*/
     .header2-ruptura{
@@ -3913,7 +4068,33 @@
     }
 
     .cores-tipografias-borogodo{
-        height: 50vh;
+        height: 52.5vh;
+    }
+
+    .tipografias-borogodo{
+        justify-content:space-around;
+        gap: 0;
+    }
+
+    .tipografias-borogodo-tit p{
+        font-size: 2.25vw;
+    }
+
+    .tipografias-borogodo-info-normal{
+        width: 50%;
+    }
+
+    .tipografias-borogodo-info-normal p{
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+
+    .tipografias-borogodo-info-italico{
+        display: block;
+    }
+
+    .tipografias-borogodo-text{
+        display: block;
     }
 
     .banners1-borogodo{
@@ -3933,13 +4114,13 @@
         height: 90vh;
     }
 
-    .cerveja-frontal-borogodo{
-        height: 75vh;
-    }
-
     .foto-conceitual-borogodo{
         height: 80vh;
         flex-direction: row;
+    }
+
+    .cerveja-frontal-borogodo{
+        height: 75vh;
     }
 
     .foto-conceitual-borogodo img{
