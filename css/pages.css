@@ -1615,7 +1615,7 @@
     width: 100vw;
 }
 
-.papelaria-borogodo img{
+.papelaria-borogodo video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1726,18 +1726,6 @@
     list-style: none;
 }
 
-.tipografias-borogodo-text{
-    width: 90%;
-    display: none;
-}
-
-.tipografias-borogodo-text p{
-    color: var(--borogodo-bg);
-    font-weight: 400;
-    font-size: 1vw;
-    list-style: none;
-}
-
 .banners1-borogodo{
     display: flex;
     flex-direction: row;
@@ -1838,7 +1826,7 @@
     width: 100vw;
 }
 
-.social-borogodo img{
+.social-borogodo video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -4068,12 +4056,12 @@
     }
 
     .cores-tipografias-borogodo{
-        height: 52.5vh;
+        height: 45vh;
     }
 
     .tipografias-borogodo{
-        justify-content:space-around;
-        gap: 0;
+        justify-content:center;
+        gap: 10%;
     }
 
     .tipografias-borogodo-tit p{
@@ -4090,10 +4078,6 @@
     }
 
     .tipografias-borogodo-info-italico{
-        display: block;
-    }
-
-    .tipografias-borogodo-text{
         display: block;
     }
 
