@@ -1587,7 +1587,7 @@
 }
 
 .conceito-borogodo{
-    height: 10vh;
+    height: 17.5vh;
     width: 100vw;
 }
 
@@ -1784,7 +1784,7 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 30vh;
+    height: 32.5vh;
 }
 
 .cerveja-frente-borogodo{
@@ -1835,7 +1835,7 @@
 
 .banners2-borogodo{
     width: 100vw;
-    height: 25vh;
+    height: 27.5vh;
 }
 
 .banners2-borogodo img{
@@ -1864,7 +1864,7 @@
 }
 
 .banners4-borogodo{
-    height: 22.5vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -3151,7 +3151,7 @@
     }
     
     .conceito-borogodo{
-        height: 25vh;
+        height: 27.5vh;
     }
 
     .versoes-borogodo{
@@ -3195,7 +3195,7 @@
     }
 
     .cerveja-frontal-borogodo{
-        height: 40vh;
+        height: 48.5vh;
     }
 
     .tampinha-borogodo{
@@ -3211,11 +3211,11 @@
     }
 
     .banners3-borogodo{
-        height: 50vh;
+        height: 37.5vh;
     }
 
     .banners4-borogodo{
-        height: 35vh;
+        height: 37.5vh;
     }
 
     /*RUPTURA*/
@@ -4099,17 +4099,18 @@
     }
 
     .foto-conceitual-borogodo{
-        height: 80vh;
+        height: 100vh;
         flex-direction: row;
     }
 
-    .cerveja-frontal-borogodo{
-        height: 75vh;
+    .foto-conceitual-borogodo img{
+        height: 100vh;
+        width: 100vw;
+        object-position: 0 5%;
     }
 
-    .foto-conceitual-borogodo img{
-        height: 80vh;
-        width: 100vw;
+    .cerveja-frontal-borogodo{
+        height: 90vh;
     }
 
     .tampinha-borogodo{
