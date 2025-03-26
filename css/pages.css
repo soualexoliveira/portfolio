@@ -1582,8 +1582,9 @@
     list-style: none;
 }
 
-.sobre-borogodo strong{
+.sobre-borogodo .strong{
     color: var(--borogodo-bg);
+    font-weight: 700;
 }
 
 .conceito-borogodo{
@@ -1940,7 +1941,7 @@
 .sobre-ruptura-texto p{
     color: var(--ruptura-txt);
     font-weight: 300;
-    font-size: 3.2vw;
+    font-size: 3.25vw;
     text-align:left;
     list-style: none;
 }
