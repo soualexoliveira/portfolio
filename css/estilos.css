@@ -285,7 +285,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 6vh;
+    height: 10vh;
     width: 100%;
     padding: 0 3.5%;
     background-color:var(--color-b);
@@ -445,7 +445,7 @@ nav{
 }
 
 .header2{
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     padding: 6vh 3.5% 0 3.5%;
     display: flex;
@@ -483,7 +483,7 @@ nav{
 }
 
 .header2-data{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: none;
 }
 
@@ -499,11 +499,11 @@ nav{
 }
 
 .header2-functions p{
-    font-size: 2.25vw;
-    line-height: 5.25vh;
+    font-size: 1.75vw;
+    line-height: 5vh;
     color: var(--color-w);
     font-family: var(--font);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .video-intro{
@@ -532,11 +532,11 @@ nav{
 }
 
 .resumo p{
-    font-size: 6vw;
+    font-size: 4.25vw;
     color: var(--color-w);
     font-family: var(--font);
     font-weight: 400;
-    line-height: 7.25vw;
+    line-height: 6vw;
 }
 
 p, img, h2{
@@ -926,11 +926,6 @@ footer{
         padding: 0% 5%;
     }
     
-    .resumo p{
-        font-size: 4.5vw;
-        line-height: 6.25vw;
-    }
-    
     .projetos{
         height: 50vh;
     }
@@ -1073,7 +1068,7 @@ footer{
         display: flex;
         justify-content: left;
         align-items: center;
-        font-size: 1vw;
+        font-size: 1.15vw;
     }
     
     .menu-list li a:hover{
@@ -1119,7 +1114,7 @@ footer{
     .header2{
         height: 80vh;
         width: 100%;
-        padding: 17.5vh 7.5% 0 7.5%;
+        padding: 20vh 7.5% 0 7.5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1156,8 +1151,8 @@ footer{
     }
 
     .resumo p{
-        font-size: 3.25vw;
-        line-height: 4.25vw;
+        font-size: 2.75vw;
+        line-height: 3.5vw;
         font-weight: 300;
     }
 

@@ -1,7 +1,7 @@
 .header-sobre{
-    height: 25vh;
+    height: 30vh;
     width: 100%;
-    padding: 5vh 3.5% 0 3.5%;
+    padding: 6vh 3.5% 0 3.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +17,8 @@
     display: block;
     width: 100%;
     aspect-ratio: 16/9;
-    background-image: url(../images/foto-bg.jpg);
+    background-image: url(../images/foto-bg-teste.jpg);
     background-size: cover;
-    filter:brightness(1.1) contrast(1.1) saturate(2.75) grayscale(.5);
 }
 
 .sobre-bio{
@@ -48,8 +47,8 @@
 .sobre-texto p{
     font-family: var(--font);
     font-weight: 300;
-    font-size: 5vw;
-    line-height: 125%;
+    font-size: 4.25vw;
+    line-height: 5.25vw;
     margin-bottom: 4vw;
     color: var(--color-w);
 }
@@ -64,7 +63,7 @@
 .sobre-texto-skills p{
     font-family: var(--font);
     font-weight: 300;
-    font-size: 3.25vw;
+    font-size: 3.5vw;
     line-height: 125%;
     margin-bottom: 3vw;
     color: var(--color-w);
@@ -266,7 +265,7 @@
     .header-sobre{
         height: 80vh;
         width: 100%;
-        padding: 0 7.5%;
+        padding: 10vh 7.5% 0 7.5%;
     }
     
     .sobre-bio{
@@ -282,8 +281,8 @@
     }
     
     .sobre-texto p{
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 2.75vw;
+        line-height: 3.75vw;
         margin-bottom: 2.5vw;
         color: var(--color-w);
     }
