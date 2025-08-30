@@ -176,6 +176,15 @@
     transition: all 0.3s ease-in-out;
 }
 
+.riohome .portfolio-projetos-cover p{
+    color: var(--riohome-txt);
+}
+
+.riohome .portfolio-projetos-logo img{
+    max-height: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .portfolio-header{
         height: 35vh;
@@ -249,6 +258,11 @@
     }
 
     .ruptura .portfolio-projetos-logo img{
+        max-height: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .riohome .portfolio-projetos-logo img{
         max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
@@ -400,6 +414,11 @@
     }
 
     .ruptura .portfolio-projetos-logo img{
+        max-height: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .riohome .portfolio-projetos-logo img{
         max-height: 50%;
         transition: all 0.3s ease-in-out;
     }

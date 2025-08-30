@@ -2449,6 +2449,246 @@
     border-top: none;
 }
 
+/*RIOHOME*/
+#inicio-riohome{
+    background-color: var(--riohome-bg);
+}
+
+.header2-riohome{
+    height: 30vh;
+    width: 100%;
+    padding: 0 3.5% 0 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--riohome-bg);
+}
+
+.header2-riohome-desc h2{
+    color: var(--color-w);
+}
+
+.port-projeto-riohome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    background-color: var(--riohome-txt);
+}
+
+.logo-aplicado-riohome{
+    height: 20vh;
+    width: 100vw;
+}
+
+.logo-aplicado-riohome video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.sobre-riohome{
+    margin: 3.5% 0;
+    padding: 0 8%;
+}
+
+.sobre-riohome p{
+    margin: 3.5% 0;
+    color: var(--riohome-txt2);
+    font-weight: 400;
+    font-size: 2.75vw;
+    text-align:left;
+    list-style: none;
+}
+
+.sobre-riohome .strong{
+    color: var(--riohome-bg);
+    font-weight: 700;
+}
+
+.ambiente-riohome{
+    height: 30vh;
+    width: 100vw;
+}
+
+.ambiente-riohome video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.cores-tipografias-riohome{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100vw;
+}
+
+.cores-riohome{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.cores-riohome-branco{
+    background-color: var(--riohome-txt);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.cores-riohome-branco p{
+    color: var(--riohome-bg);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+    width: 80%;
+}
+
+.cores-riohome-amarelo{
+    background-color: var(--riohome-bg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.cores-riohome-amarelo p{
+    color: var(--riohome-txt);
+    font-weight: 500;
+    font-size: 2.25vw;
+    list-style: none;
+    width: 80%;
+}
+
+.tipografias-riohome{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--riohome-txt);
+    justify-content:center;
+    align-items: center;
+    gap: 5%;
+    padding: 1% 0;
+}
+
+.tipografias-riohome-tit{
+    width: 90%;
+}
+
+.tipografias-riohome-tit p{
+    color: var(--riohome-bg);
+    font-weight: 600;
+    font-size: 3vw;
+    list-style: none;
+}
+
+.tipografias-riohome-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.tipografias-riohome-info-normal{
+    width: 100%;
+}
+
+.tipografias-riohome-info-normal p{
+    color: var(--riohome-bg);
+    font-weight: 500;
+    font-size: 2.75vw;
+    list-style: none;
+}
+
+.tipografias-riohome-info-italico{
+    width: 50%;
+    display: none;
+}
+
+.tipografias-riohome-info-italico p{
+    color: var(--riohome-bg);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3vw;
+    list-style: none;
+}
+
+.ambiente2-riohome{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 25vh;
+}
+
+.meio-amb-riohome{
+    width: 50vw;
+}
+
+.meio-amb-riohome img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    background-color: #222222;
+}
+
+.linha-riohome img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fotos-riohome{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos1-riohome{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 25vh;
+}
+
+.meio-fotos1-riohome{
+    width: 50vw;
+}
+
+.meio-fotos1-riohome img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    background-color: #222222;
+}
+
+.fotos2-riohome{
+    height: 30vh;
+    width: 100vw;
+}
+
+.fotos2-riohome img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #222222;
+}
+
+.footer-riohome{
+    background-color: var(--riohome-bg);
+    border-top: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .header2-logo{
         height: 28vh;
@@ -3305,6 +3545,88 @@
     
     .ruptura-cor-azul img{
         border-radius: 22.5px;
+    }
+
+    /*RIOHOME*/
+    .header2-riohome{
+        height: 50vh;
+        padding: 0 5% 0 5%;
+    }
+    
+    .logo-aplicado-riohome{
+        height: 30vh;
+    }
+
+    .sobre-riohome{
+        padding: 0 12.5vw;
+    }
+    
+    .conceito-riohome{
+        height: 27.5vh;
+    }
+
+    .versoes-riohomeo{
+        height: 22.5vh;
+    }
+
+    .papelaria-riohomeo{
+        height: 37.5vh;
+    }
+
+    .cores-tipografias-riohome{
+        height: 22.5vh;
+    }
+
+    .cores-riohome-branco p{
+        font-size: 2.3vw;
+    }
+
+    .cores-riohome-amarelo p{
+        font-size: 2.3vw;
+    }
+
+    .tipografias-riohome-tit p{
+        font-size: 2.75vw;
+    }
+
+    .tipografias-riohome-info-normal p{
+        font-size: 2.6vw;
+    }
+
+    .banners1-riohome{
+        height: 40vh;
+    }
+
+    .cores-rotulos-riohome{
+        height: 45vh;
+    }
+
+    .foto-conceitual-riohome{
+        height: 40vh;
+    }
+
+    .cerveja-frontal-riohome{
+        height: 48.5vh;
+    }
+
+    .tampinha-riohome{
+        height: 40vh;
+    }
+
+    .social-riohome{
+        height: 45vh;
+    }
+
+    .banners2-riohome{
+        height: 40vh;
+    }
+
+    .banners3-riohome{
+        height: 37.5vh;
+    }
+
+    .banners4-riohome{
+        height: 37.5vh;
     }
 }
 
@@ -4259,6 +4581,130 @@
     .website-ruptura-icones{
         width: 85%;
         margin-top: 3%;
+    }
+
+    /*RIOHOME*/
+    .header2-riohome{
+        height: 80vh;
+        padding: 0 7.5% 0 7.5%;
+    }
+
+    .logo-site-riohome:hover path{
+        fill: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-riohome li a:hover{
+        color: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .redes-riohome i:hover{
+        color: var(--color-b);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo-aplicado-riohome{
+        height: 75vh;
+    }
+
+    .sobre-riohome{
+        margin: 1.5% 0;
+        padding: 0 10%;
+    }
+    .sobre-riohome p{
+        margin: 1.5% 0;
+        font-size: 1.3vw;
+    }
+
+    .conceito-riohome{
+        height: 45vh;
+    }
+
+    .versoes-riohome{
+        height: 60vh;
+    }
+
+    .papelaria-riohome{
+        height: 100vh;
+    }
+
+    .cores-tipografias-riohome{
+        height: 45vh;
+    }
+
+    .tipografias-riohome{
+        justify-content:center;
+        gap: 10%;
+    }
+
+    .tipografias-riohome-tit p{
+        font-size: 2.25vw;
+    }
+
+    .tipografias-riohome-info-normal{
+        width: 50%;
+    }
+
+    .tipografias-riohome-info-normal p{
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+
+    .tipografias-riohome-info-italico{
+        display: block;
+    }
+
+    .banners1-riohome{
+        height: 95vh;
+    }
+
+    .design-rotulo-riohome{
+        flex-direction: row;
+    }
+
+    .design-rotulo-riohome img{
+        height: 45vh;
+        width: 33.3vw;
+    }
+
+    .cores-rotulos-riohome{
+        height: 90vh;
+    }
+
+    .foto-conceitual-riohome{
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    .foto-conceitual-riohome img{
+        height: 100vh;
+        width: 100vw;
+        object-position: 0 5%;
+    }
+
+    .cerveja-frontal-riohome{
+        height: 90vh;
+    }
+
+    .tampinha-riohome{
+        height: 100vh;
+    }
+
+    .social-riohome{
+        height: 115vh;
+    }
+
+    .banners2-riohome{
+        height: 110vh;
+    }
+
+    .banners3-riohome{
+        height: 65vh;
+    }
+
+    .banners4-riohome{
+        height: 100vh;
     }
 
 }

@@ -146,6 +146,8 @@
     --borogodo-txt: #fdfaf1;
     --borogodo-txt2:#000000;
     --borogodo-bg: #fac03d;
+    --riohome-txt:#ffffff;
+    --riohome-bg: #000000;
     --cantarola-txt: #ffce1b;
     --cantarola-bg: #76036b;
     --ruptura-txt: #ffffff;
@@ -177,6 +179,7 @@
     --merula-font: 'Okine', sans-serif;
     --coach-font: 'Gotham', sans-serif;
     --borogodo-font:#;
+    --riohome-font:#;
     --ruptura-font: 'Barlow', sans-serif;
     --size-text: 1em;
 }
@@ -762,7 +765,28 @@ a[disabled]{
     transition: all 0.3s ease-in-out;
 }
 
-.coach p, .solitude p, .merula p, .up p, .dunkel p, .borogodo p, .ruptura p{
+.riohome-bg{
+    background-color: var(--riohome-bg);
+}
+
+.riohome h2{
+    color: var(--riohome-txt);
+}
+
+.riohome h4{
+    color: var(--riohome-txt2);
+}
+
+.riohome .cover p{
+    color: var(--riohome-txt);
+}
+
+.riohome .project-logo img{
+    max-height: 55%;
+    transition: all 0.3s ease-in-out;
+}
+
+.coach p, .solitude p, .merula p, .up p, .dunkel p, .borogodo p, .ruptura p, .riohome p{
     color: var(--color-b);
 }
 
@@ -991,6 +1015,10 @@ footer{
     }
 
     .ruptura .project-logo img{
+        max-height: 55%;
+    }
+
+    .riohome .project-logo img{
         max-height: 55%;
     }
 
@@ -1229,6 +1257,11 @@ footer{
     }
 
     .ruptura .project-logo img{
+        max-height: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .riohome .project-logo img{
         max-height: 50%;
         transition: all 0.3s ease-in-out;
     }
